@@ -17,7 +17,7 @@ public class Main {
         //problem.l = ... // number of training examples
         //problem.n = ... // number of features
         //problem.x = ... // feature nodes
-        //problem.y = ... // target values
+        //problem.y = ... // target values ---- lkafljafasfasf
 
         /**
          This is similar to original C implementation:
