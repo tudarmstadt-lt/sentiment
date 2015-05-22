@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JNSP</title>
+<style type="text/css">
+<!--
+div.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+div.Section1 {page:Section1;}
+li.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+.style1 {font-family: arial}
+.style2 {font-family: "Times New Roman", Times, serif}
+.style3 {font-family: Courier}
+.style5 {
+	font-size: 24;
+	font-family: arial;
+}
+.style6 {font-size: 24}
+.style11 {font-family: arial; font-size: 10; }
+.style14 {font-family: "Courier New", Courier, monospace}
+.style15 {font-family: Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+
+<body>
+<div class="Section1">
+  <p align="center" style='text-align:center'>
+    <!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1028" type="#_x0000_t75"
+ alt="SourceForge" href="http://sourceforge.net/" style='position:absolute;
+ left:0;text-align:left;margin-left:0;margin-top:0;width:157.5pt;height:46.5pt;
+ z-index:1;visibility:visible;mso-wrap-distance-left:0;
+ mso-wrap-distance-right:0;mso-position-horizontal:left;
+ mso-position-vertical-relative:line' o:allowoverlap="f" o:button="t">
+ <v:imagedata src="http://sourceforge.net/sflogo.php?group_id=27659&amp;type=5"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]-->
+    <![if !vml]>
+    <a href="http://sourceforge.net/"><img
+border="0" width="210" height="62"
+src="http://sourceforge.net/sflogo.php?group_id=27659&amp;type=5" align="left"
+alt="SourceForge" title="" v:shapes="Picture_x0020_2" /></a>
+    <![endif]>
+    <a
+href="http://sourceforge.net/"></a><a href="http://sourceforge.net/"></a><a
+href="http://sourceforge.net/"></a><a href="http://sourceforge.net/"></a><a
+href="http://sourceforge.net/"></a></p>
+  <p align="center" style='text-align:center'>&nbsp;</p>
+  <p align="center" style='text-align:center'>&nbsp;</p>
+  <p align="center" style='text-align:center'><b><span style='font-size:19.0pt;
+font-family:Arial'>JNSP</span></b></p>
+  <p align="center" style='text-align:center'><span style='font-size:16.0pt;
+font-family:Arial'>A Java Implementation of Ngram Statistic Package</span></p>
+  <p align="center" style='text-align:center'><a
+href="http://jgibblda.sourceforge.net/"><span style='font-size:13.5pt;
+font-family:Arial'>http://jnsp.sourceforge.net/</span></a></p>
+  <p align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:3.75pt;
+margin-left:0cm;text-align:center'><span style='font-size:13.5pt;font-family:
+Arial'>Copyright <b>&copy;</b> 2008 by</span></p>
+  <p align="center" style='margin-top:3.75pt;margin-right:0cm;margin-bottom:3.75pt;
+margin-left:0cm;text-align:center'><span style='font-family:Arial'><a
+href="http://www.coltech.vnu.edu.vn/httt">Cam-Tu Nguyen</a> (ncamtu at gmail
+    dot com),
+    <st1:City w:st="on">College of Technology</st1:City>
+    ,
+    <st1:country-region
+w:st="on">Vietnam</st1:country-region>
+    National University,
+    <st1:place w:st="on">
+      <st1:City
+ w:st="on">Hanoi</st1:City>
+    </st1:place>
+  </span></p>
+  <p align="center" style='margin-top:3.75pt;margin-right:0cm;margin-bottom:3.75pt;
+margin-left:0cm;text-align:center'><span style='font-family:Arial'><a
+href="http://www.coltech.vnu.edu.vn/httt"> Thu-Trang Nguyen</a> (trangnt84 at gmail
+    dot com),
+      <st1:City w:st="on">College of Technology</st1:City>
+,
+<st1:country-region
+w:st="on">Vietnam</st1:country-region>
+National University,
+<st1:place w:st="on">
+  <st1:City
+ w:st="on">Hanoi</st1:City>
+</st1:place>
+  </span></p>
+  <div class="MsoNormal" align="center" style='text-align:center'>
+    <hr size="2" width="100%" align="center" />
+  </div>
+  <p style='margin-top:7.5pt;margin-right:0cm;margin-bottom:4.5pt;margin-left:
+0cm'><span style='font-family:Arial'>1. <a href="#1._Introduction_">Introduction</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.1. <a
+href="#1.1._Description_">Description</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2. <a
+href="#1.2._News,_Comments,_and_Bug_Reports._">News, Comments, and Bug Reports</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.3. <a
+href="#1.3._License">License</a> </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>2.<a href="#2._How_to_Use_JNSP">How
+    to Use JNSP from Command Line</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1. <a
+href="#2.1._Download">Download</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.2. <a
+href="#_2.2._Command_Line_&amp;_Input_Parameter">Command Line &amp; Input Parameters</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.2.1. <a href="#2.2.1._Counting_a_collection_of_text">Counting a collection of text </a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.2.2. <a href="#_2.2.3._Parameter_Estimation_from_a_">Doing statistics on the counted data </a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    2.2.3. <a href="#_2.2.3._Inference_for_Previously_Uns">Option Parameters </a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:4.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3. <a
+href="#_2.3._Input_Data_Format">Output Data Format </a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm'><span
+style='font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.4. <a
+href="#_2.5._Case_Study">Case Study</a></span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm'><span
+style='font-family:Arial'>3.<a href="#4._Citation,_Links,_Acknowledgements,_a">Acknowledgements, and References</a></span></p>
+  <h3 style='margin-top:22.5pt;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>1. Introduction</span><a
+name="1._Introduction_" id="1._Introduction_"></a></h3>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><span style='font-family:Arial'>1.1. Description</span><a
+name="1.1._Description_" id="1.1._Description_"></a></h4>
+  <p class="style1" style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'>JNSP is a Java implementation of Ngram Statistic Package at http://ngram.sourceforge.net/ . This allows user to count and find collocations through hypothesis testing with t-score, mutual information, etc. </p>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="#1.2._News,_Comments,_and_Bug_Reports._" id="#1.2._News,_Comments,_and_Bug_Reports._"><span
+style='font-family:Arial'>1.2. News, Comments, and Bug Reports.</span></a><span
+style='font-family:Arial'>
+    <o:p></o:p>
+  </span></h4>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><b><span style='font-family:Arial;color:red'>- September 07, 2008</span></b><span
+style='font-family:Arial'>:
+      <o:p></o:p>
+  </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.75pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo4;tab-stops:list 36.0pt'>
+    <![if !supportLists]>
+    <span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+    <![endif]>
+    <span style='font-family:Arial'>Released version
+  2.0</span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:3.75pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo4;tab-stops:list 36.0pt'><span style='font-family:Arial'>
+    <o:p></o:p>
+  </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>We highly appreciate any suggestion,
+    comment, and bug report.
+        <o:p></o:p>
+  </span></p>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="1.3._License" id="1.3._License"><span style='font-family:Arial'>1.3.
+    License</span></a><span style='font-family:Arial'>
+      <o:p></o:p>
+    </span></h4>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>JNSP is a free software; you can
+    redistribute it and/or modify it under the terms of the GNU General Public
+    License as published by the Free Software Foundation.<br />
+    <br />
+    JNSP is distributed in the hope that it will be useful, but WITHOUT ANY
+    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  </span></p>
+  <h3 style='margin-top:22.5pt;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>2. How to Use JNSP <a
+name="2._How_to_Use_JNSP" id="2._How_to_Use_JNSP"> from Command Line</a>
+        <o:p></o:p>
+  </span></h3>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="2.1._Download" id="2.1._Download"><span style='font-family:Arial'>2.1.
+    Download</span></a><span style='font-family:Arial'>
+      <o:p></o:p>
+    </span></h4>
+  <p class="style1" style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>You can find and download document, source
+    code of JNSP at <a href="http://sourceforge.net/projects/jgibblda">http://sourceforge.net/projects/jnsp</a></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>Here are some other tools developed by the
+    same author:
+        <o:p></o:p>
+  </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l4 level1 lfo6;tab-stops:list 36.0pt'>
+    <![if !supportLists]>
+    <span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+    <![endif]>
+    <span style='font-family:Arial'><a
+href="http://jvnsegmenter.sourceforge.net/">JVnSegmenter</a>: A Java-based
+      Vietnamese Word Segmentation Tool
+      <o:p></o:p>
+    </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l4 level1 lfo6;tab-stops:list 36.0pt'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+    <![endif]>
+    <span style='font-family:Arial'><a
+href="http://jvnsegmenter.sourceforge.net/">JGibbLDA</a>: A Java-based
+      Latent Dirichllet Allocation using Gibbs Sampling for estimation/inference
+    <o:p></o:p>
+    </span></p>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="2.2._Command_Line_&amp;_Input_Parameters" id="2.2._Command_Line_&amp;_Input_Parameters"></a><span style='mso-bookmark:
+&quot;2\.2\._Command_Line_&amp;_Input_Parameters&quot;'><span style='font-family:Arial'>2.2.
+    Command Line &amp; Input Parameters</span></span><span style='font-family:Arial'>
+      <o:p></o:p>
+  </span></h4>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>In this section, we describe how to use
+    this tool for parameter estimation and inference for new data. Suppose that the
+    current working directory is the home directory of JNSP and we are in Linux
+    platform. The command lines for other cases are similar.
+        <o:p></o:p>
+  </span></p>
+  <h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><a name="2.2.1._Counting_a_collection_of_text" id="2.2.1._Counting_a_collection_of_text"></a><span style='mso-bookmark:&quot;2\.2\.1\._Parameter_Estimation_from_Scratch&quot;'><span
+style='font-family:Arial'>2.2.1. Counting a collection of text </span></span></h5>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Courier;mso-bidi-font-family:Arial'>$ java 
+    [-mx512M] -cp bin:lib/tokenfilter.jar jnsp.Counter &lt;option file&gt; </span></p>
+  </blockquote>
+  <ul>
+    <li class="style2"><span
+style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span
+style='mso-list:Ignore'><span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="style1">&nbsp;&nbsp;</span></span></span></span><span class="style1">&lt;option file&gt; path to option file. Parameters in the option file are listed as in the next Section </span></li>
+  </ul>
+  <h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><a name="2.2.3._Parameter_Estimation_from_a_Previ" id="2.2.3._Parameter_Estimation_from_a_Previ"></a><span style='mso-bookmark:&quot;2\.2\.3\._Parameter_Estimation_from_a_Previ&quot;'><span
+style='font-family:Arial'>2.2.3. Doing statistics on the counted data </span></span><span style='font-family:Arial'>
+      <o:p></o:p>
+  </span></h5>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Courier;mso-bidi-font-family:Arial'>$ java 
+      [-mx512M]-cp bin:lib/tokenfilter.jar jnsp.Statistic &lt;option file&gt; </span><span style='font-family:Arial'>
+        <o:p></o:p>
+    </span></p>
+  </blockquote>
+  <ul>
+    <li><span
+style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;</span></span><span class="style2"><span
+style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span
+style='mso-list:Ignore'><span style='font:7.0pt &quot;Times New Roman&quot;'><span class="style1">&nbsp;</span></span></span></span><span class="style1">&lt;option file&gt; path to option file. Parameters in the option file are listed as in thenext Section </span></span></li>
+  </ul>
+  <h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:5.0pt;margin-left:
+0cm'><a name="2.2.3._Inference_for_Previously_Unseen_(" id="2.2.3._Inference_for_Previously_Unseen_("></a><span style='mso-bookmark:&quot;2\.2\.3\._Inference_for_Previously_Unseen_\(&quot;'><span
+style='font-family:Arial'>2.2.3. Option Parameters </span></span></h5>
+  <p class="style1" style='margin-top:0cm;margin-right:0cm;margin-bottom:5.0pt;margin-left:
+0cm'> Parameters which can be set in option file are presented as follows: </p>
+  <ul style="margin-bottom: 11.25pt">
+    <li>
+      <![if !supportLists]>
+      <span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'><span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp; </span></span></span>
+      <![endif]>
+      <span style='font-family:Courier;mso-bidi-font-family: Arial'>window</span><span style='font-family:Arial'>: number of grams </span></li>
+    <li>
+      <![if !supportLists]>
+      <![endif]>
+      <span style='font-family:Courier;mso-bidi-font-family: Arial'>datadir</span><span style='font-family:Arial'>: The
+        directory contain text data to be counted and performed statistics on </span></li>
+    <li>
+      <![if !supportLists]><![endif]>
+      <span class="style3">stopFile</span><span style='font-family:Arial'>: File containing stop words in a specific language
+    </span></li>
+    <li><span style='font-family:Arial'>
+      <o:p></o:p>
+        </span>
+      <![if !supportLists]>
+      <span class="style5"><span style="font-family:Courier;mso-bidi-font-family: Arial">freqCutoff</span>: cutoff ngrams with frequency larger than this threshold.  </span></li>
+    <li><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'><span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp; </span></span></span>
+      <![endif]>
+      <span style='font-family:Courier;mso-bidi-font-family: Arial'>rareCutoff</span><span style='font-family:Arial'>: <span class="style5">cutoff ngrams with frequency less than this threshold.</span></span></li>
+    <li><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'><span style='font:7.0pt &quot;Times New Roman&quot;'><span class="style3">cntFile</span></span></span></span><span style='font-family:Arial'>: &lt;path to counted file&gt; + &lt;file path separotor&gt; + &lt;prefix of counting file&gt; </span>.</li>
+  </ul>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12;tab-stops:list 36.0pt'> <span class="style1">	For example, in order to refer to the file D:\count2.cnt (here, 2 means the number of gram, and cnt is the suffix in the counting file name), we specify cntFile=D:\count</span>.<span class="style1"> Associating with the information of the number of grams, we can construct the counting file name from this cntFile.</span></p>
+  <ul>
+    <li><span style='font-family:Courier;mso-bidi-font-family:
+Arial'>agressiveCount</span><span style='font-family:Arial'>: If this set to true, for a collection and a specified window, we generated counting information about <strong>1,2,..., window</strong> grams. This helps avoiding scan collection each time for one type of ngram. Each type of ngram is written in one file with name
+    </span><span style='font-family:Arial'>
+    <o:p></o:p>
+    </span><span style='font-family:Arial'>cntFile + &lt;number of grams&gt; + &quot;.cnt&quot;.</span></li>
+    <li>
+      <![endif]>
+      <span style='font-family:Courier;mso-bidi-font-family: Arial'>freqComboFile</span><span style='font-family:Arial'>: <span class="style6">specify file countaing frequency combo to count. Since we can count several types of ngrams at the same time (with agressiveCount), each frequency combo need to be clear for which type of ngrams.</span></span> <span style='font-family:Arial'>For example: for trigrams and its frequency combo 3=0:1:2|0|1|2|0:1|0:2, we count the frequency of w0w1w2, w0 at the first place, w1 at the second place and so on.</span></li>
+    <li><span class="style14">statFile</span>:<span class="style15"> path to file containing statistic information of the collection </span></span></li>
+  </ul>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="2.3._Input_Data_Format" id="2.3._Input_Data_Format"></a><span style='mso-bookmark:&quot;2\.3\._Input_Data_Format&quot;'><span
+style='font-family:Arial'>2.3. Output Data Format</span></span><span
+style='font-family:Arial'>
+    <o:p></o:p>
+  </span></h4>
+  <ul>
+    <li>Format of the output of Counter:</li>
+  </ul>
+  <blockquote>
+    <p style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm">[Number of ngrams]<br />
+      [Ngram 1]&lt;&gt;[Couting Parameters]<br />
+      [Ngram 2]&lt;&gt;[Couting Parameters]<br />
+      .....</p>
+  </blockquote>
+  <ul>
+    <li>Format of the output of Statistic<br />
+    </li>
+  </ul>
+  <blockquote>
+    <p>	<span style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm">[Ngram 1]&lt;&gt;</span>[statistic value]<br />  
+        <span style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm">[Ngram 2]&lt;&gt;</span>[statistic value]<br />
+    ...    </p>
+  </blockquote>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><a name="2.5._Case_Study" id="2.5._Case_Study"></a><span
+style='mso-bookmark:&quot;2\.5\._Case_Study&quot;'><span style='font-family:Arial'>2.5.
+    Case Study</span></span><span style='font-family:Arial'>
+      <o:p></o:p>
+  </span></h4>
+  <h5 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'>2.5.1. Find collocation in English</h5>
+  <ul>
+    <li>Data and options to count/anaylyse statistic are shown in the samples and data in the package of JNSP which you can download.</li>
+    <li>Sample output of the counting process. Here, the bigram &quot;months ago&quot; occurs 21 times in the collection, the word &quot;months&quot; occurs 35 times, and the word &quot;ago&quot; occurs 123. </li>
+  </ul>
+  <blockquote>
+    <p style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm">29843<br />
+      run&lt;&gt;begins&lt;&gt;1 33 11<br />
+      months&lt;&gt;ago&lt;&gt;21 35 123<br />
+      test&lt;&gt;match&lt;&gt;4 74 108<br />
+      team&lt;&gt;effort&lt;&gt;3 207 10<br />
+      aussie&lt;&gt;bowlers&lt;&gt;1 5 15<br />
+      glenn&lt;&gt;mcgrath&lt;&gt;4 6 5<br />
+      colin&lt;&gt;miller&lt;&gt;1 34 19 <br />
+    ....</p>
+  </blockquote>
+  <ul>
+    <li>Sample output of the statistic analysis process. Calculate T-score to the ngrams counted, we got the results as follows. Here, the larger t-score is, the more likely a bigram be a collocation. The &quot;world champion&quot; is a collocation with the confidence of more than 99.5% because its t-score (9.51860..) larger than 2.675. </li>
+  </ul>
+  <blockquote>
+    <p style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm">bbc&lt;&gt;sport	10.392742222776956<br />
+      world&lt;&gt;champion	9.518601451101189<br />
+      grand&lt;&gt;prix	9.486832980505138<br />
+      world&lt;&gt;number	9.221981556055333<br />
+      ve&lt;&gt;got	8.888194417315589<br />
+      west&lt;&gt;ham	8.831760866327846<br />
+      world&lt;&gt;record	8.728715609439696<br />
+      years&lt;&gt;ago	8.485281374238571<br />
+      world&lt;&gt;cup	8.410956309868196<br />
+    sri&lt;&gt;lanka	8.246211251235321<br />
+    .....</p>
+  </blockquote>
+  <h5 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'>2.5.2. Find collocation in Vietnamese  </h5>
+  <ul>
+    <li>Similarly to the above case study, we found collocations for a collection of Vietnamese text and show results as follows. The output of the couting process:</li>
+    <blockquote>
+      <p>54166<br />
+        clb&lt;&gt;benfica&lt;&gt;4 808 11<br />
+        benfica&lt;&gt;chu&#7849;n_b&#7883;&lt;&gt;1 4 85<br />
+        chu&#7849;n_b&#7883;&lt;&gt;x&acirc;y_d&#7921;ng&lt;&gt;1 67 28<br />
+        x&acirc;y_d&#7921;ng&lt;&gt;sv&#273;&lt;&gt;1 31 11<br />
+        ban&lt;&gt;&#273;i&#7873;u_h&agrave;nh&lt;&gt;1 163 48<br />
+  &#273;i&#7873;u_h&agrave;nh&lt;&gt;clb&lt;&gt;15 38 447<br />
+        ph&aacute;_b&#7887;&lt;&gt;sv&#273;&lt;&gt;1 2 11<br />
+        sv&#273;&lt;&gt;hi&#7879;n_th&#7901;i&lt;&gt;1 24 4<br />
+        v&ograve;ng&lt;&gt;chung_k&#7871;t&lt;&gt;69 543 318<br />
+        chung_k&#7871;t&lt;&gt;euro&lt;&gt;5 217 191 <br />
+      ....</p>
+    </blockquote>
+    <li>The output of statistic analysis with T-score</li>
+    <blockquote>
+      <p>world&lt;&gt;cup	22.116209726652244<br />
+        champions&lt;&gt;league	19.774293161202728<br />
+        m&ugrave;a&lt;&gt;gi&#7843;i	16.743157806499145<br />
+        tp&lt;&gt;hcm	16.401331959231246<br />
+        hlv&lt;&gt;tr&#432;&#7903;ng	14.565737684227129<br />
+        real&lt;&gt;madrid	14.526000648343672<br />
+        tr&#7853;n&lt;&gt;chung_k&#7871;t	14.39746489892214<br />
+        m&ugrave;a&lt;&gt;b&oacute;ng	13.089776391875638<br />
+        &#273;&#7897;i&lt;&gt;ch&#7911;_nh&agrave;	13.005370613883684<br />
+        ghi&lt;&gt;b&agrave;n	12.96170831152056<br />
+        v&ograve;ng&lt;&gt;lo&#7841;i	12.728868621583858<br />
+        ch&acirc;u&lt;&gt;&acirc;u	12.409673645990857<br />
+        ch&#7913;c&lt;&gt;v&ocirc;_&#273;&#7883;ch	12.125448035690276 <br />
+      .....</p>
+    </blockquote>
+  </ul>
+  <h3 style='margin-top:22.5pt;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>3.  Acknowledgements, and
+    References</span><span style='font-family:Courier;mso-bidi-font-family:Arial'>
+      <o:p></o:p>
+  </span><span style="margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm"><a
+name="3.Acknowledgements_Ref" id="3.Acknowledgements_Ref"></a></span></h3>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><span style='font-family:Arial'>3.1. Acknowledgements</span><a
+name="3.1_Acknowledgements" id="3.1_Acknowledgements"></a><span style='font-family:Courier;mso-bidi-font-family:
+Arial'>
+    <o:p></o:p>
+  </span></h4>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:11.25pt;margin-left:
+0cm'><span style='font-family:Arial'>Our code is based on the <a
+href="http://ngram.sourceforge.net/">NSP</a>
+    of Ted Pedersen et. al. and the design descriptions in [Banerjee and Pedersen]. I would like to thank Ted Pedersen, Satanjeev Banerjee, etc for sharing the
+    code and a comprehensive technical report.</span><span style='font-family:Courier;
+mso-bidi-font-family:Arial'>
+      <o:p></o:p>
+  </span></p>
+  <p style='margin-bottom:0cm;margin-bottom:.0001pt'><span style='font-family:
+Arial'>We would like to thank Sourceforge.net for hosting this project.</span><span
+style='font-family:Courier;mso-bidi-font-family:Arial'>
+    <o:p></o:p>
+  </span></p>
+  <p><a href="http://sourceforge.net/"><span style='font-family:Arial;mso-no-proof:
+yes;text-decoration:none;text-underline:none'><img border="0" width="210"
+height="62" id="_x0000_i1026"
+src="http://sourceforge.net/sflogo.php?group_id=27659&amp;type=5"
+alt="SourceForge" /></span></a><span style='font-family:Courier;mso-bidi-font-family:
+Arial'>
+    <o:p></o:p>
+  </span></p>
+  <h4 style='margin-top:18.75pt;margin-right:0cm;margin-bottom:11.25pt;
+margin-left:0cm'><span style='font-family:Arial'>3.2.References</span><a
+name="3.2._References" id="3.2._References"></a><span style='font-family:Courier;mso-bidi-font-family:
+Arial'>
+    <o:p></o:p>
+  </span></h4>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo24;tab-stops:list 36.0pt'>
+    <![if !supportLists]>
+    <span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;<span class="style11">&nbsp;</span></span></span></span><span class="style1">  <span style="font-family:Arial"><a name="Banerjee" id="Banerjee"></a></span>[Banerjee &amp; Pedersen] <a href="http://www.d.umn.edu/%7Etpederse/Pubs/cicling2003-2.pdf">The Design, Implementation, and Use of the Ngram Statistics Package</a> - Appears in the Proceedings of the Fourth  International Conference on Intelligent Text Processing and Computational    Linguistics, February 17-21, 2003, Mexico City  </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo24;tab-stops:list 36.0pt'>
+    <![if !supportLists]>
+  <span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;<span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:Arial"><a name="Manning" id="Manning"></a></span>&nbsp;<span
+style='font-size:12pt;mso-bidi-font-size:12.0pt;font-family:arial; mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'>[Manning] </span></span></span></span></span><span
+style='font-size:12pt;mso-bidi-font-size:12.0pt;font-family:arial; mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'>Manning, C. D. and Schutze, H. 1999. Foundations of Statistic Natural Language Processing. 
+  MIT Press.&nbsp;&nbsp;</span></p>
+  <div class="MsoNormal" align="center" style='text-align:center'><span
+style='font-family:Courier;mso-bidi-font-family:Arial'>
+    <hr size="2" width="100%" align="center" />
+  </span></div>
+  <p align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;
+margin-left:0cm;text-align:center'><span style='font-family:Arial'>Last updated
+    September , 2008</span><span style='font-family:Courier;mso-bidi-font-family:Arial'>
+     <o:p></o:p>
+  </span></p>
+  <p align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;
+margin-left:0cm;text-align:center'><span style='font-family:Courier;mso-bidi-font-family:
+Arial'>&nbsp;
+        <o:p></o:p>
+  </span></p>
+</div>
+</body>
+
+
+
+
+</html>

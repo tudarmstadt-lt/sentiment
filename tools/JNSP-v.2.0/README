@@ -1,0 +1,30 @@
+Directory structure:
+====================
+
+    data		containing sample data
+    samples		containing some samples of using JNSP to find out collocations
+    src			containing source code files
+    bin			class files which are output of compiling process
+    README		this one
+
+How to use JNSP
+=====================
+
+    command line:
+    
+    case 1:
+	
+	java -mx512MB -classpath <CLASSPATH> jnsp.Counter <OPTIONFILE>
+	
+    case 2:
+    
+	java -mx512MB -classpath <CLASSPATH> jnsp.Statistic <OPTIONFILE>
+	<STATLIB> -window <WINDOW>
+	
+    where:
+	
+	-mx512MB: to extend heap memory for JVM
+	
+	<CLASSPATH> is the path to the "Counter.class" or "Statistic.class" file, and necessary lib for JNSP. 
+	For instance, if we are currently at the home directory of JNSP, the <CLASSPATH> is "bin;lib\tokenfilter.jar"
+	

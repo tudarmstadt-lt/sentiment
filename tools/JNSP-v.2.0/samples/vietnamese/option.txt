@@ -1,0 +1,21 @@
+window = 2
+
+#freqComboFile = freqcombo.txt
+
+dataDir = ../../data/vietnamese/bong-da
+	
+cntFile = sport
+	
+stopFile = ../../data/vietnamese/stopwords.txt
+	
+freqCutOff = -1
+	
+rareCutOff = -1
+	
+statFile = sort-tscore2d
+	
+statlib = TScore2D
+	
+agressiveCount = false
+	
+ngramCache = true

@@ -1,0 +1,14 @@
+You rate the players
+
+   We are changing the way we compile our Player Ratings.  
+ In fact, we are not compiling them anymore. You are. 
+ Our new user-generated Player Rating service will be making its debut at Saturday's FA Cup final between Liverpool and West Ham. 
+ And the new addition to the BBC Sport team will be an ever-present during all 64 matches at this summer's World Cup finals in Germany. 
+ The process is simple. You submit your marks out of 10 for the players on show at any stage during the game, or after the final whistle has blown. 
+ The aggregated scores, based on all submitted entries, will be displayed in our live console and updated as more scores come in. 
+ We also want your opinion on the big talking points from the games. 
+ So, at various stages of the match, we will be asking for your verdict on issues such as who will win, whether a goal should have been ruled out, or a penalty awarded. 
+ As part of our development process, we want you to rate the players during this weekend's FA Cup final at the Millennium Stadium. 
+ Rate the players, then tell us what you think of our new bit of kit. 
+  The FA Cup final player rater will be available shortly before kick-off on Saturday. Revisit this story or the main football index to access the application.  
+  

@@ -9,6 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: commons-cli:commons-cli:20040117.000000" level="project" />
     <orderEntry type="library" name="Maven: de.bwaldvogel:liblinear:1.95" level="project" />
   </component>
 </module>

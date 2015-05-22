@@ -1,0 +1,7 @@
+World Rally 2003 final standings
+
+  
+      Drivers' world championship       Name     Car     Nat     Points       1  Petter Solberg   Subaru   Nor   72      2  Sebastien Loeb   Citroen   Fra   71      3  Carlos Sainz   Citroen   Spa   63      4  Richard Burns   Peugeot   GB   58      5  Markko Martin   Ford   Est   49      6  Marcus Gronholm   Peugeot   Fin   46      7  Colin McRae   Citroen   GB   45      8  Tommi Makinen   Subaru   Fin   30      9  Francois Duval   Ford   Bel   30      10  Gilles Panizzi   Peugeot   Fra   27      11  Harri Rovanpera   Peugeot   Fin   18      12  Toni Gardemeister   Skoda   Fin   9      13  Didier Auriol   Skoda   Fra   4      14  Mikko Hirvonen   Ford   Fin   3      15  Cedric Robert   Peugeot   Fra   3      16  Alistair McRae   Mitsubishi   GB   3      17  Armin Shwarz   Skoda   Ger   3      18  Janne Tuohini   Ford   Fin   2     
+      Manufacturers' world championship       Car     Points       1  Citroen   160      2  Peugeot   145      3  Subaru   109      4  Ford   93      5  Skoda   23      6  Hyundai   12     
+ Each team nominated two drivers to score points for the manufacturers' championship at each event. Only these drivers contributed to the team standings. 
+  

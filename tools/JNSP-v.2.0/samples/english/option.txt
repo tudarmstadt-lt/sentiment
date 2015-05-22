@@ -1,0 +1,21 @@
+window = 2
+
+#freqComboFile = freqcombo.txt
+
+dataDir = ../../data/english/sport
+	
+cntFile = sport
+	
+stopFile = ../../data/english/stopwords.txt
+	
+freqCutOff = -1
+	
+rareCutOff = -1
+	
+statFile = sort-tscore2d
+	
+statlib = TScore2D
+	
+agressiveCount = false
+	
+ngramCache = true
