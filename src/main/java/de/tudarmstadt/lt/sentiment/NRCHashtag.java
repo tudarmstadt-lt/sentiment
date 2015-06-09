@@ -13,14 +13,20 @@ import java.util.List;
 
 class NRCHashtag {
     List<LinkedHashMap<Integer, Double>> trainingFeature;
+    List<LinkedHashMap<Integer, Double>> testFeature;
 
     NRCHashtag() {
-        this.trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
-        generateFeature();
+        trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+
+        trainingFeature = generateFeature("/Users/biem/sentiment/dataset/tokenized_Train.txt");
+        testFeature = generateFeature("/Users/biem/sentiment/dataset/tokenized_Test.txt");
+
     }
 
-    private void generateFeature() {
-        File file = new File("/Users/biem/sentiment/dataset/resources/nrcHashtagLexicon/unigrams-pmilexicon.txt");
+    private List<LinkedHashMap<Integer, Double>> generateFeature(String fileName) {
+        List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
+        File file = new File("/Users/biem/sentiment/resources/nrcHashtagLexicon/unigrams-pmilexicon.txt");
         String line = null;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -32,7 +38,7 @@ class NRCHashtag {
             }
             reader.close();
 
-            file = new File("/Users/biem/sentiment/dataset/tokenized_Train.txt");
+            file = new File(fileName);
             reader = new BufferedReader(new FileReader(file));
             //int i = 0;
             int count = 0;
@@ -56,16 +62,16 @@ class NRCHashtag {
                     }
                 }
 
-                trainingFeature.add(count, new LinkedHashMap<Integer, Double>());
-                trainingFeature.get(count).put(1, totalScore);
-                trainingFeature.get(count).put(2, pos);
-                trainingFeature.get(count).put(3, neg);
+                featureVector.add(count, new LinkedHashMap<Integer, Double>());
+                featureVector.get(count).put(1, totalScore);
+                featureVector.get(count).put(2, pos);
+                featureVector.get(count).put(3, neg);
 
                 count++;
                 //System.out.println(totalScore+" "+pos+" "+neg);
             }
 
-            System.out.println("In NRC Class " + trainingFeature.size());
+            System.out.println("In NRC Class " + featureVector.size());
             /*for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
             {
                 //System.out.println(trainingFeature.get(i).size());
@@ -74,7 +80,7 @@ class NRCHashtag {
         } catch (IOException e) {
             System.out.println(e);
         }
-
+        return featureVector;
     }
 
     public List<LinkedHashMap<Integer, Double>> getTrainingList() {
@@ -82,8 +88,15 @@ class NRCHashtag {
         return this.trainingFeature;
     }
 
+    public List<LinkedHashMap<Integer, Double>> getTestList() {
+        //System.out.println(trainingFeature.size());
+        return this.testFeature;
+    }
+
     public int getFeatureCount() {
         return trainingFeature.get(0).size();
     }
+
+
 }
 

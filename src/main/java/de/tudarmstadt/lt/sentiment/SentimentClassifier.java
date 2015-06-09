@@ -10,24 +10,28 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 
 class GenerateTrainFeature {
     static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
 
     GenerateTrainFeature() {
-        for (int i = 0; i < 1654; i++) {
+        for (int i = 0; i < 20; i++) {
             listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
         }
     }
 
-    public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap, int featureCount) {
+    public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
         //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
+        System.out.println("start: " + start + ": ");
+
         for (int i = 0; i < hMap.size(); i++) {
-            for (int j = 1; j <= featureCount; j++) {
-                if (listOfMaps.get(i).containsValue(j)) {
-                    listOfMaps.get(i).put(start + j, hMap.get(i).get(j));
-                }
+            //System.out.println();
+            for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
+                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
+                listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
+                // do stuff
             }
         }
     }
@@ -42,16 +46,21 @@ class GenerateTestFeature {
     static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
 
     GenerateTestFeature() {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 3; i++) {
             listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
         }
     }
 
     public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
         //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
+        System.out.println("start: " + start + ": ");
+
         for (int i = 0; i < hMap.size(); i++) {
-            for (int j = 1; j <= hMap.get(i).size(); j++) {
-                listOfMaps.get(i).put(start + j, hMap.get(i).get(j));
+            //System.out.println();
+            for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
+                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
+                listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
+                // do stuff
             }
         }
     }
@@ -67,34 +76,32 @@ public class SentimentClassifier {
     public static void main(String[] args) throws IOException {
 
         //TRAINING SET
-        List<LinkedHashMap<Integer, Double>> trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         GenerateTrainFeature trainingObject = new GenerateTrainFeature();
+        List<LinkedHashMap<Integer, Double>> trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+
 
         //TESTING SET
-        List<LinkedHashMap<Integer, Double>> testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         GenerateTestFeature testObject = new GenerateTestFeature();
+        List<LinkedHashMap<Integer, Double>> testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+
 
 
         //POS FEATURE
         int start = 0;
         //POS obj1 = new POS();
         //trainingObject.setHashMap(start, obj1.getTrainingList(), obj1.getFeatureCount());
-        trainingFeature = trainingObject.getList();
+        //trainingFeature = trainingObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
 
         //NRC HASHTAG FEATURE
         //start += obj1.getFeatureCount();
         NRCHashtag obj2 = new NRCHashtag();
-        trainingObject.setHashMap(start, obj2.getTrainingList(), obj2.getFeatureCount());
+        trainingObject.setHashMap(start, obj2.getTrainingList());
         trainingFeature = trainingObject.getList();
-        //System.out.println(trainingFeature.get(10).size());
 
-
-        //testObject.setHashMap(start, obj1.getTestList());
+        testObject.setHashMap(start, obj2.getTestList());
         testFeature = testObject.getList();
-        System.out.println(testFeature.get(10).size());
-
 
 
         /*System.out.println("*************************************");
@@ -108,8 +115,11 @@ public class SentimentClassifier {
         //N GRAM FEATURE
         start += obj2.getFeatureCount();
         Ngram obj3 = new Ngram();
-        trainingObject.setHashMap(start, obj3.getTrainingList(), obj3.getFeatureCount());
+        trainingObject.setHashMap(start, obj3.getTrainingList());
         trainingFeature = trainingObject.getList();
+
+        testObject.setHashMap(start, obj3.getTestList());
+        testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
 
@@ -121,13 +131,20 @@ public class SentimentClassifier {
         System.out.println(trainingFeature.get(10).size());*/
 
 
-
-        /*System.out.println("*************************************");
+        System.out.println("TRAINING *************************************");
         for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
         {
             //System.out.println(trainingFeature.get(i).size());
             System.out.println(trainingFeature.get(i));
-        }*/
+        }
+
+        System.out.println("TEST *************************************");
+        for (int i = 0; i < testFeature.size(); i++)    //Print the feature values
+        {
+            //System.out.println(trainingFeature.get(i).size());
+            System.out.println(testFeature.get(i));
+        }
+
 
         System.out.println("Hello sentiment!");
 
@@ -151,27 +168,28 @@ public class SentimentClassifier {
         //Feature[][] f = new Feature[][]{ {}, {}, {}, {}, {}, {} };
 
         trainingFeature = trainingObject.getList();
-        Feature[][] f = new Feature[trainingFeature.size()][trainingFeature.get(0).size()];
+        Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][start + obj3.getFeatureCount()];
 
         System.out.println(trainingFeature.size());
-        System.out.println(trainingFeature.get(10).size());
+        System.out.println(start + obj3.getFeatureCount());
 
         for (int i = 0; i < trainingFeature.size(); i++) {
 
             System.out.println(trainingFeature.get(i));
-            for (int j = 0; j < trainingFeature.get(i).size(); j++) {
+            for (int j = 0; j < start + obj3.getFeatureCount(); j++) {
                 //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
                 if (trainingFeature.get(i).containsValue(j + 1)) {
-                    f[i][j] = new FeatureNode(j + 1, trainingFeature.get(i).get(j + 1));
+                    trainFeatureVector[i][j] = new FeatureNode(j + 1, trainingFeature.get(i).get(j + 1));
+                } else {
+                    trainFeatureVector[i][j] = new FeatureNode(j + 1, 0.0);
                 }
-
             }
             //System.out.println();
         }
 
         problem.l = trainingFeature.size(); // number of training examples
-        problem.n = trainingFeature.get(0).size(); // number of features
-        problem.x = f; // feature nodes
+        problem.n = start + obj3.getFeatureCount(); // number of features
+        problem.x = trainFeatureVector; // feature nodes
         problem.y = a; // target values ----
 
         /**

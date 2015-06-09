@@ -2,1009 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdac6510-30e6-4cad-a3f4-fc85de15d1a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_efficient_java_matrix_library_ejml_0_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_io7m_xom_xom_1_2_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_jollyday_jollyday_0_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_nlp_stanford_corenlp_3_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_nlp_stanford_corenlp_models_3_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_03.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/training_label.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/training_set.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1051186.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1078020.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1290563.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1292768.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1533991.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1661304.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1771837.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1810811.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1889065.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/1950539.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2024311.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2287194.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2300501.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2705145.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2783339.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2784215.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2933721.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2974127.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/2999377.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3020615.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3049499.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3050255.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3080451.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3104670.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3119732.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3192002.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3194315.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3223718.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3224458.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3233400.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3245989.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3249559.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3366747.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3460155.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3460737.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3490850.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3545740.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3653577.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3667070.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3669658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3669950.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3671434.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3674578.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3674792.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3674856.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3678462.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3681738.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3684448.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3684818.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3685486.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3688572.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3689770.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3690406.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3691908.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3692352.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3692832.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3694566.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3695574.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3697510.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3698170.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3698640.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3698758.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3699650.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3701208.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3701268.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3710300.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3711814.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3762297.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3774591.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3841161.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3914143.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3924353.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3935121.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/3992179.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4023691.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4032531.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4043337.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4073569.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4085588.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4089373.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4099955.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4100546.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4106792.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4107884.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4129043.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4135319.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4136926.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4137996.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4139672.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4149884.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4150314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4151812.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4181323.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4184227.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4215432.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4217717.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4224329.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4224494.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4225390.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4227406.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4234172.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4239422.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4244701.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4244720.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4249356.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4249664.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4249864.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4249892.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4250000.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4250522.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4250632.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4252136.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4252544.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4252644.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4252726.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4252750.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253436.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253508.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253672.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253766.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253816.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253958.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4253976.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4259604.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4259686.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4260070.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4260446.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4260816.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4261268.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4261626.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4261854.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4261874.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263424.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263464.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263574.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263588.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263734.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263782.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263866.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4263920.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264268.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264326.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264442.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264790.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264882.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264888.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264916.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264930.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264938.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4264954.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4278332.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4278352.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4294233.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4304482.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4305535.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4305806.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4309317.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4309396.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4312083.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4320150.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4320358.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4321374.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4322742.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4323443.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4324878.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4325152.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4325374.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4325577.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4326947.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4328740.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4329071.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4329869.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4332286.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4332295.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4336160.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4337558.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4338224.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4339580.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4341160.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4343054.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4345662.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4348072.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4350081.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4352264.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4353484.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4354422.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4369869.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4378140.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4378794.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4380002.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4397165.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4404512.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4409657.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4412852.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4414604.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4428162.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4433254.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4433450.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4441185.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4442780.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4451016.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4453635.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4455122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4456367.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4460696.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4462122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4465568.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4466868.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4478894.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4482921.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4484793.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4494934.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4497398.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4497621.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4506429.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4510476.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4510613.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4512286.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4513807.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4515653.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4515694.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4516800.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4517744.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4518068.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4518404.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4518417.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4519184.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4519366.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4519980.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4520545.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4522180.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4523262.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4525293.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4526330.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4526566.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4527431.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4527927.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4529516.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4530735.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4532854.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4534426.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4536158.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4538290.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4538446.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4539034.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4540090.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4541129.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4542157.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4545437.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4546561.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4549331.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4552838.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4553279.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4556277.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4557330.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4558969.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4568127.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4576239.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4577720.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4579907.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4593987.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4596776.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4597269.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4598136.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4603545.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4606376.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4606550.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4607658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4612562.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4615190.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4618108.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4622210.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4622448.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4623064.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4624894.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4625570.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4628180.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4628249.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4628394.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4628686.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4629698.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4631036.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4632964.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4635174.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4635628.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4637756.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4644430.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4646063.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4647007.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4649232.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4651870.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4653052.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4654265.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4657026.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4662738.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4673986.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4674565.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4676218.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4684406.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4691466.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4691833.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4692252.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4695404.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4697168.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4697415.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4697443.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4698470.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4702617.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4708773.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4711771.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4714274.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4720810.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4721089.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4721670.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4724777.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4724988.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4729664.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4732706.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4733928.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4734192.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4735266.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4737426.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4740622.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4740906.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4741596.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4749904.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4750387.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4750619.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4750641.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751347.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751467.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751494.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751575.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751645.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751769.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4751773.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4752319.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753049.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753133.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753245.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753475.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753501.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753681.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753743.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753757.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4753773.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754015.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754041.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754253.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754633.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754717.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4754747.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4755203.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4755205.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4755221.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4755291.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756019.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756045.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756080.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756257.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756259.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756437.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756446.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756517.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756553.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756559.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756575.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756615.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4756875.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4757407.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4757857.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758061.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758225.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758243.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758365.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758565.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4758969.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759133.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759251.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759253.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759389.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759505.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4759847.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760078.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760201.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760277.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760339.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760359.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760507.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760625.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760649.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760663.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760664.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760677.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760887.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4760989.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761245.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761249.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761277.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761489.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761511.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761633.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761811.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4761902.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762027.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762125.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762409.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762439.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762809.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4762813.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763013.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763161.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763233.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763319.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763339.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763452.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763500.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763679.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763751.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763873.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763905.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4763975.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764039.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764107.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764114.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764125.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764135.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764233.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764289.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764305.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764353.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764375.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764441.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764477.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764551.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764567.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764633.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764687.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764715.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764813.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764839.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764953.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764955.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764957.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4764967.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765005.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765029.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765035.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765047.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765127.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765129.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765153.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765173.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765177.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765303.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765363.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765369.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765571.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765593.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765613.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765627.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765645.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765693.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765715.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765735.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765773.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765783.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765811.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765841.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765859.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765911.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4765947.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766071.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766079.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766109.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766157.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766178.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766247.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766513.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766537.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766577.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766837.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766877.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4766995.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767219.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767307.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767395.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767525.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767527.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767529.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767595.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767617.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767655.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767677.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767817.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767881.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767899.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4767907.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4768122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4771108.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4772058.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4775038.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4777018.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4777206.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4782414.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4786020.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4786604.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4788052.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4789716.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4790788.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4792822.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4793762.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4796814.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4798696.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4799886.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4801872.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4802362.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4803314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4805050.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4806392.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4806932.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4807178.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4807644.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4808776.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4809358.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4812022.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4814248.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4814452.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4815804.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4816040.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4816504.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4816910.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4818448.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4818658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4820350.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4821840.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4823264.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4831418.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4832048.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4834364.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4834714.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4834972.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4837916.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4838486.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4840360.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4846670.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4847360.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4848162.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4850168.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4855620.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4855752.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4856516.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4858408.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4858590.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4861904.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4863960.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4865728.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4866750.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4867208.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4869790.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4870712.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4871618.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4872112.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4872362.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4872488.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4873802.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4877036.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4878554.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4878750.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4879080.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4880208.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4880538.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4881300.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4882320.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4882660.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4883008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4883216.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4884676.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4888328.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4890968.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4892012.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4893990.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894372.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894412.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894420.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894570.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894602.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894670.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4894870.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4895084.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4897062.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4899152.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4899402.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4900076.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4900394.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4901166.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4901930.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4902568.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4904552.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4904854.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4904934.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4905542.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4906194.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4907116.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4907280.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4907662.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910086.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910252.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910258.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910266.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910274.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910276.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910278.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910282.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910286.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910288.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910290.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910292.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910294.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910296.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910298.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910300.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4910302.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4911014.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4911744.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4911786.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4911960.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4912028.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4912098.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4912176.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4912940.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4913386.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914140.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914284.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914638.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914862.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4914904.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4915824.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4916532.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4917140.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4917356.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4917394.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4917446.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4918284.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4919614.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4919774.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4920094.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4920108.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4920408.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4921138.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4921338.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4921900.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4922534.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4923160.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4923228.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4923654.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4924164.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4924574.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4924892.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4925302.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4927290.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4927604.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4928142.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4928374.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4928570.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4928874.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4929046.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4929628.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4929868.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4930238.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4930250.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4930540.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4931040.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4931334.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4931402.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4932522.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4932648.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4932796.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4933220.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4933440.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4933602.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4934328.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4934544.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4934572.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4934816.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4935320.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4935622.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4935764.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4935766.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936216.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936276.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936316.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936614.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936638.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936752.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936884.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4936910.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4937030.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4937146.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4937588.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4938068.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4938660.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4938708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4939324.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4939662.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4939984.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4940470.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4940676.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941054.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941298.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941450.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941774.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941886.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4941978.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4942608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4942752.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4943096.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4943416.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4943642.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4943656.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4943788.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4944168.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4944386.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4944794.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4945104.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4945430.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4946740.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4946840.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4947506.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4947862.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4947924.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4947956.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4948096.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4948368.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4950494.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951218.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951404.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951584.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951690.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951862.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4951912.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4952162.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4952236.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4952250.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4952394.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4952810.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4953116.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4953694.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4953772.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4953886.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4954830.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4955220.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4955806.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4955934.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4956710.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4956718.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4956766.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4957128.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4957166.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4957260.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4957490.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4957976.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4958054.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4958098.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4958330.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4958976.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959032.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959058.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959094.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959096.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959638.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4959732.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960076.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960262.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960264.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960350.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960518.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960576.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960688.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4960758.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4961018.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4961158.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4961168.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4961422.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4961704.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4962008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4962230.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4962942.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963020.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963494.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963566.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963694.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963744.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963842.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4963884.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4964278.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4964644.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4964778.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4965268.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4965296.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4965406.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4965658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966078.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966106.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966414.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966514.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966572.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966702.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966716.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4966912.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4967392.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4967396.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4968524.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4968636.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4968780.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4969130.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4970060.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4970664.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4970862.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4971008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4971108.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4971300.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972470.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972532.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972570.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972592.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972940.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4972970.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4973034.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4973052.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4973462.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4973658.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974326.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974472.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974644.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974826.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974862.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4974934.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4975364.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4975832.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4976266.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4976592.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4977496.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4977736.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4978110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4978448.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4978706.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979044.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979076.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979146.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979224.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979450.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979486.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4979734.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980196.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980250.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980322.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980498.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980550.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980662.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4980920.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981186.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981346.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981362.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981464.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981610.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981620.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981676.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4981776.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982086.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982166.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982188.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982238.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982334.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982520.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982554.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982674.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982740.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982746.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982758.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982760.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4982940.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4983372.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/4984126.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/935481.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/969129.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/sport/984969.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/data/english/stopwords.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/english/option.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/english/sort-tscore2d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/english/sport2.cnt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/freqcombo.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/option.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/vietnamese/option.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/vietnamese/sort-tscore2d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/samples/vietnamese/sport2.cnt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Counter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Dictionary.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Document.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/NGram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/NGramSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/NSIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/NSPOption.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Pair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Statistic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/Util.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/Chi2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/MI2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/Measure.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/Phi2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/TScore2D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/JNSP-v.2.0/src/jnsp/stat/TScore3D.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/prepare_release.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/MIT-LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/annotator-instructions.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/json.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/lib/MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/lib/jquery-1.4.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/lib/jquery-ui-1.8.6.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/pos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-annotator-v0.1/sample.automatic_tags" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3.tgz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/anno_changes/oct27_reanno_changes_to_supertsv.diff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/daily547.conll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/full_data/daily547.supertsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/full_data/oct27.supertsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.conll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.splits/oct27.dev" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.splits/oct27.test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.splits/oct27.train" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.splits/oct27.traindev" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/oct27.splits/splits.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/data/twpos-data-v0.3/scripts/toconll.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/docs/annot_guidelines.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/docs/changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/docs/hacking.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/docs/nathan_notes.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/docs/training.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/bill_nye_tho.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/casual.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/example_tweets.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/out.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/tagged_tweets_expected.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/examples/tweets.jsonline" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/runTagger.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/scripts/paired_stats.r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/scripts/phraseomatic.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/scripts/show.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/scripts/simple_tests.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/scripts/toconll.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ark-tweet-nlp-0.3.2/twokenize.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/nrcHashtagLexicon/unigrams-pmilexicon.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_20040117_000000.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_20040117_000000.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_bwaldvogel_liblinear_1_95.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_bwaldvogel_liblinear_1_95.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model" afterPath="$PROJECT_DIR$/model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sentiment-analysis.iml" afterPath="$PROJECT_DIR$/sentiment-analysis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sentiment.iml" afterPath="$PROJECT_DIR$/sentiment.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sentiment-analysis.iws" />
@@ -1034,52 +39,37 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+              <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#351#383#0" expanded="true" />
-                <element signature="e#1283#1315#0" expanded="true" />
-                <element signature="e#2228#2260#0" expanded="true" />
-                <element signature="e#2433#2465#0" expanded="true" />
+                <element signature="e#433#465#0" expanded="true" />
+                <element signature="e#1491#1523#0" expanded="true" />
+                <element signature="e#2744#2776#0" expanded="true" />
+                <element signature="e#2944#2976#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="POS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="POS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1785#1802#0" expanded="true" />
-                <element signature="e#5230#5231#0" expanded="true" />
-                <element signature="e#5277#5278#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+            <state vertical-scroll-proportion="3.0068028">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
-                <element signature="e#851#867#0" expanded="true" />
-                <element signature="e#3213#3214#0" expanded="true" />
-                <element signature="e#3265#3266#0" expanded="true" />
+                <element signature="e#3826#3827#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1089,16 +79,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="108" selection-start-line="121" selection-start-column="108" selection-end-line="121" selection-end-column="108" />
-              <folding>
-                <element signature="e#1034#1051#0" expanded="true" />
-                <element signature="e#1130#1147#0" expanded="true" />
-                <element signature="e#1532#1540#0" expanded="true" />
-                <element signature="e#7094#7111#0" expanded="true" />
-                <element signature="e#7175#7192#0" expanded="true" />
-                <element signature="e#9006#9007#0" expanded="true" />
-                <element signature="e#9039#9040#0" expanded="true" />
-              </folding>
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1129,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
       </list>
     </option>
   </component>
@@ -1190,6 +172,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1214,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1550,25 +532,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1320" height="784" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26153848" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26153848" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.36174244" order="3" side_tool="false" content_ui="tabs" x="87" y="79" width="326" height="675" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.35607675" order="3" side_tool="false" content_ui="tabs" x="87" y="79" width="326" height="675" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.63825756" order="2" side_tool="true" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20888889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.6439232" order="2" side_tool="true" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34405595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18074074" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1607,13 +589,63 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1785#1802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding>
+            <element signature="e#3826#3827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1622,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1632,15 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding>
-            <element signature="e#1034#1051#0" expanded="true" />
-            <element signature="e#1130#1147#0" expanded="true" />
-            <element signature="e#1532#1540#0" expanded="true" />
-            <element signature="e#7094#7111#0" expanded="true" />
-            <element signature="e#7175#7192#0" expanded="true" />
-            <element signature="e#9006#9007#0" expanded="true" />
-            <element signature="e#9039#9040#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1649,10 +670,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1785#1802#0" expanded="true" />
-            <element signature="e#5230#5231#0" expanded="true" />
-            <element signature="e#5277#5278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1662,9 +680,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="42" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="42" />
           <folding>
-            <element signature="e#851#867#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1675,10 +691,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1688,9 +704,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
-            <element signature="e#851#867#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1722,10 +736,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1735,9 +749,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#851#867#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1769,10 +781,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1782,9 +794,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#851#867#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1816,10 +826,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1851,10 +861,10 @@
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1886,10 +896,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1898,13 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1956,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7183099">
           <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1964,37 +966,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="e#851#867#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="108" selection-start-line="121" selection-start-column="108" selection-end-line="121" selection-end-column="108" />
-          <folding>
-            <element signature="e#1034#1051#0" expanded="true" />
-            <element signature="e#1130#1147#0" expanded="true" />
-            <element signature="e#1532#1540#0" expanded="true" />
-            <element signature="e#7094#7111#0" expanded="true" />
-            <element signature="e#7175#7192#0" expanded="true" />
-            <element signature="e#9006#9007#0" expanded="true" />
-            <element signature="e#9039#9040#0" expanded="true" />
-          </folding>
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2002,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.0622">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2010,31 +988,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/stanford-postagger-full-2015-04-20/TaggerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.430622">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/stanford-postagger-full-2015-04-20/TaggerDemo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.009569378">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5414847">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding />
         </state>
@@ -2043,26 +1002,33 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+          <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#383#0" expanded="true" />
-            <element signature="e#1283#1315#0" expanded="true" />
-            <element signature="e#2228#2260#0" expanded="true" />
-            <element signature="e#2433#2465#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#1491#1523#0" expanded="true" />
+            <element signature="e#2744#2776#0" expanded="true" />
+            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1785#1802#0" expanded="true" />
-            <element signature="e#5230#5231#0" expanded="true" />
-            <element signature="e#5277#5278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0068028">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#3826#3827#0" expanded="true" />
           </folding>
         </state>
       </provider>
