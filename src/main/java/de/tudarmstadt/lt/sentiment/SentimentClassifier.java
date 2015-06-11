@@ -3,10 +3,7 @@ package de.tudarmstadt.lt.sentiment;
 import de.bwaldvogel.liblinear.*;
 import org.apache.commons.cli.BasicParser;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -17,7 +14,7 @@ class GenerateTrainFeature {
     static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
 
     GenerateTrainFeature() {
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 1654; i++) {
             listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
         }
     }
@@ -46,7 +43,7 @@ class GenerateTestFeature {
     static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
 
     GenerateTestFeature() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 845; i++) {
             listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
         }
     }
@@ -73,7 +70,7 @@ class GenerateTestFeature {
 
 public class SentimentClassifier {
     //static int start=0;
-    final static String rootDirectory = "/Users/biem/sentiment";
+    final static String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment";
 
     public static void main(String[] args) throws IOException {
 
@@ -90,14 +87,17 @@ public class SentimentClassifier {
 
         //POS FEATURE
         int start = 0;
-        //POS obj1 = new POS();
-        //trainingObject.setHashMap(start, obj1.getTrainingList(), obj1.getFeatureCount());
-        //trainingFeature = trainingObject.getList();
+        POS posObject = new POS(rootDirectory);
+        trainingObject.setHashMap(start, posObject.getTrainingList());
+        trainingFeature = trainingObject.getList();
+
+        testObject.setHashMap(start, posObject.getTestList());
+        testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
 
         //NRC HASHTAG FEATURE
-        //start += obj1.getFeatureCount();
+        start += posObject.getFeatureCount();
         NRCHashtag nrcHashtagObject = new NRCHashtag(rootDirectory);
         trainingObject.setHashMap(start, nrcHashtagObject.getTrainingList());
         trainingFeature = trainingObject.getList();
@@ -133,7 +133,7 @@ public class SentimentClassifier {
         System.out.println(trainingFeature.get(10).size());*/
 
 
-        System.out.println("TRAINING *************************************");
+        /*System.out.println("TRAINING *************************************");
         for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
         {
             //System.out.println(trainingFeature.get(i).size());
@@ -145,7 +145,7 @@ public class SentimentClassifier {
         {
             //System.out.println(trainingFeature.get(i).size());
             System.out.println(testFeature.get(i));
-        }
+        }*/
 
 
         System.out.println("Hello sentiment!");
@@ -158,7 +158,7 @@ public class SentimentClassifier {
 
         // Save X to problem
         double a[] = new double[nrcHashtagObject.getTrainingList().size()];
-        File file = new File("/Users/biem/sentiment/dataset/trainingLabels.txt");
+        File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read = null;
         int count = 0;
@@ -176,11 +176,13 @@ public class SentimentClassifier {
         System.out.println(start + ngramObject.getFeatureCount());
 
         for (int i = 0; i < trainingFeature.size(); i++) {
-
-            System.out.println(trainingFeature.get(i));
+            //System.out.println();
+            //System.out.println(trainingFeature.get(i));
             for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
                 //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
-                if (trainingFeature.get(i).containsValue(j + 1)) {
+                //trainingFeature.get(i).
+                if (trainingFeature.get(i).containsKey(j + 1)) {
+                    //System.out.print(j + 1 + ", ");
                     trainFeatureVector[i][j] = new FeatureNode(j + 1, trainingFeature.get(i).get(j + 1));
                 } else {
                     trainFeatureVector[i][j] = new FeatureNode(j + 1, 0.0);
@@ -221,31 +223,42 @@ public class SentimentClassifier {
 
         Feature[] instance = new Feature[start + ngramObject.featureCount];
 
-        for (int i = 0; i < testFeature.size(); i++) {
+        /*for (int i = 0; i < testFeature.size(); i++) {
             //System.out.println();
             for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
                 instance[i] = new FeatureNode(entry.getKey(), entry.getValue());
             }
-        }
+        }*/
 
+        PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedRestaurantsLabels.txt")));
         for (int i = 0; i < testFeature.size(); i++) {
-
-            //System.out.println(trainingFeature.get(i));
+            //System.out.println();
+            //System.out.println(testFeature.get(i));
             for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
                 //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
-                if (testFeature.get(i).containsValue(j + 1)) {
+                if (testFeature.get(i).containsKey(j + 1)) {
                     instance[j] = new FeatureNode(j + 1, testFeature.get(i).get(j + 1));
+                    //System.out.print(j+1+":"+testFeature.get(i).get(j + 1)+"; ");
                 } else {
                     instance[j] = new FeatureNode(j + 1, 0.0);
                 }
+
+
+                //System.out.println();
             }
+
+            /*System.out.println();
+            for(int k=0; k<start + ngramObject.getFeatureCount(); k++)
+            {
+                System.out.print(instance[k].getValue() + ", ");
+            }*/
             double prediction = Linear.predict(model, instance);
 
-            System.out.println(prediction);
-            //System.out.println();
+            write.println(prediction);
+            //System.out.println(prediction);
         }
 
-
+        write.close();
 
     }
 }

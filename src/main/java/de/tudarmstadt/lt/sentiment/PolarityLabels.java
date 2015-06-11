@@ -9,9 +9,9 @@ public class PolarityLabels {
 
     private void generateTestLabels() {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File("E:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\Test_Restaurants_Cleansed.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File("D:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\Test_Restaurants_Cleansed.txt")));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter("E:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\testLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter("D:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\testLabels.txt")));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -37,9 +37,9 @@ public class PolarityLabels {
 
     private void generateTrainingLabels() {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File("E:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\Train_Restaurants_Cleansed.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File("D:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\Train_Restaurants_Cleansed.txt")));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter("E:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\trainingLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter("D:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\trainingLabels.txt")));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -66,6 +66,7 @@ public class PolarityLabels {
     public static void main(String[] args) {
         PolarityLabels obj = new PolarityLabels();
         obj.generateTrainingLabels();
+        obj.generateTestLabels();
         //obj.generateTestLabels();
     }
 

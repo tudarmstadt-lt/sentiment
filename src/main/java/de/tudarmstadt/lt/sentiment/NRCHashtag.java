@@ -21,14 +21,14 @@ class NRCHashtag {
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
 
-        trainingFeature = generateFeature(rootDirectory + "/dataset/tokenized_Train.txt");
-        testFeature = generateFeature(rootDirectory + "/dataset/tokenized_Test.txt");
+        trainingFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Train.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Test.txt");
 
     }
 
     private List<LinkedHashMap<Integer, Double>> generateFeature(String fileName) {
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
-        File file = new File(rootDirectory + "/resources/nrcHashtagLexicon/unigrams-pmilexicon.txt");
+        File file = new File(rootDirectory + "\\resources\\nrcHashtagLexicon\\unigrams-pmilexicon.txt");
         String line = null;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));

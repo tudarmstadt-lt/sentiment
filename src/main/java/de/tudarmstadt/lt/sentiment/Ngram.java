@@ -23,8 +23,8 @@ public class Ngram {
         LinkedHashMap<String, Integer> indexedNgrams = new LinkedHashMap<String, Integer>();
         indexedNgrams = generateNgrams();
 
-        trainingFeature = generateFeature(indexedNgrams, rootDirectory + "/dataset/tokenized_Train.txt");
-        testFeature = generateFeature(indexedNgrams, rootDirectory + "/dataset/tokenized_Test.txt");
+        trainingFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Train.txt");
+        testFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Test.txt");
 
         //featureCount = 1;
     }
@@ -32,7 +32,7 @@ public class Ngram {
     private LinkedHashMap<String, Integer> generateNgrams() {
         LinkedHashMap<String, Integer> indexedNgram = new LinkedHashMap<String, Integer>();
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory + "/dataset/tokenized_Train.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\tokenized_Train.txt")));
             String line = "";
             String text = "";
             int num = 0;
@@ -109,7 +109,7 @@ public class Ngram {
                 //trainingFeature.add(count, new LinkedHashMap<Integer, Double>());
                 featureVector.add(count, new LinkedHashMap<Integer, Double>());
 
-                System.out.println(line);
+                //System.out.println(line);
 
                 for (int n = 1; n < 5; n++) {
 

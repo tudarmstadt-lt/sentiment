@@ -11,21 +11,25 @@ import java.util.List;
 public class POS {
 
 
-    List<LinkedHashMap<Integer, Double>> listOfMaps;
+    List<LinkedHashMap<Integer, Double>> trainingFeature;
+    List<LinkedHashMap<Integer, Double>> testFeature;
+    String rootDirectory;
 
-    POS() {
-        this.listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
-        generateFeature();
+    POS(String rootDirectory) {
+        this.trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        this.testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        this.rootDirectory = rootDirectory;
+
+        trainingFeature = generateFeature(rootDirectory + "\\dataset\\Train_Restaurants_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Train.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Test.txt");
     }
 
-    private void generateFeature() {
-        //File file =
-
+    private List<LinkedHashMap<Integer, Double>> generateFeature(String rawDataset, String tokenizedDataset) {
         String line = null;
         try {
-            PrintWriter write = new PrintWriter("/Users/biem/sentiment/dataset/raw_POS.txt");
-            BufferedReader reader = new BufferedReader(new FileReader(new File("/Users/biem/sentiment/dataset/Train_Restaurants_Contextual_Cleansed.txt")));
-            MaxentTagger tagger = new MaxentTagger("/Users/biem/sentiment/resources/stanford-postagger-full-2015-04-20/models/english-left3words-distsim.tagger");
+            PrintWriter write = new PrintWriter(rootDirectory + "\\dataset\\raw_POS.txt");
+            BufferedReader reader = new BufferedReader(new FileReader(new File(rawDataset)));
+            MaxentTagger tagger = new MaxentTagger(rootDirectory + "\\resources\\stanford-postagger-full-2015-04-20\\models\\english-left3words-distsim.tagger");
             //HashMap<String, Double> scoreMap = new HashMap<String, Double>();
             while ((line = reader.readLine()) != null) {
                 String tagged = tagger.tagString(line);
@@ -45,10 +49,11 @@ public class POS {
             System.out.println(e);
         }
 
-        generateFeatureHelper();
+        return generateFeatureHelper(tokenizedDataset);
     }
 
-    private void generateFeatureHelper() {
+    private List<LinkedHashMap<Integer, Double>> generateFeatureHelper(String tokenizedDataset) {
+        List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
         try {
             HashMap<String, Integer> posTags = new HashMap<String, Integer>();
             posTags.put("CC", 1);
@@ -94,8 +99,8 @@ public class POS {
                 trainingFeature.get(i).put(i+1, 0.0);
             }*/
 
-            BufferedReader reader = new BufferedReader(new FileReader(new File("/Users/biem/sentiment/dataset/raw_POS.txt")));
-            PrintWriter write = new PrintWriter("/Users/biem/sentiment/dataset/tokenized_Train.txt");
+            BufferedReader reader = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\raw_POS.txt")));
+            PrintWriter write = new PrintWriter(tokenizedDataset);
 
             String line = null;
 
@@ -123,10 +128,11 @@ public class POS {
 
                 write.println(tokenized);
 
-                listOfMaps.add(count, new LinkedHashMap<Integer, Double>());
+                featureVector.add(count, new LinkedHashMap<Integer, Double>());
                 for (int i = 0; i < 36; i++) {
-
-                    listOfMaps.get(count).put(i + 1, arr[i]);
+                    if (arr[i] != 0) {
+                        featureVector.get(count).put(i + 1, arr[i]);
+                    }
                 }
                 count++;
                 //System.out.println();
@@ -136,7 +142,7 @@ public class POS {
         } catch (IOException e) {
             System.out.println(e);
         }
-
+        return featureVector;
         /*for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
         {
             //System.out.println(trainingFeature.get(i).size());
@@ -146,11 +152,16 @@ public class POS {
 
     public List<LinkedHashMap<Integer, Double>> getTrainingList() {
         //System.out.println(trainingFeature.size());
-        return this.listOfMaps;
+        return this.trainingFeature;
+    }
+
+    public List<LinkedHashMap<Integer, Double>> getTestList() {
+        //System.out.println(trainingFeature.size());
+        return this.testFeature;
     }
 
     public int getFeatureCount() {
-        return listOfMaps.get(0).size();
+        return 36;
     }
     /*public static void main(String[] args)
     {
