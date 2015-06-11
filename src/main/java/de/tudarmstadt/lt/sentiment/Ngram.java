@@ -11,19 +11,20 @@ import java.util.*;
 public class Ngram {
     List<LinkedHashMap<Integer, Double>> trainingFeature;
     List<LinkedHashMap<Integer, Double>> testFeature;
+    String rootDirectory;
 
     int featureCount;
 
-    Ngram() {
-
+    Ngram(String rootDirectory) {
+        this.rootDirectory = rootDirectory;
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
 
         LinkedHashMap<String, Integer> indexedNgrams = new LinkedHashMap<String, Integer>();
         indexedNgrams = generateNgrams();
 
-        trainingFeature = generateFeature(indexedNgrams, "/Users/biem/sentiment/dataset/tokenized_Train.txt");
-        testFeature = generateFeature(indexedNgrams, "/Users/biem/sentiment/dataset/tokenized_Test.txt");
+        trainingFeature = generateFeature(indexedNgrams, rootDirectory + "/dataset/tokenized_Train.txt");
+        testFeature = generateFeature(indexedNgrams, rootDirectory + "/dataset/tokenized_Test.txt");
 
         //featureCount = 1;
     }
@@ -31,7 +32,7 @@ public class Ngram {
     private LinkedHashMap<String, Integer> generateNgrams() {
         LinkedHashMap<String, Integer> indexedNgram = new LinkedHashMap<String, Integer>();
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File("/Users/biem/sentiment/dataset/tokenized_Train.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory + "/dataset/tokenized_Train.txt")));
             String line = "";
             String text = "";
             int num = 0;
@@ -107,6 +108,9 @@ public class Ngram {
                 //String tokens[] = line.split(" ");
                 //trainingFeature.add(count, new LinkedHashMap<Integer, Double>());
                 featureVector.add(count, new LinkedHashMap<Integer, Double>());
+
+                System.out.println(line);
+
                 for (int n = 1; n < 5; n++) {
 
                     // Use .isEmpty() instead of .length() == 0

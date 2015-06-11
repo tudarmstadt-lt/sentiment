@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdac6510-30e6-4cad-a3f4-fc85de15d1a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" />
+    <list default="true" id="bdac6510-30e6-4cad-a3f4-fc85de15d1a8" name="Default" comment="The programs takes one Training and one Test file as input and computes training and test feature vector for them.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model" afterPath="$PROJECT_DIR$/model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/trainingLabels.txt" afterPath="$PROJECT_DIR$/dataset/trainingLabels.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sentiment-analysis.iws" />
@@ -35,17 +32,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+            <state vertical-scroll-proportion="1.0526316">
+              <caret line="240" column="13" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#433#465#0" expanded="true" />
-                <element signature="e#1491#1523#0" expanded="true" />
-                <element signature="e#2744#2776#0" expanded="true" />
-                <element signature="e#2944#2976#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,21 +49,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-              <folding>
-                <element signature="e#1785#1802#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.0068028">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding>
-                <element signature="e#3826#3827#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -109,9 +98,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
       </list>
     </option>
@@ -135,8 +124,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,6 +150,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -172,7 +162,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,6 +181,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sentiment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stanford-postagger-full-2015-04-20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,11 +548,41 @@
       <option name="project" value="LOCAL" />
       <updated>1432300665743</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="The programs takes one Training and one Test file as input and computes training and test feature vector for them.">
+      <created>1433892328977</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1433892328977</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Dataset Folder for the classifier.">
+      <created>1433892677373</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1433892677373</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Resource Directory: NRC Hashtag Lexicon, Stanford POS Tagger">
+      <created>1433892859688</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1433892859688</updated>
+    </task>
+    <task id="LOCAL-00006" summary="The programs takes one Training and one Test file as input and computes training and test feature vector for them.">
+      <created>1433893288111</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1433893288111</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Stanford POS Tagger Models Directory">
+      <created>1433893382361</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1433893382370</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1320" height="784" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -546,11 +597,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26153848" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.35607675" order="3" side_tool="false" content_ui="tabs" x="87" y="79" width="326" height="675" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22777778" sideWeight="0.33978495" order="3" side_tool="false" content_ui="tabs" x="87" y="79" width="326" height="675" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.6439232" order="2" side_tool="true" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34405595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22777778" sideWeight="0.6602151" order="2" side_tool="true" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36126372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18074074" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -573,7 +624,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="The program as of now uses one feature based on NRC Hashtag Lexicon to train on the dataset in the /dataset folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="The program as of now uses one feature based on NRC Hashtag Lexicon to train on the dataset in the /dataset folder." />
+    <MESSAGE value="Dataset Folder for the classifier." />
+    <MESSAGE value="Resource Directory: NRC Hashtag Lexicon, Stanford POS Tagger" />
+    <MESSAGE value="The programs takes one Training and one Test file as input and computes training and test feature vector for them." />
+    <MESSAGE value="Stanford POS Tagger Models Directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stanford POS Tagger Models Directory" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,16 +642,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,9 +664,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1785#1802#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,9 +680,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,10 +698,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,9 +721,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="e#1785#1802#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="42" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="42" />
-          <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -691,10 +739,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -703,9 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -736,10 +778,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -748,9 +786,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -781,10 +817,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,9 +825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -826,10 +856,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,10 +887,6 @@
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,10 +918,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -943,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="337" column="5" selection-start-line="337" selection-start-column="5" selection-end-line="337" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,14 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,36 +1007,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#1491#1523#0" expanded="true" />
-            <element signature="e#2744#2776#0" expanded="true" />
-            <element signature="e#2944#2976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding>
-            <element signature="e#1785#1802#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0068028">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0526316">
+          <caret line="240" column="13" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
           <folding>
-            <element signature="e#3826#3827#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

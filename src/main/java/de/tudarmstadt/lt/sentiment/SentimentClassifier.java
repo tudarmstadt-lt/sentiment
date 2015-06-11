@@ -73,6 +73,8 @@ class GenerateTestFeature {
 
 public class SentimentClassifier {
     //static int start=0;
+    final static String rootDirectory = "/Users/biem/sentiment";
+
     public static void main(String[] args) throws IOException {
 
         //TRAINING SET
@@ -96,11 +98,11 @@ public class SentimentClassifier {
 
         //NRC HASHTAG FEATURE
         //start += obj1.getFeatureCount();
-        NRCHashtag obj2 = new NRCHashtag();
-        trainingObject.setHashMap(start, obj2.getTrainingList());
+        NRCHashtag nrcHashtagObject = new NRCHashtag(rootDirectory);
+        trainingObject.setHashMap(start, nrcHashtagObject.getTrainingList());
         trainingFeature = trainingObject.getList();
 
-        testObject.setHashMap(start, obj2.getTestList());
+        testObject.setHashMap(start, nrcHashtagObject.getTestList());
         testFeature = testObject.getList();
 
 
@@ -113,12 +115,12 @@ public class SentimentClassifier {
 
 
         //N GRAM FEATURE
-        start += obj2.getFeatureCount();
-        Ngram obj3 = new Ngram();
-        trainingObject.setHashMap(start, obj3.getTrainingList());
+        start += nrcHashtagObject.getFeatureCount();
+        Ngram ngramObject = new Ngram(rootDirectory);
+        trainingObject.setHashMap(start, ngramObject.getTrainingList());
         trainingFeature = trainingObject.getList();
 
-        testObject.setHashMap(start, obj3.getTestList());
+        testObject.setHashMap(start, ngramObject.getTestList());
         testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
@@ -155,7 +157,7 @@ public class SentimentClassifier {
         Problem problem = new Problem();
 
         // Save X to problem
-        double a[] = new double[obj2.getTrainingList().size()];
+        double a[] = new double[nrcHashtagObject.getTrainingList().size()];
         File file = new File("/Users/biem/sentiment/dataset/trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read = null;
@@ -168,15 +170,15 @@ public class SentimentClassifier {
         //Feature[][] f = new Feature[][]{ {}, {}, {}, {}, {}, {} };
 
         trainingFeature = trainingObject.getList();
-        Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][start + obj3.getFeatureCount()];
+        Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][start + ngramObject.getFeatureCount()];
 
         System.out.println(trainingFeature.size());
-        System.out.println(start + obj3.getFeatureCount());
+        System.out.println(start + ngramObject.getFeatureCount());
 
         for (int i = 0; i < trainingFeature.size(); i++) {
 
             System.out.println(trainingFeature.get(i));
-            for (int j = 0; j < start + obj3.getFeatureCount(); j++) {
+            for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
                 //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
                 if (trainingFeature.get(i).containsValue(j + 1)) {
                     trainFeatureVector[i][j] = new FeatureNode(j + 1, trainingFeature.get(i).get(j + 1));
@@ -188,7 +190,7 @@ public class SentimentClassifier {
         }
 
         problem.l = trainingFeature.size(); // number of training examples
-        problem.n = start + obj3.getFeatureCount(); // number of features
+        problem.n = start + ngramObject.getFeatureCount(); // number of features
         problem.x = trainFeatureVector; // feature nodes
         problem.y = a; // target values ----
 
@@ -217,16 +219,33 @@ public class SentimentClassifier {
         // load model or use it directly
         model = Model.load(modelFile);
 
-        Feature[] instance = {new FeatureNode(1, 4), new FeatureNode(2, 2)};
+        Feature[] instance = new Feature[start + ngramObject.featureCount];
 
-        /*for(int i=0; i<trainingFeature.get(23).size(); i++)
-        {
-            instance[i] = new FeatureNode(i+1, trainingFeature.get(23).get(i+1));
-        }*/
+        for (int i = 0; i < testFeature.size(); i++) {
+            //System.out.println();
+            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
+                instance[i] = new FeatureNode(entry.getKey(), entry.getValue());
+            }
+        }
 
-        double prediction = Linear.predict(model, instance);
+        for (int i = 0; i < testFeature.size(); i++) {
 
-        System.out.println(prediction);
+            //System.out.println(trainingFeature.get(i));
+            for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
+                //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
+                if (testFeature.get(i).containsValue(j + 1)) {
+                    instance[j] = new FeatureNode(j + 1, testFeature.get(i).get(j + 1));
+                } else {
+                    instance[j] = new FeatureNode(j + 1, 0.0);
+                }
+            }
+            double prediction = Linear.predict(model, instance);
+
+            System.out.println(prediction);
+            //System.out.println();
+        }
+
+
 
     }
 }
