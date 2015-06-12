@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-class NRCHashtag {
+public class NRCHashtag {
     List<LinkedHashMap<Integer, Double>> trainingFeature;
     List<LinkedHashMap<Integer, Double>> testFeature;
     String rootDirectory;

@@ -76,12 +76,12 @@ public class SentimentClassifier {
 
         //TRAINING SET
         GenerateTrainFeature trainingObject = new GenerateTrainFeature();
-        List<LinkedHashMap<Integer, Double>> trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        List<LinkedHashMap<Integer, Double>> trainingFeature;
 
 
         //TESTING SET
         GenerateTestFeature testObject = new GenerateTestFeature();
-        List<LinkedHashMap<Integer, Double>> testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        List<LinkedHashMap<Integer, Double>> testFeature;
 
 
 
@@ -89,10 +89,8 @@ public class SentimentClassifier {
         int start = 0;
         POS posObject = new POS(rootDirectory);
         trainingObject.setHashMap(start, posObject.getTrainingList());
-        trainingFeature = trainingObject.getList();
 
         testObject.setHashMap(start, posObject.getTestList());
-        testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
 
@@ -100,10 +98,8 @@ public class SentimentClassifier {
         start += posObject.getFeatureCount();
         NRCHashtag nrcHashtagObject = new NRCHashtag(rootDirectory);
         trainingObject.setHashMap(start, nrcHashtagObject.getTrainingList());
-        trainingFeature = trainingObject.getList();
 
         testObject.setHashMap(start, nrcHashtagObject.getTestList());
-        testFeature = testObject.getList();
 
 
         /*System.out.println("*************************************");
@@ -118,7 +114,6 @@ public class SentimentClassifier {
         start += nrcHashtagObject.getFeatureCount();
         Ngram ngramObject = new Ngram(rootDirectory);
         trainingObject.setHashMap(start, ngramObject.getTrainingList());
-        trainingFeature = trainingObject.getList();
 
         testObject.setHashMap(start, ngramObject.getTestList());
         testFeature = testObject.getList();
@@ -160,7 +155,7 @@ public class SentimentClassifier {
         double a[] = new double[nrcHashtagObject.getTrainingList().size()];
         File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
-        String read = null;
+        String read;
         int count = 0;
         while ((read = reader.readLine()) != null) {
             //System.out.println(read);
@@ -221,7 +216,7 @@ public class SentimentClassifier {
         // load model or use it directly
         model = Model.load(modelFile);
 
-        Feature[] instance = new Feature[start + ngramObject.featureCount];
+        //Feature[] instance = new Feature[start + ngramObject.featureCount];
 
         /*for (int i = 0; i < testFeature.size(); i++) {
             //System.out.println();
@@ -232,6 +227,19 @@ public class SentimentClassifier {
 
         PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedRestaurantsLabels.txt")));
         for (int i = 0; i < testFeature.size(); i++) {
+            //System.out.println();
+            Feature[] instance = new Feature[testFeature.get(i).size()];
+            int j = 0;
+            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
+                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
+                //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
+                // do stuff
+                instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
+            }
+
+
+
+        /*for (int i = 0; i < testFeature.size(); i++) {
             //System.out.println();
             //System.out.println(testFeature.get(i));
             for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
@@ -245,7 +253,7 @@ public class SentimentClassifier {
 
 
                 //System.out.println();
-            }
+            }*/
 
             /*System.out.println();
             for(int k=0; k<start + ngramObject.getFeatureCount(); k++)
