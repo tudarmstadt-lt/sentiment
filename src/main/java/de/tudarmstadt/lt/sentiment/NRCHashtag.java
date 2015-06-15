@@ -96,6 +96,7 @@ public class NRCHashtag {
     }
 
     public int getFeatureCount() {
+        System.out.println(trainingFeature.get(0).size());
         return trainingFeature.get(0).size();
     }
 

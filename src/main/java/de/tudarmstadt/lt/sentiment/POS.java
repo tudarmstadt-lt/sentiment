@@ -49,10 +49,10 @@ public class POS {
             System.out.println(e);
         }
 
-        return generateFeatureHelper(tokenizedDataset);
+        return generateFeatureHelper(POSFile, tokenizedDataset);
     }
 
-    private List<LinkedHashMap<Integer, Double>> generateFeatureHelper(String tokenizedDataset) {
+    private List<LinkedHashMap<Integer, Double>> generateFeatureHelper(String POSFile, String tokenizedDataset) {
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
         try {
             HashMap<String, Integer> posTags = new HashMap<String, Integer>();
@@ -99,7 +99,7 @@ public class POS {
                 trainingFeature.get(i).put(i+1, 0.0);
             }*/
 
-            BufferedReader reader = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\raw_POS.txt")));
+            BufferedReader reader = new BufferedReader(new FileReader(new File(POSFile)));
             PrintWriter write = new PrintWriter(tokenizedDataset);
 
             String line = null;

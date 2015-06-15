@@ -120,6 +120,32 @@ public class SentimentClassifier {
         //System.out.println(trainingFeature.get(10).size());
 
 
+        //SENTI WORD NET FEATURE
+        start += ngramObject.getFeatureCount();
+        SentiWordNet sentiWordNetObject = new SentiWordNet(rootDirectory);
+        trainingObject.setHashMap(start, sentiWordNetObject.getTrainingList());
+
+        testObject.setHashMap(start, sentiWordNetObject.getTestList());
+        testFeature = testObject.getList();
+
+        //BING LIU LEXICON FEATURE
+        start += sentiWordNetObject.getFeatureCount();
+        BingLiuLexicon bingLiuObject = new BingLiuLexicon(rootDirectory);
+        trainingObject.setHashMap(start, bingLiuObject.getTrainingList());
+
+        testObject.setHashMap(start, bingLiuObject.getTestList());
+        testFeature = testObject.getList();
+
+
+        //BING LIU LEXICON FEATURE
+        start += bingLiuObject.getFeatureCount();
+        Senti140Lexicon senti140Object = new Senti140Lexicon(rootDirectory);
+        trainingObject.setHashMap(start, senti140Object.getTrainingList());
+
+        testObject.setHashMap(start, senti140Object.getTestList());
+        testFeature = testObject.getList();
+
+        int finalSize = start + senti140Object.getFeatureCount();
         //CATEGORY FEATURE
         /*start = trainingFeature.get(0).size();
         Category obj4 = new Category();
@@ -165,15 +191,16 @@ public class SentimentClassifier {
         //Feature[][] f = new Feature[][]{ {}, {}, {}, {}, {}, {} };
 
         trainingFeature = trainingObject.getList();
-        Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][start + ngramObject.getFeatureCount()];
+        Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][finalSize];
 
         System.out.println(trainingFeature.size());
-        System.out.println(start + ngramObject.getFeatureCount());
+        System.out.println(finalSize);
 
         for (int i = 0; i < trainingFeature.size(); i++) {
             //System.out.println();
             //System.out.println(trainingFeature.get(i));
-            for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
+            System.out.println(i + " trained.");
+            for (int j = 0; j < finalSize; j++) {
                 //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
                 //trainingFeature.get(i).
                 if (trainingFeature.get(i).containsKey(j + 1)) {
@@ -187,7 +214,7 @@ public class SentimentClassifier {
         }
 
         problem.l = trainingFeature.size(); // number of training examples
-        problem.n = start + ngramObject.getFeatureCount(); // number of features
+        problem.n = finalSize; // number of features
         problem.x = trainFeatureVector; // feature nodes
         problem.y = a; // target values ----
 
@@ -204,7 +231,7 @@ public class SentimentClassifier {
 
         BasicParser bp = new BasicParser();
 
-        SolverType solver = SolverType.L2R_LR_DUAL; // -s 7
+        SolverType solver = SolverType.L2R_LR; // -s 7
         double C = 1.0;    // cost of constraints violation
         double eps = 0.001; // stopping criteria
 
