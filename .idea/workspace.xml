@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe831675-5c30-45bf-8400-988671688ac6" name="Default" comment="Sentiment Classifier for Restaurants Dataset">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/adjectivesScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/adverbsScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/BingLiuLexicon/negative.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/nounsScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/BingLiuLexicon/positive.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/Sentiment140Lexicon/unigrams-pmilexicon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/verbsScore.txt" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\BingLiuLexicon\negative.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\BingLiuLexicon\positive.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\adjectivesScore.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\adverbsScore.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\nounsScore.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\verbsScore.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\Sentiment140Lexicon\unigrams-pmilexicon.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sentiment-analysis.iws" />
@@ -31,16 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="POS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.2576419">
               <caret line="67" column="58" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="58" />
               <folding />
             </state>
@@ -85,24 +75,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SentiWordNet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SentiWordNet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40829694">
+            <state vertical-scroll-proportion="0.0">
               <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculateAccuracy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -135,6 +115,10 @@
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java" />
+        <option value="$PROJECT_DIR$/resources/BingLiuLexicon/negative.txt" />
+        <option value="$PROJECT_DIR$/resources/SentiWordNet/adverbsScore.txt" />
+        <option value="$PROJECT_DIR$/resources/BingLiuLexicon/positive.txt" />
+        <option value="$PROJECT_DIR$/resources/SentiWordNet/adjectivesScore.txt" />
       </list>
     </option>
   </component>
@@ -292,42 +276,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SentiWordNet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sentiment140Lexicon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="nrcHashtagLexicon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -343,24 +291,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BingLiuLexicon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,12 +610,18 @@
       <option name="project" value="LOCAL" />
       <updated>1434326690040</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sentiment Classifier for Restaurants Dataset">
+      <created>1434326758508</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1434326758508</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -698,7 +634,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20015338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20015338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -948,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -976,19 +904,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65065503">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,13 +938,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40829694">
-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.2576419">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
