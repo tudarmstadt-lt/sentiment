@@ -137,13 +137,46 @@ public class SentimentClassifier {
         testFeature = testObject.getList();
 
 
-        //BING LIU LEXICON FEATURE
+        //SENTIMENT 140 LEXICON FEATURE
         start += bingLiuObject.getFeatureCount();
         Senti140Lexicon senti140Object = new Senti140Lexicon(rootDirectory);
         trainingObject.setHashMap(start, senti140Object.getTrainingList());
 
         testObject.setHashMap(start, senti140Object.getTestList());
         testFeature = testObject.getList();
+
+        /*
+        //CHARACTER NGRAM PREFIX SIZE 2 FEATURE
+        start += bingLiuObject.getFeatureCount();
+        CharacterNgramPrefixSize2 cNgramObject = new CharacterNgramPrefixSize2(rootDirectory);
+        trainingObject.setHashMap(start, cNgramObject.getTrainingList());
+
+        testObject.setHashMap(start, cNgramObject.getTestList());
+        testFeature = testObject.getList();
+
+        //CHARACTER NGRAM PREFIX SIZE 3 FEATURE
+        start += cNgramObject.getFeatureCount();
+        CharacterNgramPrefixSize3 cNgramP3Object = new CharacterNgramPrefixSize3(rootDirectory);
+        trainingObject.setHashMap(start, cNgramP3Object.getTrainingList());
+
+        testObject.setHashMap(start, cNgramP3Object.getTestList());
+        testFeature = testObject.getList();
+
+        //CHARACTER NGRAM SUFFIX SIZE 2 FEATURE
+        start += cNgramP3Object.getFeatureCount();
+        CharacterNgramSuffixSize2 cNgramS2Object = new CharacterNgramSuffixSize2(rootDirectory);
+        trainingObject.setHashMap(start, cNgramS2Object.getTrainingList());
+
+        testObject.setHashMap(start, cNgramS2Object.getTestList());
+        testFeature = testObject.getList();
+
+        //CHARACTER NGRAM SUFFIX SIZE 3 FEATURE
+        start += cNgramS2Object.getFeatureCount();
+        CharacterNgramSuffixSize3 cNgramS3Object = new CharacterNgramSuffixSize3(rootDirectory);
+        trainingObject.setHashMap(start, cNgramS3Object.getTrainingList());
+
+        testObject.setHashMap(start, cNgramS3Object.getTestList());
+        testFeature = testObject.getList();*/
 
         int finalSize = start + senti140Object.getFeatureCount();
         //CATEGORY FEATURE

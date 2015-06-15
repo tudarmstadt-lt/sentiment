@@ -71,7 +71,7 @@ public class BingLiuLexicon {
             featureVector.get(count).put(1, pos);
             featureVector.get(count).put(2, neg);
 
-            System.out.println("Pos: " + pos + ", Neg: " + neg);
+            //System.out.println("Pos: " + pos + ", Neg: " + neg);
             count++;
         }
 

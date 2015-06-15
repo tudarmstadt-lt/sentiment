@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe831675-5c30-45bf-8400-988671688ac6" name="Default" comment="Sentiment Classifier for Restaurants Dataset">
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\BingLiuLexicon\negative.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\BingLiuLexicon\positive.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\adjectivesScore.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\adverbsScore.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\nounsScore.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\SentiWordNet\verbsScore.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\resources\Sentiment140Lexicon\unigrams-pmilexicon.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sentiment-analysis.iws" />
@@ -31,12 +31,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.69164884">
+              <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="POS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterNgramSuffixSize2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7284#7285#0" expanded="true" />
+                <element signature="e#7325#7326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterNgramSuffixSize3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7284#7285#0" expanded="true" />
+                <element signature="e#7325#7326#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+              <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#841#849#0" expanded="true" />
@@ -55,12 +93,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NRCHashtag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2576419">
-              <caret line="67" column="58" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ngram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="199" column="0" selection-start-line="195" selection-start-column="4" selection-end-line="199" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterNgramPrefixSize2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7358#7359#0" expanded="true" />
+                <element signature="e#7399#7400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterNgramPrefixSize3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7254#7255#0" expanded="true" />
+                <element signature="e#7295#7296#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,21 +144,9 @@
       <file leaf-file-name="Senti140Lexicon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Senti140Lexicon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.206897">
+            <state vertical-scroll-proportion="0.0">
               <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentiWordNet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,16 +173,21 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/PolarityLabels.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Senti140Lexicon.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java" />
         <option value="$PROJECT_DIR$/resources/BingLiuLexicon/negative.txt" />
         <option value="$PROJECT_DIR$/resources/SentiWordNet/adverbsScore.txt" />
         <option value="$PROJECT_DIR$/resources/BingLiuLexicon/positive.txt" />
         <option value="$PROJECT_DIR$/resources/SentiWordNet/adjectivesScore.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java" />
       </list>
     </option>
   </component>
@@ -167,9 +236,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,56 +313,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stanford-postagger-full-2015-04-20" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nrcHashtagLexicon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -311,26 +330,6 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Application.calculateAccuracy">
-    <configuration default="false" name="PolarityLabels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="de.tudarmstadt.lt.sentiment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentiment.PolarityLabels" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sentiment-analysis" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="SentimentClassifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -399,6 +398,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentiment.BingLiuLexicon" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sentiment-analysis" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CharacterNgramPrefixSize2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.tudarmstadt.lt.sentiment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentiment.CharacterNgramPrefixSize2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -559,19 +578,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.PolarityLabels" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassifier" />
-      <item index="2" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SentiWordNet" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BingLiuLexicon" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SentimentClassifier" />
+      <item index="1" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SentiWordNet" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BingLiuLexicon" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CharacterNgramPrefixSize2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
         <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassifier" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BingLiuLexicon" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SentiWordNet" />
-        <item index="4" class="java.lang.String" itemvalue="Application.PolarityLabels" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CharacterNgramPrefixSize2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BingLiuLexicon" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SentiWordNet" />
       </list>
     </recent_temporary>
   </component>
@@ -616,12 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1434326758508</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Sentiment Classifier for Restaurants Dataset">
+      <created>1434327237826</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1434327237826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -631,7 +656,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26666668" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20015338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -675,6 +700,118 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#849#0" expanded="true" />
+            <element signature="e#998#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="186" column="9" selection-start-line="179" selection-start-column="10" selection-end-line="186" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7358#7359#0" expanded="true" />
+            <element signature="e#7399#7400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Senti140Lexicon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#849#0" expanded="true" />
+            <element signature="e#998#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Senti140Lexicon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -721,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,26 +1008,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-          <folding />
+        <state vertical-scroll-proportion="0.65065503">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Ngram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="199" column="0" selection-start-line="195" selection-start-column="4" selection-end-line="199" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7358#7359#0" expanded="true" />
+            <element signature="e#7399#7400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7284#7285#0" expanded="true" />
+            <element signature="e#7325#7326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramPrefixSize3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7254#7255#0" expanded="true" />
+            <element signature="e#7295#7296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/CharacterNgramSuffixSize3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="11" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7284#7285#0" expanded="true" />
+            <element signature="e#7325#7326#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/BingLiuLexicon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#841#849#0" expanded="true" />
@@ -904,25 +1091,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/calculateAccuracy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65065503">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentiWordNet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.254818">
           <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -932,16 +1103,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Senti140Lexicon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.206897">
+        <state vertical-scroll-proportion="0.0">
           <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/NRCHashtag.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/POS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2576419">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/SentimentClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69164884">
+          <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
           <folding />
         </state>
       </provider>
