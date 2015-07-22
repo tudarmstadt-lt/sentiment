@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe831675-5c30-45bf-8400-988671688ac6" name="Default" comment="Pre-final version of the system">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/ABSALaptopsPair.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/BN_SENTI_TRAIL_60.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/BN_SENTI_TRAIL_60_TWEET.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/BN_SENTI_TRAIL_60_TWEET_1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/EV_Test_Laptops.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/EV_Test_Restaurants.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/EV_Train_Laptops.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/EV_Train_Restaurants.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/HI_SENTI_TRAIL_60.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/HI_SENTI_TRAIL_60_TWEET.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Test_Hotels_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Hotels_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Test_Hotels_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Hotels_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Laptops_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Test_Laptops_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Laptops_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Test_Restaurants_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Restaurants_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Test_Restaurants_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Test_Restaurants_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Train_Hotels_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Hotels_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Train_Hotels_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Hotels_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Laptops_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Train_Laptops_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Laptops_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Restaurants_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/Train_Restaurants_Contextual_Cleansed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/adjectivesScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/adverbsScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/AFINNLexicon/afinn.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/Sentiment140Lexicon/bigrams-pmilexicon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/nrcHashtagLexicon/bigrams-pmilexicon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/brownclusters.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/hotelTrainingLabels.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/Original/hotelTrainingLabels.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/MPQALexicon/mpqa.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/negatedWord.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/BingLiuLexicon/negative.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/nounsScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/NRCEmotionLexicon/nrcemotion.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/BingLiuLexicon/positive.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/predictedLaptopsLabels.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/predictedRestaurantsLabels.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/raw_POS_Test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/raw_POS_Train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/Sentiment140Lexicon/unigrams-pmilexicon.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/SentiWordNet/verbsScore.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/weight.txt" />
-    </list>
+    <list default="true" id="fe831675-5c30-45bf-8400-988671688ac6" name="Default" comment="Pre-final version of the system" />
     <ignored path="sentiment-analysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -651,7 +598,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
