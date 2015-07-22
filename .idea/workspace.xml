@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe831675-5c30-45bf-8400-988671688ac6" name="Default" comment="Pre-final version of the system">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Tf_IdfFeature.java" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\BingLiuLexicon.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\Category.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\NRCHashtag.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\Ngram.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\POS.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\PolarityLabels.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\Senti140Lexicon.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\SentiWordNet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\SentimentClassifier.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\src\main\java\de\tudarmstadt\lt\sentiment\calculateAccuracy.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/Test_Laptops_Cleansed.txt" afterPath="$PROJECT_DIR$/dataset/Test_Laptops_Cleansed.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/Train_Laptops_Cleansed.txt" afterPath="$PROJECT_DIR$/dataset/Train_Laptops_Cleansed.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/Train_Restaurants_Cleansed.txt" afterPath="$PROJECT_DIR$/dataset/Train_Restaurants_Cleansed.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/Train_Restaurants_Contextual_Cleansed.txt" afterPath="$PROJECT_DIR$/dataset/Train_Restaurants_Contextual_Cleansed.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model" afterPath="$PROJECT_DIR$/model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sentiment-analysis.iml" afterPath="$PROJECT_DIR$/sentiment-analysis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/testLabels.txt" afterPath="$PROJECT_DIR$/dataset/testLabels.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/tokenized_Test.txt" afterPath="$PROJECT_DIR$/dataset/tokenized_Test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/tokenized_Train.txt" afterPath="$PROJECT_DIR$/dataset/tokenized_Train.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/trainingLabels.txt" afterPath="$PROJECT_DIR$/dataset/trainingLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentiment/Category.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sentiment-analysis.iws" />
@@ -626,12 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1434382576700</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pre-final version of the system">
+      <created>1437560437213</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1437560437213</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -670,6 +655,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Sentiment Classifier for Restaurants Dataset" />
     <MESSAGE value="Pre-final version of the system" />
     <option name="LAST_COMMIT_MESSAGE" value="Pre-final version of the system" />
