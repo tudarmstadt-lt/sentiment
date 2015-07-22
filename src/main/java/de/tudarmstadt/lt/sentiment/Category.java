@@ -25,7 +25,8 @@ public class Category {
         generateFeature();
     }
 
-    private void generateFeature() {
+    private  void generateFeature()
+    {
         HashMap<String, Integer> entityTags = new HashMap<String, Integer>();
         entityTags.put("LAPTOP", 1);
         entityTags.put("DISPLAY", 2);
@@ -62,19 +63,21 @@ public class Category {
         attributeTags.put("MISCELLANEOUS", 9);
 
 
-        try {
+        try
+        {
             BufferedReader read = new BufferedReader(new FileReader(new File("E:\\COURSE\\Semester VII\\Internship\\sentiment\\dataset\\Train_Laptops_Cleansed.txt")));
             String line = "";
 
-            int count = 0;
-            while ((line = read.readLine()) != null) {
+            int count=0;
+            while((line = read.readLine()) != null)
+            {
                 String words[] = line.split("\\|");
                 String labels[] = words[4].split("#");
 
                 //System.out.println(labels[0]+": "+labels[1]);
 
                 trainingFeature.add(count, new LinkedHashMap<Integer, Double>());
-                trainingFeature.get(count).put(1, Double.parseDouble(entityTags.get(labels[0]) + "." + attributeTags.get(labels[1])));
+                trainingFeature.get(count).put(1, Double.parseDouble(entityTags.get(labels[0])+"."+attributeTags.get(labels[1])));
                 count++;
             }
             read.close();
@@ -84,7 +87,8 @@ public class Category {
                 System.out.println(trainingFeature.get(i));
             }*/
 
-        } catch (IOException e) {
+        }catch(IOException e)
+        {
             System.out.println(e);
         }
     }
