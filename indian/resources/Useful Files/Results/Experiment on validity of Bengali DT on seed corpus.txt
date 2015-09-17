@@ -1,0 +1,11 @@
+Bengali Exp 1 on removal of about 10% of the word from each of the classes
+
+Stats of seed Corpus: 2282 -ve, 1260 +ve, 219 0
+Remaining Corpus: 252 -ve, 139 +ve, 24 0
+
+Total found: 67.0, Match: 41.0
+Total pos found: 22.0, Match: 3.0
+Total neg found: 40.0, Match: 38.0
+Total neu found: 5.0, Match: 0.0
+
+--------------------------------------------------------------------------------

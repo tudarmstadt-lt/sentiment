@@ -1,0 +1,54 @@
+Hindi Exp 1 on removal of about 20% of the word from each of the classes
+
+Stats of seed Corpus: 346 -ve, 299 +ve, 40 0
+Remaining Corpus: 1241 -ve, 1015 +ve, 158 0
+
+Total found: 452.0, Match: 302.0
+Total pos found: 184.0, Match: 144.0
+Total neg found: 225.0, Match: 156.0
+Total neu found: 43.0, Match: 2.0
+
+
+----------------------------------------------------------------------------------------
+
+Hindi Exp 1 on removal of about 50% of the word from each of the classes
+
+Stats of seed Corpus: 831 -ve, 652 +ve, 101 0
+Remaining Corpus: 756 -ve, 662 +ve, 97 0
+
+Total found: 428.0, Match: 304.0
+Total pos found: 190.0, Match: 144.0
+Total neg found: 203.0, Match: 160.0
+Total neu found: 35.0, Match: 0.0
+
+
+
+---------------------------------------------------------------------------------------
+
+Hindi Exp 1 on removal of about 10% of the word from each of the classes
+
+Stats of seed corpus: 1432 -ve, 1182 +ve, 177 0
+Remaining Corpus: 155 -ve, 132 +ve, 21 0
+
+Total found: 74.0, Match: 48.0
+Total pos found: 35.0, Match: 25.0
+Total neg found: 33.0, Match: 23.0
+Total neu found: 6.0, Match: 0.0
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+Total found: 84.0, Match: 62.0
+Total pos found: 52.0, Match: 52.0
+Total neg found: 30.0, Match: 10.0
+Total neu found: 2.0, Match: 0.0
