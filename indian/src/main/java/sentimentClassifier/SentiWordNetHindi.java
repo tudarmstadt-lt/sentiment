@@ -23,13 +23,13 @@ public class SentiWordNetHindi {
         this.rootDirectory = rootDirectory;
 
         trainingFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Train.txt");
-        //testFeature = generateFeature(rootDirectory + "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Test.txt", rootDirectory + "\\dataset\\raw_POS_Test.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Test.txt");
     }
 
     private List<LinkedHashMap<Integer, Double>> generateFeature(String fileName) throws IOException {
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
         LinkedHashMap<String, Integer> lexicon = new LinkedHashMap<String, Integer>();
-        try {
+
             BufferedReader readLexicon = new BufferedReader(new InputStreamReader(new FileInputStream(rootDirectory + "\\resources\\sentimentSeedWordsHindi.txt"), "UTF-8"));
             String line = "";
             while ((line = readLexicon.readLine()) != null) {
@@ -78,9 +78,7 @@ public class SentiWordNetHindi {
                 count++;
             }
             read.close();
-        } catch (IOException e) {
-            System.out.println(e);
-        }
+
 
         return featureVector;
     }
@@ -103,6 +101,6 @@ public class SentiWordNetHindi {
     }
 
     public static void main(String[] args) throws IOException {
-        DTCOOCLexiconHindi ob = new DTCOOCLexiconHindi("D:\\Course\\Semester VII\\Internship\\sentiment\\indian");
+        SentiWordNetHindi ob = new SentiWordNetHindi(System.getProperty("user.dir"));
     }
 }

@@ -7,13 +7,18 @@ import java.io.*;
  */
 public class ABSAPolarityRestaurants {
 
-    //String rootDirectory = "D:\\COURSE\\Semester VII\\Internship\\sentiment\\english";
+    String rootDirectory;
 
-    private void generateTestLabels(String rootDirectory) {
+    ABSAPolarityRestaurants(int option, String trainFileName, String testFileName) {
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(option, trainFileName, testFileName);
+    }
+
+    private void generateTestLabels(String dataFile, String labelFile) {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Test_ABSA.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(dataFile)));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\testLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(labelFile)));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -54,11 +59,11 @@ public class ABSAPolarityRestaurants {
         }
     }
 
-    private void generateTrainingLabels(String rootDirectory) {
+    private void generateTrainingLabels(String dataFile, String labelFile) {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Train_ABSA.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(dataFile)));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\trainingLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(labelFile)));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -99,20 +104,21 @@ public class ABSAPolarityRestaurants {
         }
     }
 
-    public static void main(String[] args) {
-        String rootDirectory = System.getProperty("user.dir");
-            /*File file = new File("rootDir.txt");
-            BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                rootDirectory = line;
-                System.out.println("Root Directory is: " + rootDirectory);
-            }*/
-        ABSAPolarityRestaurants obj = new ABSAPolarityRestaurants();
-        obj.generateTrainingLabels(rootDirectory);
-        obj.generateTestLabels(rootDirectory);
-        //obj.generateTestLabels();
-        //obj.generateTestLabels();
-    }
+    private void mainFunction(int option, String trainingFileName, String testFileName) {
 
+        //String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        //System.out.println(args.length);
+        //String rootDirectory = System.getProperty("user.dir");;
+        //SetPolarityLabels this = new SetPolarityLabels();
+        this.generateTrainingLabels(rootDirectory + "\\dataset\\dataset_aspectCategorization\\" + trainingFileName, rootDirectory + "\\dataset\\trainingLabels.txt");
+        if (option == 1) {
+            this.generateTestLabels(rootDirectory + "\\dataset\\dataset_aspectCategorization\\" + trainingFileName, rootDirectory + "\\dataset\\testLabels.txt");
+        } else if (option == 2) {
+
+        } else if (option == 3) {
+            this.generateTestLabels(rootDirectory + "\\dataset\\dataset_aspectCategorization\\" + testFileName, rootDirectory + "\\dataset\\testLabels.txt");
+            //this.generateTestLabels(rootDirectory + "\\dataset\\Gold Set\\HI_Test_Gold.txt", rootDirectory + "\\dataset\\testLabels.txt");
+        }
+
+    }
 }

@@ -11,6 +11,8 @@ import java.util.*;
 public class Ngram {
     List<LinkedHashMap<Integer, Double>> trainingFeature;
     List<LinkedHashMap<Integer, Double>> testFeature;
+    LinkedHashMap<String, Integer> ngramMap;
+
     String rootDirectory;
 
     int featureCount;
@@ -18,13 +20,15 @@ public class Ngram {
     Ngram(String rootDirectory) {
         this.rootDirectory = rootDirectory;
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
-        //testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
+        testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
 
         LinkedHashMap<String, Integer> indexedNgrams = new LinkedHashMap<String, Integer>();
+        ngramMap = new LinkedHashMap<String, Integer>();
+
         indexedNgrams = generateNgrams();
 
         trainingFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Train.txt");
-        //testFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Test.txt");
+        testFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Test.txt");
 
         //featureCount = 1;
     }
@@ -38,12 +42,10 @@ public class Ngram {
             String text = "";
             int num = 0;
             while ((line = read.readLine()) != null) {
-                line.trim();
+                line = line.trim();
                 text += line + " ";
                 num++;
             }
-
-            LinkedHashMap<String, Integer> ngramMap = new LinkedHashMap<String, Integer>();
 
             int count = 1;
             for (int n = 1; n < 3; n++) {
@@ -63,13 +65,13 @@ public class Ngram {
                         ngram += " " + words[i + j];
                     }
                     //System.out.println(ngram);
-                    /*if (ngramMap.containsKey(ngram)) {
+                    if (ngramMap.containsKey(ngram)) {
                         ngramMap.put(ngram, ngramMap.get(ngram) + 1);
                     } else {
                         ngramMap.put(ngram, 1);
                         indexedNgram.put(ngram, count++);
                         //System.out.println(ngram+" "+count);
-                    }*/
+                    }
 
                     if (indexedNgram.containsKey(ngram)) {
                     } else {
@@ -106,6 +108,7 @@ public class Ngram {
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
+                line = line.trim();
                 //System.out.println(line);
                 //String tokens[] = line.split(" ");
                 //trainingFeature.add(count, new LinkedHashMap<Integer, Double>());
@@ -121,7 +124,7 @@ public class Ngram {
                     }
                     String[] words = line.split(" ");
                     //List<String> list = new ArrayList<String>();
-
+                    //System.out.println();
                     for (int i = 0; i <= words.length - n; i++) {
                         //StringBuilder keyBuilder = new StringBuilder(words[i].trim());
                         words[i].trim();
@@ -131,9 +134,13 @@ public class Ngram {
                         }
                         //System.out.println(ngram);
                         if (indexedNgram.containsKey(ngram)) {
+                            //System.out.println(ngram+":"+ngramMap.get(ngram));
                             //ngramMap.put(ngram, ngramMap.get(ngram) + 1);
                             //trainingFeature.get(count).remove(indexedNgram.get(ngram).intValue());
-                            featureVector.get(count).put(indexedNgram.get(ngram).intValue(), 1.0);
+                            //if(ngramMap.get(ngram)>=2)
+                            {
+                                featureVector.get(count).put(indexedNgram.get(ngram).intValue(), 1.0);
+                            }
                         } /*else {
                             //ngramMap.put(ngram, 1);
                             //indexedNgram.put(ngram, count++);
@@ -223,5 +230,10 @@ public class Ngram {
 
         }
         return sortedMap;
+    }
+
+    public static void main(String[] args)
+    {
+        Ngram ng = new Ngram(System.getProperty("user.dir"));
     }
 }

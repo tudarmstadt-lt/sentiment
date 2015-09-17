@@ -10,8 +10,16 @@ import java.util.*;
  * Created by krayush on 29-06-2015.
  */
 public class SendHTTPRequest {
-    public static void main(String[] args) throws Exception {
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+    String rootDirectory;
+    SendHTTPRequest()throws IOException
+    {
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
+
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
         File fR = new File(rootDirectory+"\\resources\\sentimentSeedWordsBengali.txt");
         //PrintWriter writer = new PrintWriter("D:\\Course\\Semester VII\\Internship\\Results\\Maggie TUD\\sentimentJavaWords.txt");
         BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(fR), "UTF-8"));

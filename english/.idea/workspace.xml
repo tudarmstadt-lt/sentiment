@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8b1340a-f734-47ae-94e9-5cc5c4e101ec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CharacterNgramPrefixSize2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CharacterNgramPrefixSize3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CharacterNgramSuffixSize2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CharacterNgramSuffixSize3.java" />
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ABSALaptopsPair.txt" afterPath="" />
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train.txt" afterPath="" />
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train1.txt" afterPath="" />
@@ -9,19 +13,72 @@
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train3.txt" afterPath="" />
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train4.txt" afterPath="" />
       <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\weight.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\src\main\java\de\tudarmstadt\lt\SetRootDirectory.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\posTags.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\posTagsTraining.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\posTrainTags.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\raw_POS_Train.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\tokenizedPOS_Train.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\tokenizedTrain.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\dataset\tokenized_Bengali.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\DTExpansion\ComparePolarities.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\DTExpansion\GetCOOCPolarity.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\DTExpansion\GetDTTopWordsPolarity.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\DTExpansion\GetTopWords.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\CalculateAccuracyBengali.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\CalculateAccuracyHindi.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\POS.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\PolarityLabelsHindi.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\SentimentClassifier.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/AFINNLexicon.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/AFINNLexicon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BrownClusters.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BrownClusters.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CalculateFScore.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/CalculateFScore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize2.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize3.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize2.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize3.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/ComparePolaritiesBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/ComparePolaritiesBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/ComparePolaritiesHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/ComparePolaritiesHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/ComparePolaritiesHindiTwitter.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/ComparePolaritiesHindiTwitter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/DTCOOCLexiconBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/DTCOOCLexiconBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/DTCOOCLexiconHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/DTCOOCLexiconHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/resources/DT_COOCBengaliLexicon.txt" afterPath="$PROJECT_DIR$/../indian/resources/DT_COOCBengaliLexicon.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/resources/DT_COOCHindiLexicon.txt" afterPath="$PROJECT_DIR$/../indian/resources/DT_COOCHindiLexicon.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeature.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureH.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureH.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureL.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetCOOCPolarityBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetCOOCPolarityBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetCOOCPolarityHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetCOOCPolarityHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetCOOCPolarityHindiTwitter.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetCOOCPolarityHindiTwitter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetDTTopCandidateWordsBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetDTTopCandidateWordsBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopCandidateWordsHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopCandidateWordsHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopCandidateWordsHindiTwitter.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopCandidateWordsHindiTwitter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetDTTopWordsPolarityBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/GetDTTopWordsPolarityBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopWordsPolarityHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopWordsPolarityHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopWordsPolarityHindiTwitter.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/GetDTTopWordsPolarityHindiTwitter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/MPQALexicon.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/MPQALexicon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/NRCEmotionLexicon.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/NRCEmotionLexicon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/Ngram.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/Ngram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POSH.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POSH.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/POSHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/POSHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/dataset/POS_Hindi_Train.txt" afterPath="$PROJECT_DIR$/../indian/dataset/POS_Hindi_Train.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/PolarityLabelsBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/PolarityLabelsBengali.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/PolarityLabelsHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/PolarityLabelsHindi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/SendHTTPRequest.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansion/SendHTTPRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/SendHTTPRequest.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/DTExpansionBengali/SendHTTPRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentiWordNetBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentiWordNetBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentiWordNetHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentiWordNetHindi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentimentClassifierBengali.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentimentClassifierBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierH.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierH.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentimentClassifierHindi.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SentimentClassifierHindi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" afterPath="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" />
@@ -29,15 +86,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/calculateAccuracy.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/calculateAccuracy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model" afterPath="$PROJECT_DIR$/model" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/model" afterPath="$PROJECT_DIR$/../indian/model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/raw_POS_Test.txt" afterPath="$PROJECT_DIR$/dataset/raw_POS_Test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/raw_POS_Train.txt" afterPath="$PROJECT_DIR$/dataset/raw_POS_Train.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/testLabels.txt" afterPath="$PROJECT_DIR$/dataset/testLabels.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/tokenized_Test.txt" afterPath="$PROJECT_DIR$/dataset/tokenized_Test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/tokenized_Train.txt" afterPath="$PROJECT_DIR$/dataset/tokenized_Train.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset/trainingLabels.txt" afterPath="$PROJECT_DIR$/dataset/trainingLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/dataset/predictedLabels.txt" afterPath="$PROJECT_DIR$/../indian/dataset/predictedLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/resources/sentimentSeedWordsBengali.txt" afterPath="$PROJECT_DIR$/../indian/resources/sentimentSeedWordsBengali.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/resources/sentimentSeedWordsHindi.txt" afterPath="$PROJECT_DIR$/../indian/resources/sentimentSeedWordsHindi.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/dataset/testLabels.txt" afterPath="$PROJECT_DIR$/../indian/dataset/testLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/dataset/tokenized_Train.txt" afterPath="$PROJECT_DIR$/../indian/dataset/tokenized_Train.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/dataset/trainingLabels.txt" afterPath="$PROJECT_DIR$/../indian/dataset/trainingLabels.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../indian/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../indian/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../indian/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Course\Semester VII\Internship\sentiment\indian\src\main\java\sentimentClassifier\PolarityLabels.java" afterPath="$PROJECT_DIR$/../indian/src/main/java/sentimentClassifier/SetPolarityLabels.java" />
     </list>
     <ignored path="sentiment-analysis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +117,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ABSAPolarityLaptops.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SentimentClassifierR.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#7809#7817#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABSAClassifierRestaurants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+              <folding>
+                <element signature="e#265#297#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#8590#8607#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABSAClassifierLaptops.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="15" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="15" />
+              <folding>
+                <element signature="e#7428#7445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AspectCategorizationWrapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/AspectCategorizationWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.3096591">
+              <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABSAPolarityLaptops.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42194745">
-              <caret line="73" column="62" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="91" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ABSAPolarityRestaurants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="21.103449">
+              <caret line="16" column="69" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -90,18 +207,35 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/JavaApplication1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POSH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/NRCEmotionLexicon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/MPQALexicon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BrownClusters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/AFINNLexicon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/UsingJarFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassificationWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/AspectCategorizationWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" />
       </list>
     </option>
   </component>
@@ -145,6 +279,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,44 +351,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sentimentClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentiment-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="english" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="aspectCategorization" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,15 +369,75 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Application.CreateRestaurantsPredictedXML">
-    <configuration default="false" name="ABSAClassifierLaptops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.AspectCategorizationWrapper">
+    <configuration default="false" name="SentimentClassificationWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.tudarmstadt.lt.sentimentClassification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentimentClassification.SentimentClassificationWrapper" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sentiment-analysis" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="calculateAccuracy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.tudarmstadt.lt.sentimentClassification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentimentClassification.calculateAccuracy" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sentiment-analysis" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PolarityLabelsHotels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.tudarmstadt.lt.sentimentClassification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.sentimentClassification.PolarityLabelsHotels" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sentiment-analysis" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="UsingJarFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="de.tudarmstadt.lt.aspectCategorization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.ABSAClassifierLaptops" />
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.UsingJarFile" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -286,79 +450,19 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CreateLaptopsPredictedXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AspectCategorizationWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="de.tudarmstadt.lt.aspectCategorization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.CreateLaptopsPredictedXML" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.AspectCategorizationWrapper" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="3 l Laptops_Train_ABSA.txt Laptops_Test_ABSA.txt Laptops_Test_ABSA.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sentiment-analysis" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ABSAPolarityRestaurants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="de.tudarmstadt.lt.aspectCategorization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.ABSAPolarityRestaurants" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sentiment-analysis" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ABSAClassifierRestaurants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="de.tudarmstadt.lt.aspectCategorization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.ABSAClassifierRestaurants" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sentiment-analysis" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateRestaurantsPredictedXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="de.tudarmstadt.lt.aspectCategorization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="de.tudarmstadt.lt.aspectCategorization.CreateRestaurantsPredictedXML" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -530,23 +634,26 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ABSAClassifierLaptops" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CreateLaptopsPredictedXML" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ABSAPolarityRestaurants" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ABSAClassifierRestaurants" />
-      <item index="5" class="java.lang.String" itemvalue="Application.CreateRestaurantsPredictedXML" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassificationWrapper" />
+      <item index="2" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PolarityLabelsHotels" />
+      <item index="4" class="java.lang.String" itemvalue="Application.UsingJarFile" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AspectCategorizationWrapper" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CreateRestaurantsPredictedXML" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ABSAClassifierRestaurants" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ABSAPolarityRestaurants" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CreateLaptopsPredictedXML" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ABSAClassifierLaptops" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AspectCategorizationWrapper" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassificationWrapper" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UsingJarFile" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PolarityLabelsHotels" />
+        <item index="4" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a8b1340a-f734-47ae-94e9-5cc5c4e101ec" name="Default" comment="" />
@@ -562,28 +669,36 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43703705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25597534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -597,10 +712,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/SetRootDirectory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -619,11 +758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/SetRootDirectory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -634,129 +772,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/SetRootDirectory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.28">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/JavaApplication1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/NRCEmotionLexicon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.04">
-          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/MPQALexicon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92">
-          <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeatureH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.48">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/EntityFeature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BingLiuLexicon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/SetRootDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/AFINNLexicon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.71903324">
+          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/BrownClusters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6117647">
-          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.6918429">
+          <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POSH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.24">
-          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.8731118">
+          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.88">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <folding>
-            <element signature="e#1104#1120#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.58912385">
+          <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58912385">
+          <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramPrefixSize2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7945619">
+          <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CharacterNgramSuffixSize3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58912385">
+          <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76">
+        <state vertical-scroll-proportion="0.74595845">
           <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/UsingJarFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43187067">
+          <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7667437">
+          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POSL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15704387">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/POS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15704387">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.223618">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="5" selection-start-line="59" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+          <folding>
+            <element signature="e#3865#3866#0" expanded="false" />
+            <element signature="e#3899#3900#0" expanded="false" />
+            <element signature="method#generateDataset#0;class#SentimentClassifierH#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#SentimentClassifierH#0" expanded="false" />
+            <element signature="e#9664#9672#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="93" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassificationWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34791252">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#7809#7817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding>
+            <element signature="e#265#297#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#8590#8607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <element signature="e#7428#7445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="21.103449">
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42194745">
-          <caret line="73" column="62" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="91" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/tudarmstadt/lt/aspectCategorization/AspectCategorizationWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3096591">
+          <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
           <folding />
         </state>
       </provider>

@@ -7,11 +7,18 @@ import java.io.*;
  */
 public class PolarityLabelsLaptops {
 
-    private void generateTestLabels(String rootDirectory) {
+    String rootDirectory;
+    PolarityLabelsLaptops(int option, String trainFileName, String testFileName)
+    {
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(option, trainFileName, testFileName);
+    }
+
+    private void generateTestLabels(String dataFile, String labelFile ) {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory+"\\dataset\\dataset_sentimentClassification\\Test_Laptops_Cleansed.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(dataFile)));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory+"\\dataset\\testLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(labelFile)));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -32,11 +39,11 @@ public class PolarityLabelsLaptops {
         }
     }
 
-    private void generateTrainingLabels(String rootDirectory) {
+    private void generateTrainingLabels(String dataFile, String labelFile) {
         try {
-            BufferedReader read = new BufferedReader(new FileReader(new File(rootDirectory+"\\dataset\\dataset_sentimentClassification\\Train_Laptops_Cleansed.txt")));
+            BufferedReader read = new BufferedReader(new FileReader(new File(dataFile)));
             String line = null;
-            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory+"\\dataset\\trainingLabels.txt")));
+            PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(labelFile)));
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
@@ -57,21 +64,26 @@ public class PolarityLabelsLaptops {
         }
     }
 
-    public static void main(String[] args) {
-        String rootDirectory = System.getProperty("user.dir");
-            /*File file = new File("rootDir.txt");
-            BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line;
-            while((line = reader.readLine())!=null)
-            {
-                rootDirectory = line;
-                System.out.println("Roor Directory is: "+rootDirectory);
-            }*/
+    //public static void main(String[] args) {
+    private void mainFunction(int option, String trainingFileName, String testFileName)
+    {
+        this.generateTrainingLabels(rootDirectory+"\\dataset\\dataset_sentimentClassification\\"+ trainingFileName, rootDirectory + "\\dataset\\trainingLabels.txt");
+        if(option == 1)
+        {
+            this.generateTestLabels(rootDirectory+"\\dataset\\dataset_sentimentClassification\\"+trainingFileName, rootDirectory + "\\dataset\\testLabels.txt");
+        }
+        else if(option == 2)
+        {
 
-        //rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\english";
-        PolarityLabelsLaptops obj = new PolarityLabelsLaptops();
-        obj.generateTrainingLabels(rootDirectory);
-        obj.generateTestLabels(rootDirectory);
+        }
+        else if(option == 3)
+        {
+            this.generateTestLabels(rootDirectory+"\\dataset\\dataset_sentimentClassification\\"+testFileName, rootDirectory + "\\dataset\\testLabels.txt");
+            //this.generateTestLabels(rootDirectory + "\\dataset\\Gold Set\\HI_Test_Gold.txt", rootDirectory + "\\dataset\\testLabels.txt");
+        }
+
+        //this.generateTrainingLabels(rootDirectory);
+        //this.generateTestLabels(rootDirectory);
         //obj.generateTestLabels();
 
     }

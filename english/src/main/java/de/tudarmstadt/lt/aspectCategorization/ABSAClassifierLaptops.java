@@ -44,31 +44,30 @@ public class ABSAClassifierLaptops {
     static List<LinkedHashMap<Integer, Double>> testFeature;
 
 
-    int SentimentClassifierL() throws IOException {
-        //String rootDirectory="";
-        /*File file = new File("rootDir.txt");
-        BufferedReader reader = new BufferedReader(new FileReader(file));
-        String line;
-        while ((line = reader.readLine()) != null) {
-            rootDirectory = line;
-            System.out.println("Root Directory is: " + rootDirectory);
-        }*/
-        rootDirectory = System.getProperty("user.dir");
+    ABSAClassifierLaptops(int option, String trainFile, String testFile) throws IOException {
 
-        return generateFeature();
+        rootDirectory = System.getProperty("user.dir");
+        mainClassifierFunction(option, trainFile, testFile);
+
+        //rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        //return generateFeature();
     }
 
-    private int generateFeature() throws IOException {
-        //TRAINING SET
-        ABSAClassifierHelperL trainingObject = new ABSAClassifierHelperL(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Laptops_Train_ABSA.txt");
+    private int generateFeature(int option, String trainFile, String testFile) throws IOException {
 
+        //TRAINING SET
+        ABSAClassifierHelperR trainingObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+trainFile);
 
         //TESTING SET
-        ABSAClassifierHelperL testObject = new ABSAClassifierHelperL(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Laptops_Test_ABSA.txt");
-
+        ABSAClassifierHelperR testObject = null;
+        if(option == 2 || option == 3)
+        {
+            //generateDataset(rootDirectory + "\\dataset\\dataset_sentimentClassification\\"+testFile, rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Laptops_Contextual_Cleansed.txt");
+            testObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile);
+        }
         //POS FEATURE
         int start = 0;
-        ABSAPOS posObject = new ABSAPOS(rootDirectory, rootDirectory + "\\dataset\\dataset_aspectCategorization\\Laptops_Train_ABSA.txt", rootDirectory + "\\dataset\\dataset_aspectCategorization\\Laptops_Test_ABSA.txt");
+        ABSAPOS posObject = new ABSAPOS(rootDirectory, rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+trainFile, rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile);
         //trainingObject.setHashMap(start, posObject.getTrainingList());
 
         //testObject.setHashMap(start, posObject.getTestList());
@@ -107,17 +106,17 @@ public class ABSAClassifierLaptops {
     }
 
 
-    public static void main(String[] args) throws IOException {
-
-        ABSAClassifierLaptops object = new ABSAClassifierLaptops();
-        int finalSize = object.SentimentClassifierL();
+    private void mainClassifierFunction(int option, String trainFile, String testFile)throws IOException {
+        //SentimentClassifierHindi this = new SentimentClassifierHindi();
+        //int finalSize = this.SentimentClassifierHindi();
+        int finalSize = this.generateFeature(option, trainFile, testFile);
         System.out.println("Hello aspectCategorization!");
 
         // Create features
         Problem problem = new Problem();
 
         // Save X to problem
-        double a[] = new double[object.trainingFeature.size()];
+        double a[] = new double[this.trainingFeature.size()];
         File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read;
@@ -183,56 +182,59 @@ public class ABSAClassifierLaptops {
         model = Model.load(modelFile);
 
         PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\dataset_aspectCategorization\\predictedLaptopsLabels.txt")));
-        BufferedReader testFile = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Laptops_Test_ABSA.txt")));
+        BufferedReader testReader = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile)));
         HashMap<String, Integer> id = new HashMap<String, Integer>();
 
-        for (int i = 0; i < testFeature.size(); i++) {
-            //System.out.println();
-            Feature[] instance = new Feature[testFeature.get(i).size()];
-            int j = 0;
-            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
-                //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
-                instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
-            }
-            double[] predict = new double[81];
-            double prediction = Linear.predictProbability(model, instance, predict);
-
-            //Arrays.sort(predict, Collections.reverseOrder());
-            //System.out.println();
-            String tokens[] = testFile.readLine().split("\\|");
-
-            if (id.containsKey(tokens[1]) == true) {
-
-            } else {
-                int flag = 0;
-                for (int p = 0; p < 81; p++) {
-                    if (predict[p] >= 0.13) {
-                        flag = 1;
-                        write.println(p + 1);
-                    }
+        if(option == 3) {
+            for (int i = 0; i < testFeature.size(); i++) {
+                //System.out.println();
+                Feature[] instance = new Feature[testFeature.get(i).size()];
+                int j = 0;
+                for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
+                    //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
+                    //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
+                    // do stuff
+                    instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
                 }
-                if (flag == 1) {
-                    write.println("next");
+                double[] predict = new double[81];
+                double prediction = Linear.predictProbability(model, instance, predict);
+
+                //Arrays.sort(predict, Collections.reverseOrder());
+                //System.out.println();
+                String tokens[] = testReader.readLine().split("\\|");
+
+                if (id.containsKey(tokens[1]) == true) {
+
                 } else {
-                    write.println("-1");
-                    write.println("next");
+                    int flag = 0;
+                    for (int p = 0; p < 81; p++) {
+                        if (predict[p] >= 0.13) {
+                            flag = 1;
+                            write.println(p + 1);
+                        }
+                    }
+                    if (flag == 1) {
+                        write.println("next");
+                    } else {
+                        write.println("-1");
+                        write.println("next");
+                    }
+                    //write.println(prediction);
+                    id.put(tokens[1], 1);
                 }
-                //write.println(prediction);
-                id.put(tokens[1], 1);
-            }
 
             /*for(int p=0; p<13; p++)
             {
                 System.out.print(predict[p] * 100 + " ");
             }*/
 
-            //write.println(prediction);
-            //System.out.println(prediction);
-        }
+                //write.println(prediction);
+                //System.out.println(prediction);
+            }
 
-        write.close();
+
+            write.close();
+        }
 
     }
 }

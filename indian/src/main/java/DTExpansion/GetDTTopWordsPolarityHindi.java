@@ -7,9 +7,18 @@ import java.util.*;
  * Created by krayush on 08-07-2015.
  */
 public class GetDTTopWordsPolarityHindi {
-    public static void main(String[] args)throws IOException
+
+    String rootDirectory;
+    GetDTTopWordsPolarityHindi()throws IOException
     {
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
+
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
+        //String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
 
         LinkedHashMap<String, Double> modifiedFrequency = new LinkedHashMap();
         LinkedHashMap<String, Double> wordCount = new LinkedHashMap<String, Double>();

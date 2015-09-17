@@ -7,10 +7,16 @@ import java.util.*;
  * Created by krayush on 08-07-2015.
  */
 public class GetDTTopWordsPolarityHindiTwitter {
-    public static void main(String[] args)throws IOException
+    String rootDirectory;
+    GetDTTopWordsPolarityHindiTwitter()throws IOException
     {
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
 
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
         LinkedHashMap<String, Double> modifiedFrequency = new LinkedHashMap();
         LinkedHashMap<String, Double> wordCount = new LinkedHashMap<String, Double>();
         LinkedHashMap<String, Double> wordPolarity = new LinkedHashMap<String, Double>();

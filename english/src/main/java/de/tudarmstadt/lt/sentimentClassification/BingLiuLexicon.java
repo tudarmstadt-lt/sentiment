@@ -106,7 +106,7 @@ public class BingLiuLexicon {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         BingLiuLexicon ob = new BingLiuLexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
-    }
+    }*/
 }

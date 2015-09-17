@@ -20,8 +20,8 @@ public class POSH {
         this.testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         this.rootDirectory = rootDirectory;
 
-        trainingFeature = generateFeature(rootDirectory + "\\dataset\\Train_Hotels_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Train.txt", rootDirectory + "\\dataset\\raw_POS_Train.txt");
-        testFeature = generateFeature(rootDirectory + "\\dataset\\Test_Hotels_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Test.txt", rootDirectory + "\\dataset\\raw_POS_Test.txt");
+        trainingFeature = generateFeature(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Hotels_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Train.txt", rootDirectory + "\\dataset\\raw_POS_Train.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Hotels_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Test.txt", rootDirectory + "\\dataset\\raw_POS_Test.txt");
     }
 
     private List<LinkedHashMap<Integer, Double>> generateFeature(String rawDataset, String tokenizedDataset, String POSFile) {

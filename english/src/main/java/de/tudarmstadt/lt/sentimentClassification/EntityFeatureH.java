@@ -140,7 +140,7 @@ public class EntityFeatureH {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         EntityFeature ef = new EntityFeature("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
-    }
+    }*/
 }

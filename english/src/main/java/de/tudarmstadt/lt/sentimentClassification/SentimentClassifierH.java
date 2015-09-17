@@ -4,10 +4,7 @@ import de.bwaldvogel.liblinear.*;
 import org.apache.commons.cli.BasicParser;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 /*class GenerateTrainFeatureH {
@@ -73,8 +70,6 @@ class ClassifierHelperH {
     //static List<LinkedHashMap<Integer, Double>> testFeatureList = new ArrayList<LinkedHashMap<Integer, Double>>();
 
     ClassifierHelperH(String dataset) throws IOException {
-        //String trainingSet = "\\dataset\\Train_Restaurants_Contextual_Cleansed.txt";
-        //String testSet = "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt";
         BufferedReader readerTrain = new BufferedReader(new FileReader(new File(dataset)));
         //BufferedReader readerTest = new BufferedReader(new FileReader(new File(testSet)));
 
@@ -102,10 +97,6 @@ class ClassifierHelperH {
     }
 
     public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
-        //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
-        System.out.println("start: " + start + ": ");
-        System.out.println("$$$$$$$$$$$$$$$$$" + featureList.size());
-        //System.out.println(hMap.size());
         for (int i = 0; i < hMap.size(); i++) {
             //System.out.println();
             for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
@@ -117,39 +108,188 @@ class ClassifierHelperH {
     }
 
     public List<LinkedHashMap<Integer, Double>> getList() {
-        //System.out.println(trainingFeature.size());
-        //System.out.println("$$$$$$$$$$$$$$$$$"+featureList.size());
         return featureList;
     }
 }
 
 public class SentimentClassifierH {
     //static int start=0;
-    final static String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\english";
+    static String rootDirectory;
+    static List<LinkedHashMap<Integer, Double>> trainingFeature;
+    static List<LinkedHashMap<Integer, Double>> testFeature;
 
-    public static void main(String[] args) throws IOException {
+
+    SentimentClassifierH(int option, String trainFile, String testFile) throws IOException {
+
+        rootDirectory = System.getProperty("user.dir");
+        mainClassifierFunction(option, trainFile, testFile);
+
+        //rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        //return generateFeature();
+    }
+
+    private void generateDataset(String input, String output)throws IOException {
+        FileReader fR = new FileReader(input);
+        PrintWriter writer = new PrintWriter(output);
+        BufferedReader bf = new BufferedReader(fR);
+        //BufferedWriter wr = new BufferedWriter(fW);
+        String line = null;
+        while ((line = bf.readLine()) != null) {
+            String[] part = line.split("\\|");
+            if(part.length == 9) {
+                String context[] = part[4].split(" ");
+                part[8] = part[8].trim();
+                if (context[0].compareTo("NULL") == 0) {
+                    writer.println(part[3].toLowerCase());
+                } else {
+                    String part1 = part[3].substring(0, Integer.parseInt(part[7]));
+                    String part2 = part[3].substring(Integer.parseInt(part[8]));
+                    String part1Split[] = part1.split(",|;|!|\\.|-");
+                    String part2Split[] = part2.split(",|;|!|\\.|-");
+                    String text;
+                    //System.out.println(part1Split.length+" "+part2Split.length+line);
+                    //if(part1Split.length != 1  || part2Split.length != 1) {
+                    if (part1Split.length > 1 && part2Split.length > 1) {
+                        text = part1Split[part1Split.length - 1] + " " + part[4] + " " + part2Split[0];
+                        writer.println(text.toLowerCase());
+                    } else if (part1Split.length == 0 && part2Split.length > 1) {
+                        text = part[4] + " " + part2Split[0];
+                        writer.println(text.toLowerCase());
+                    } else if (part1Split.length > 1 && part2Split.length == 0) {
+                        text = part1Split[part1Split.length - 1] + " " + part[4];
+                        writer.println(text.toLowerCase());
+                    } else if (part1Split.length == 1 && part2Split.length > 1) {
+                        text = part1Split[part1Split.length - 1] + " " + part[4] + " " + part2Split[0];
+                        writer.println(text.toLowerCase());
+                    } else if (part1Split.length > 1 && part2Split.length == 1) {
+                        text = part1Split[part1Split.length - 1] + " " + part[4] + " " + part2Split[0];
+                        writer.println(text.toLowerCase());
+                    }
+
+                    //}
+                    else {
+                /*else if(part1Split.length == 1  && part2Split.length > 1) {
+                    text = part1Split[part1Split.length-1]+" "+part[4]+" "+part2Split[0];
+                    writer.println(text.toLowerCase());
+                }*/
+                        String part1Context[] = part1.split(" |,|;|!|\\.|-");
+                        text = "";
+                        int i = part1Context.length - 1;
+
+                /*if(part1Context.length == 0)
+                {
+                    i=0;
+                }
+                else if(part1Context.length == 1)
+                {
+                    i=part1Context.length-1;
+                }
+                else
+                {
+                    i=part1Context.length-2;
+                }*/
+
+                        int count = 0;
+                        while (count < 2 && i >= 0) {
+                            if (part1Context[i].compareTo("") == 0) {
+
+                            } else {
+                                text += " " + part1Context[i];
+                                count++;
+                            }
+                            i--;
+                        }
+
+                        text = reverseWords(text);
+
+
+                        text += " " + part[4] + " ";
+
+                        part2 = part[3].substring(Integer.parseInt(part[8]));
+                        //System.out.println(part2);
+                        String part2Context[] = part2.split(" |,|;|!|\\.|-");
+
+                /*for(int p=0; p<part2Context.length; p++)
+                {
+                    System.out.print(part2Context[p]+"; ");
+                }*/
+
+                        //System.out.println();
+
+                        int k = 0;
+                        count = 0;
+                        while (count < 2 && k <= part2Context.length - 1) {
+                            if (part2Context[k].compareTo("") == 0) {
+                                ;
+                            } else {
+                                count++;
+                                text += part2Context[k] + " ";
+                            }
+                            k++;
+                        }
+
+                /*for(int k=0, j=part2Context.length-1; k<2 && k<=j; k++)
+                {
+                    System.out.println(part2Context[k]);
+                    text += part2Context[k]+" ";
+                }*/
+
+                        writer.println(text.toLowerCase());
+                    }
+                }
+            }
+            else
+            {
+                writer.println(part[3].toLowerCase());
+            }
+
+        }
+        fR.close();
+        //bf.close();
+        writer.close();
+    }
+
+    private static String reverseWords(String input) {
+        Deque<String> words = new ArrayDeque<String>();
+        for (String word: input.split(" ")) {
+            if (!word.isEmpty()) {
+                words.addFirst(word);
+            }
+        }
+        StringBuilder result = new StringBuilder();
+        while (!words.isEmpty()) {
+            result.append(words.removeFirst());
+            if (!words.isEmpty()) {
+                result.append(" ");
+            }
+        }
+        return result.toString();
+    }
+
+    private int generateFeature(int option, String trainFile, String testFile) throws IOException {
+
+        generateDataset(rootDirectory + "\\dataset\\dataset_sentimentClassification\\"+trainFile, rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Hotels_Contextual_Cleansed.txt");
+
 
         //TRAINING SET
-        ClassifierHelperH trainingObject = new ClassifierHelperH(rootDirectory + "\\dataset\\Train_Hotels_Contextual_Cleansed.txt");
-        List<LinkedHashMap<Integer, Double>> trainingFeature;
-
-        /*GenerateTrainFeatureH trainingObject = new GenerateTrainFeatureH();
-        List<LinkedHashMap<Integer, Double>> trainingFeature;*/
-
+        ClassifierHelperH trainingObject = new ClassifierHelperH(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Hotels_Contextual_Cleansed.txt");
 
         //TESTING SET
-        ClassifierHelperH testObject = new ClassifierHelperH(rootDirectory + "\\dataset\\Test_Hotels_Contextual_Cleansed.txt");
-        List<LinkedHashMap<Integer, Double>> testFeature;
-        /*GenerateTestFeatureH testObject = new GenerateTestFeatureH();
-        List<LinkedHashMap<Integer, Double>> testFeature;*/
+        ClassifierHelperH testObject = null;
+        if(option == 2 || option == 3)
+        {
+            generateDataset(rootDirectory + "\\dataset\\dataset_sentimentClassification\\"+testFile, rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Hotels_Contextual_Cleansed.txt");
+            testObject = new ClassifierHelperH(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Hotels_Contextual_Cleansed.txt");
+        }
 
 
         //POS FEATURE
         int start = 0;
         POSH posObject = new POSH(rootDirectory);
         trainingObject.setHashMap(start, posObject.getTrainingList());
-
-        testObject.setHashMap(start, posObject.getTestList());
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, posObject.getTestList());
+        }
         //System.out.println(trainingFeature.get(10).size());
 
 
@@ -157,8 +297,9 @@ public class SentimentClassifierH {
         start += posObject.getFeatureCount();
         NRCHashtag nrcHashtagObject = new NRCHashtag(rootDirectory);
         trainingObject.setHashMap(start, nrcHashtagObject.getTrainingList());
-
-        testObject.setHashMap(start, nrcHashtagObject.getTestList());
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, nrcHashtagObject.getTestList());
+        }
 
 
         /*System.out.println("*************************************");
@@ -173,9 +314,10 @@ public class SentimentClassifierH {
         start += nrcHashtagObject.getFeatureCount();
         Ngram ngramObject = new Ngram(rootDirectory);
         trainingObject.setHashMap(start, ngramObject.getTrainingList());
-
-        testObject.setHashMap(start, ngramObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, ngramObject.getTestList());
+        }
+        //testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
 
@@ -183,16 +325,18 @@ public class SentimentClassifierH {
         start += ngramObject.getFeatureCount();
         SentiWordNet sentiWordNetObject = new SentiWordNet(rootDirectory);
         trainingObject.setHashMap(start, sentiWordNetObject.getTrainingList());
-
-        testObject.setHashMap(start, sentiWordNetObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, sentiWordNetObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //BING LIU LEXICON FEATURE
         start += sentiWordNetObject.getFeatureCount();
         BingLiuLexicon bingLiuObject = new BingLiuLexicon(rootDirectory);
         trainingObject.setHashMap(start, bingLiuObject.getTrainingList());
-
-        testObject.setHashMap(start, bingLiuObject.getTestList());
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, bingLiuObject.getTestList());
+        }
         testFeature = testObject.getList();
 
 
@@ -200,17 +344,19 @@ public class SentimentClassifierH {
         start += bingLiuObject.getFeatureCount();
         Senti140Lexicon senti140Object = new Senti140Lexicon(rootDirectory);
         trainingObject.setHashMap(start, senti140Object.getTrainingList());
-
-        testObject.setHashMap(start, senti140Object.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, senti140Object.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //ENTITY FEATURE
         start += senti140Object.getFeatureCount();
         EntityFeatureH entityObject = new EntityFeatureH(rootDirectory);
         trainingObject.setHashMap(start, entityObject.getTrainingList());
-
-        testObject.setHashMap(start, entityObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, entityObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
 
         //NRC HASHTAG BIGRAM LEXICON FEATURE
@@ -218,36 +364,40 @@ public class SentimentClassifierH {
         start += entityObject.getFeatureCount();
         NRCHashtagBigrams nrcBiObject = new NRCHashtagBigrams(rootDirectory);
         trainingObject.setHashMap(start, nrcBiObject.getTrainingList());
-
-        testObject.setHashMap(start, nrcBiObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, nrcBiObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //SENTI140 BIGRAM LEXICON FEATURE
 
         start += nrcBiObject.getFeatureCount();
         Senti140LexiconBigrams sentiBiObject = new Senti140LexiconBigrams(rootDirectory);
         trainingObject.setHashMap(start, sentiBiObject.getTrainingList());
-
-        testObject.setHashMap(start, sentiBiObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, sentiBiObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //NRC EMOTION LEXICON
 
         start += nrcBiObject.getFeatureCount();
         NRCEmotionLexicon emotionObject = new NRCEmotionLexicon(rootDirectory);
         trainingObject.setHashMap(start, emotionObject.getTrainingList());
-
-        testObject.setHashMap(start, emotionObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, emotionObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //AFINN LEXICON
 
         start += nrcBiObject.getFeatureCount();
         AFINNLexicon afinnObject = new AFINNLexicon(rootDirectory);
         trainingObject.setHashMap(start, afinnObject.getTrainingList());
-
-        testObject.setHashMap(start, afinnObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, afinnObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //ZSCORE FEATURE
 
@@ -327,82 +477,53 @@ public class SentimentClassifierH {
         testObject.setHashMap(start, cNgramS3Object.getTestList());
         testFeature = testObject.getList();*/
 
-        int finalSize = start + afinnObject.getFeatureCount();
-
-        /*System.out.println("TRAINING *************************************");
-        for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
-        {
-            //System.out.println(trainingFeature.get(i).size());
-            System.out.println(trainingFeature.get(i));
+        trainingFeature = trainingObject.getList();
+        if(option == 2 || option == 3) {
+            testFeature = testObject.getList();
         }
 
-        System.out.println("TEST *************************************");
-        for (int i = 0; i < testFeature.size(); i++)    //Print the feature values
-        {
-            //System.out.println(trainingFeature.get(i).size());
-            System.out.println(testFeature.get(i));
-        }*/
 
+        int finalSize = start + afinnObject.getFeatureCount();
 
-        System.out.println("Hello aspectCategorization!");
+        return finalSize;
+    }
+
+    private void mainClassifierFunction(int option, String trainFile, String testFile)throws IOException {
+        //SentimentClassifierHindi this = new SentimentClassifierHindi();
+        //int finalSize = this.SentimentClassifierHindi();
+        int finalSize = this.generateFeature(option, trainFile, testFile);
+        System.out.println("Hello Sentiment!");
 
         // Create features
-
-        // X = HashMap<List<(int, double)>> ...
-
         Problem problem = new Problem();
 
         // Save X to problem
-        double a[] = new double[nrcHashtagObject.getTrainingList().size()];
+        double a[] = new double[this.trainingFeature.size()];
         File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read;
         int count = 0;
         while ((read = reader.readLine()) != null) {
-            //System.out.println(read);
             a[count++] = Double.parseDouble(read.toString());
         }
 
-        //Feature[][] f = new Feature[][]{ {}, {}, {}, {}, {}, {} };
-
-        trainingFeature = trainingObject.getList();
         Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][finalSize];
 
-        System.out.println(trainingFeature.size());
-        System.out.println(finalSize);
-
         for (int i = 0; i < trainingFeature.size(); i++) {
-            //System.out.println();
-            //System.out.println(trainingFeature.get(i));
             System.out.println(i + " trained.");
             for (int j = 0; j < finalSize; j++) {
-                //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
-                //trainingFeature.get(i).
                 if (trainingFeature.get(i).containsKey(j + 1)) {
-                    //System.out.print(j + 1 + ", ");
                     trainFeatureVector[i][j] = new FeatureNode(j + 1, trainingFeature.get(i).get(j + 1));
                 } else {
                     trainFeatureVector[i][j] = new FeatureNode(j + 1, 0.0);
                 }
             }
-            //System.out.println();
         }
 
         problem.l = trainingFeature.size(); // number of training examples
         problem.n = finalSize; // number of features
         problem.x = trainFeatureVector; // feature nodes
         problem.y = a; // target values ----
-
-        /**
-         This is similar to original C implementation:
-         struct problem
-         {
-         int l, n;
-         int *y;
-         struct feature_node **x;
-         double bias;
-         };
-         * */
 
         BasicParser bp = new BasicParser();
 
@@ -415,60 +536,40 @@ public class SentimentClassifierH {
         File modelFile = new File("model");
         model.save(modelFile);
 
-        // load model or use it directly
-        model = Model.load(modelFile);
+        PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedLabels.txt")));
 
-        //Feature[] instance = new Feature[start + ngramObject.featureCount];
-
-        /*for (int i = 0; i < testFeature.size(); i++) {
-            //System.out.println();
-            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
-                instance[i] = new FeatureNode(entry.getKey(), entry.getValue());
+        if (option == 1) {
+            double[] val = new double[trainingFeature.size()];
+            Linear.crossValidation(problem, parameter, 5, val);
+            for (int i = 0; i < trainingFeature.size(); i++) {
+                write.println(val[i]);
             }
-        }*/
-
-        PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedRestaurantsLabels.txt")));
-        for (int i = 0; i < testFeature.size(); i++) {
-            //System.out.println();
-            Feature[] instance = new Feature[testFeature.get(i).size()];
-            int j = 0;
-            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
-                //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
-                instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
-            }
-
-
-
-        /*for (int i = 0; i < testFeature.size(); i++) {
-            //System.out.println();
-            //System.out.println(testFeature.get(i));
-            for (int j = 0; j < start + ngramObject.getFeatureCount(); j++) {
-                //System.out.print(trainingFeature.get(i).get(j + 1)+" ");
-                if (testFeature.get(i).containsKey(j + 1)) {
-                    instance[j] = new FeatureNode(j + 1, testFeature.get(i).get(j + 1));
-                    //System.out.print(j+1+":"+testFeature.get(i).get(j + 1)+"; ");
-                } else {
-                    instance[j] = new FeatureNode(j + 1, 0.0);
-                }
-
-
-                //System.out.println();
-            }*/
-
-            /*System.out.println();
-            for(int k=0; k<start + ngramObject.getFeatureCount(); k++)
-            {
-                System.out.print(instance[k].getValue() + ", ");
-            }*/
-            double prediction = Linear.predict(model, instance);
-
-            write.println(prediction);
-            //System.out.println(prediction);
+            write.close();
+            return;
         }
 
-        write.close();
+        //LinkedHashMap<String, Double>weight = new LinkedHashMap<String, Double>();
+
+        // load model or use it directly
+        if (option == 2 || option == 3) {
+            model = Model.load(modelFile);
+            //BufferedReader testFile = new BufferedReader(new InputStreamReader(new FileInputStream(rootDirectory + "\\dataset\\hindiTest.txt"), "UTF-8"));
+            for (int i = 0; i < testFeature.size(); i++) {
+                Feature[] instance = new Feature[testFeature.get(i).size()];
+                int j = 0;
+                for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
+                    instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
+                }
+
+                double prediction = Linear.predict(model, instance);
+                //String id = testFile.readLine().split("\t")[0];
+                //write.println(id+"\t"+prediction);
+                write.println(prediction);
+            }
+
+            write.close();
+            return;
+        }
 
     }
 }

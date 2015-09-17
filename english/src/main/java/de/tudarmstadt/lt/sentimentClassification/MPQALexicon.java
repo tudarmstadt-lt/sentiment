@@ -127,8 +127,8 @@ public class MPQALexicon {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] main) throws IOException {
+    /*public static void main(String[] main) throws IOException {
         MPQALexicon ob = new MPQALexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
-    }
+    }*/
 
 }

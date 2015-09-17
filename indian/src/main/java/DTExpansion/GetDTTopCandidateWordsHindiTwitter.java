@@ -10,8 +10,16 @@ import java.util.*;
  * Created by krayush on 29-06-2015.
  */
 public class GetDTTopCandidateWordsHindiTwitter {
-    public static void main(String[] args)throws IOException {
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+    String rootDirectory;
+    GetDTTopCandidateWordsHindiTwitter()throws IOException
+    {
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
+
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
         //Writer writer = new OutputStreamWriter(new FileOutputStream(rootDirectory+"\\resources\\TwitterDT\\DTRequest\\topModifiedWords.txt"), "UTF-8");
         //BufferedWriter fout = new BufferedWriter(writer);
         LinkedHashMap<String, Double> wordCount = new LinkedHashMap<String, Double>();

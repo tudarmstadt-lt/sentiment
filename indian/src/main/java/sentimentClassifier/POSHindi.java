@@ -17,7 +17,7 @@ public class POSHindi {
         this.rootDirectory = rootDirectory;
 
         trainingFeature = generateFeature(rootDirectory + "\\dataset\\posHindiTrainTags.txt", rootDirectory + "\\dataset\\POS_Hindi_Train.txt", rootDirectory + "\\dataset\\tokenized_Train.txt");
-        //testFeature = generateFeature(rootDirectory + "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt", rootDirectory + "\\dataset\\tokenized_Test.txt", rootDirectory + "\\dataset\\raw_POS_Test.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\posHindiTestTags.txt", rootDirectory + "\\dataset\\POS_Hindi_Test.txt", rootDirectory + "\\dataset\\tokenized_Test.txt");
     }
 
     private List<LinkedHashMap<Integer, Double>> generateFeature(String rawDataset, String tokenizedDataset, String POSFile) throws IOException {

@@ -80,7 +80,7 @@ public class CreateRestaurantsPredictedXML {
         bf2.close();
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         CreateRestaurantsPredictedXML ob = new CreateRestaurantsPredictedXML();
-    }
+    }*/
 }

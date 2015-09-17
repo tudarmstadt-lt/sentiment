@@ -82,7 +82,7 @@ public class EntityFeature {
         return 11;
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         EntityFeature ef = new EntityFeature("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
-    }
+    }*/
 }

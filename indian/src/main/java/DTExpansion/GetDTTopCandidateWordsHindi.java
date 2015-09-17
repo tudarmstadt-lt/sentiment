@@ -10,8 +10,18 @@ import java.util.*;
  * Created by krayush on 29-06-2015.
  */
 public class GetDTTopCandidateWordsHindi {
-    public static void main(String[] args)throws IOException {
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+
+    String rootDirectory;
+    GetDTTopCandidateWordsHindi()throws IOException
+    {
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
+
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
+        //String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
         //Writer writer = new OutputStreamWriter(new FileOutputStream(rootDirectory+"\\resources\\DTExpansion\\HTTPResults\\topModifiedWords.txt"), "UTF-8");
         //BufferedWriter fout = new BufferedWriter(writer);
         LinkedHashMap<String, Double> wordCount = new LinkedHashMap<String, Double>();
@@ -62,9 +72,10 @@ public class GetDTTopCandidateWordsHindi {
                 //Double val = polarityRoot.get(root);
                 //System.out.println(val);
 
-                if (lineCount > 1) {
+                if (lineCount > 2) {
                     if (lineCount <= 125) {
                         String[] tokens = line.split("\\t");
+                        System.out.println(tokens[1]);
                         if (wordCount.containsKey(tokens[0])) {
                             wordCount.put(tokens[0], wordCount.get(tokens[0]) + 1);
                         } else {

@@ -9,8 +9,16 @@ import java.io.IOException;
  * Created by krayush on 12-06-2015.
  */
 public class calculateAccuracy {
-    public static void main(String[] args) throws IOException {
-        String rootDirectory= System.getProperty("user.dir");
+
+    calculateAccuracy()throws IOException
+    {
+        mainFunction();
+    }
+
+    //public static void main(String[] args) throws IOException {
+    private void mainFunction() throws IOException
+    {
+        final String rootDirectory = System.getProperty("user.dir");
         /*File file = new File("rootDir.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String line;

@@ -15,13 +15,19 @@ public class PolarityLabelsBengali {
 
             while ((line = read.readLine()) != null) {
                 line = line.replace("\n", "").replace("\r", "");
-                String words[] = line.split("\\|");
-                if (words[1].compareTo("-1") == 0) {
+                //String words[] = line.split("\\|");
+                String words[] = line.split("\\t");
+                //System.out.println(words[1]);
+                if (words[1].compareToIgnoreCase("negative") == 0) {
                     write.println("-1");
-                } else if (words[1].compareTo("1") == 0) {
+                } else if (words[1].compareToIgnoreCase("positive") == 0) {
                     write.println("1");
-                } else if (words[1].compareTo("0") == 0) {
+                } else if (words[1].compareToIgnoreCase("neutral") == 0) {
                     write.println("0");
+                }
+                else
+                {
+                    System.out.println("Error"+words[0]);
                 }
             }
             read.close();
@@ -61,7 +67,7 @@ public class PolarityLabelsBengali {
         String root = System.getProperty("user.dir");
         PolarityLabelsBengali obj = new PolarityLabelsBengali();
         obj.generateTrainingLabels(root + "\\dataset\\bengaliCleansedTraining.txt", root + "\\dataset\\trainingLabels.txt");
-        obj.generateTestLabels(root + "\\dataset\\bengaliCleansedTraining.txt", root + "\\dataset\\testLabels.txt");
+        obj.generateTestLabels(root + "\\dataset\\Gold Set\\BN_Test_Gold.txt", root + "\\dataset\\testLabels.txt");
         //obj.generateTestLabels();
     }
 

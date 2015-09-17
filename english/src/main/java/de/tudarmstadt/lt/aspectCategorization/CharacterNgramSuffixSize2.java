@@ -216,7 +216,7 @@ public class CharacterNgramSuffixSize2 {
         return sortedMap;
     }
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         CharacterNgramPrefixSize2 ob = new CharacterNgramPrefixSize2("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
-    }
+    }*/
 }

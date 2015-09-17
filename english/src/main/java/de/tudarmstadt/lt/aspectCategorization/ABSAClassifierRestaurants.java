@@ -44,29 +44,40 @@ public class ABSAClassifierRestaurants {
     static List<LinkedHashMap<Integer, Double>> testFeature;
 
 
-    int SentimentClassifierL() throws IOException {
-        /*File file = new File("rootDir.txt");
-        BufferedReader reader = new BufferedReader(new FileReader(file));
-        String line;
-        while ((line = reader.readLine()) != null) {
-            rootDirectory = line;
-            System.out.println("Root Directory is: " + rootDirectory);
-        }*/
+    ABSAClassifierRestaurants(int option, String trainFile, String testFile) throws IOException {
+
         rootDirectory = System.getProperty("user.dir");
-        return generateFeature();
+        mainClassifierFunction(option, trainFile, testFile);
+
+        //rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        //return generateFeature();
     }
 
-    private int generateFeature() throws IOException {
+    private int generateFeature(int option, String trainFile, String testFile) throws IOException {
+
+        //generateDataset(rootDirectory + "\\dataset\\dataset_sentimentClassification\\"+trainFile, rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Restaurants_Contextual_Cleansed.txt");
+
+
         //TRAINING SET
-        ABSAClassifierHelperR trainingObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Train_ABSA.txt");
+        ABSAClassifierHelperR trainingObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+trainFile);
+
+        //TESTING SET
+        ABSAClassifierHelperR testObject = null;
+        if(option == 2 || option == 3)
+        {
+            //generateDataset(rootDirectory + "\\dataset\\dataset_sentimentClassification\\"+testFile, rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Restaurants_Contextual_Cleansed.txt");
+            testObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile);
+        }
+        //TRAINING SET
+        /*ABSAABSAClassifierHelperRR trainingObject = new ABSAABSAClassifierHelperRR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Train_ABSA.txt");
 
 
         //TESTING SET
-        ABSAClassifierHelperR testObject = new ABSAClassifierHelperR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Test_ABSA.txt");
-
+        ABSAABSAClassifierHelperRR testObject = new ABSAABSAClassifierHelperRR(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Test_ABSA.txt");
+*/
         //POS FEATURE
         int start = 0;
-        ABSAPOS posObject = new ABSAPOS(rootDirectory, rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Train_ABSA.txt", rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Test_ABSA.txt");
+        ABSAPOS posObject = new ABSAPOS(rootDirectory, rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+trainFile, rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile);
         //trainingObject.setHashMap(start, posObject.getTrainingList());
 
         //testObject.setHashMap(start, posObject.getTestList());
@@ -75,18 +86,21 @@ public class ABSAClassifierRestaurants {
         //BAG OF WORDS FEATURE
         ABSABagOfWords bagObject = new ABSABagOfWords(rootDirectory);
         trainingObject.setHashMap(start, bagObject.getTrainingList());
-
-        testObject.setHashMap(start, bagObject.getTestList());
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3)
+        {
+            testObject.setHashMap(start, bagObject.getTestList());
+        }
+        //testFeature = testObject.getList();
         //System.out.println(trainingFeature.get(10).size());
 
         //EV FEATURE
-        /*start += bagObject.getFeatureCount();
+        start += bagObject.getFeatureCount();
         ABSAEVRestaurantsFeature evObject = new ABSAEVRestaurantsFeature(rootDirectory);
         trainingObject.setHashMap(start, evObject.getTrainingList());
-
-        testObject.setHashMap(start, evObject.getTestList());
-        testFeature = testObject.getList();*/
+        if(option == 2 || option == 3) {
+            testObject.setHashMap(start, evObject.getTestList());
+        }
+        //testFeature = testObject.getList();
 
         //NGRAM FEATURE
         /*start += evObject.getFeatureCount();
@@ -97,7 +111,9 @@ public class ABSAClassifierRestaurants {
         testFeature = testObject.getList();*/
 
         trainingFeature = trainingObject.getList();
-        testFeature = testObject.getList();
+        if(option == 2 || option == 3) {
+            testFeature = testObject.getList();
+        }
 
         int finalSize = start + bagObject.getFeatureCount();
 
@@ -105,16 +121,17 @@ public class ABSAClassifierRestaurants {
     }
 
 
-    public static void main(String[] args) throws IOException {
-        ABSAClassifierRestaurants object = new ABSAClassifierRestaurants();
-        int finalSize = object.SentimentClassifierL();
+    private void mainClassifierFunction(int option, String trainFile, String testFile)throws IOException {
+        //SentimentClassifierHindi this = new SentimentClassifierHindi();
+        //int finalSize = this.SentimentClassifierHindi();
+        int finalSize = this.generateFeature(option, trainFile, testFile);
         System.out.println("Hello aspectCategorization!");
 
         // Create features
         Problem problem = new Problem();
 
         // Save X to problem
-        double a[] = new double[object.trainingFeature.size()];
+        double a[] = new double[this.trainingFeature.size()];
         File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read;
@@ -189,57 +206,58 @@ public class ABSAClassifierRestaurants {
         }*/
 
         PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\dataset_aspectCategorization\\predictedRestaurantsLabels.txt")));
-        BufferedReader testFile = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\Restaurants_Test_ABSA.txt")));
+        BufferedReader testReader = new BufferedReader(new FileReader(new File(rootDirectory + "\\dataset\\dataset_aspectCategorization\\"+testFile)));
         HashMap<String, Integer> id = new HashMap<String, Integer>();
 
-        for (int i = 0; i < testFeature.size(); i++) {
-            //System.out.println();
-            Feature[] instance = new Feature[testFeature.get(i).size()];
-            int j = 0;
-            for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
-                //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
-                instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
-            }
-            double[] predict = new double[13];
-            double prediction = Linear.predictProbability(model, instance, predict);
-
-            //Arrays.sort(predict, Collections.reverseOrder());
-            //System.out.println();
-            String tokens[] = testFile.readLine().split("\\|");
-
-            if (id.containsKey(tokens[1]) == true) {
-
-            } else {
-                int flag = 0;
-                for (int p = 0; p < 13; p++) {
-                    if (predict[p] >= 0.18) {
-                        flag = 1;
-                        write.println(p + 1);
-                    }
+        if(option == 3) {
+            for (int i = 0; i < testFeature.size(); i++) {
+                //System.out.println();
+                Feature[] instance = new Feature[testFeature.get(i).size()];
+                int j = 0;
+                for (Map.Entry<Integer, Double> entry : testFeature.get(i).entrySet()) {
+                    //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
+                    //listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
+                    // do stuff
+                    instance[j++] = new FeatureNode(entry.getKey(), entry.getValue());
                 }
-                if (flag == 1) {
-                    write.println("next");
+                double[] predict = new double[13];
+                double prediction = Linear.predictProbability(model, instance, predict);
+
+                //Arrays.sort(predict, Collections.reverseOrder());
+                //System.out.println();
+                String tokens[] = testReader.readLine().split("\\|");
+
+                if (id.containsKey(tokens[1]) == true) {
+
                 } else {
-                    write.println("-1");
-                    write.println("next");
+                    int flag = 0;
+                    for (int p = 0; p < 13; p++) {
+                        if (predict[p] >= 0.18) {
+                            flag = 1;
+                            write.println(p + 1);
+                        }
+                    }
+                    if (flag == 1) {
+                        write.println("next");
+                    } else {
+                        write.println("-1");
+                        write.println("next");
+                    }
+                    //write.println(prediction);
+                    id.put(tokens[1], 1);
                 }
-                //write.println(prediction);
-                id.put(tokens[1], 1);
-            }
 
             /*for(int p=0; p<13; p++)
             {
                 System.out.print(predict[p] * 100 + " ");
             }*/
 
-            //write.println(prediction);
-            //System.out.println(prediction);
+                //write.println(prediction);
+                //System.out.println(prediction);
+            }
+
+            write.close();
         }
-
-        write.close();
-
     }
 
     private static LinkedHashMap sortHashMapByValuesD(HashMap passedMap) {

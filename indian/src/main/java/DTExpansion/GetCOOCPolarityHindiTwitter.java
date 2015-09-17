@@ -10,11 +10,16 @@ import java.util.*;
  * Created by krayush on 08-07-2015.
  */
 public class GetCOOCPolarityHindiTwitter {
-    public static void main(String[] args)throws IOException
+    String rootDirectory;
+    GetCOOCPolarityHindiTwitter()throws IOException
     {
-        //Indexing all words in the COOC word list
-        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        rootDirectory = System.getProperty("user.dir");
+        mainFunction(rootDirectory);
+    }
 
+    //public static void main(String[] args)throws IOException {
+    private void mainFunction(String rootDirectory)throws IOException
+    {
         File fR = new File(rootDirectory+"\\resources\\TwitterCOOC\\twitter_hindi.txt.words");
         //PrintWriter writer = new PrintWriter("D:\\Course\\Semester VII\\Internship\\Results\\Maggie TUD\\sentimentJavaWords.txt");
         BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(fR), "UTF-8"));
