@@ -1,0 +1,3 @@
+Go to 'Scorer' folder and execute the command.
+
+java -cp ./A.jar absa15.Do Eval ./pred.xml ./teGld.xml 1 0

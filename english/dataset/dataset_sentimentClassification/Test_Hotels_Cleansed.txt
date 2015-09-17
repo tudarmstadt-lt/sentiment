@@ -1,0 +1,339 @@
+73821_30|73821_30#0||Room Was Acceptable|Room|ROOMS#GENERAL|neutral|0|4
+73821_30|73821_30#1||The room was nice and the furnishings were comfortable.|room|ROOMS#GENERAL|positive|4|8
+73821_30|73821_30#1||The room was nice and the furnishings were comfortable.|furnishings|ROOMS#COMFORT|positive|26|37
+73821_30|73821_30#2||The food from the restaurant was very good but pricey which was the standard for everything in this hotel.|food|FOOD_DRINKS#QUALITY|positive|4|8
+73821_30|73821_30#2||The food from the restaurant was very good but pricey which was the standard for everything in this hotel.|food|FOOD_DRINKS#PRICES|negative|4|8
+73821_30|73821_30#2||The food from the restaurant was very good but pricey which was the standard for everything in this hotel.|hotel|HOTEL#PRICES|negative|100|105
+73821_30|73821_30#3||The internet access from the room was $9.95 for a 24 hour period.|internet access|ROOMS_AMENITIES#PRICES|negative|4|19
+73821_30|73821_30#4||To check in for my flight using the business center cost me $4.59 which included three minutes use of the internet and printing seven pages for my boarding pass.|business center|FACILITIES#PRICES|negative|36|51
+73821_30|73821_30#6||Staff was very pleasant and helpful.|Staff|SERVICE#GENERAL|positive|0|5
+73821_3|73821_3#0||Great stay!|NULL|HOTEL#GENERAL|positive|0|0
+73821_3|73821_3#2||What a wonderful choice.|NULL|HOTEL#GENERAL|positive|0|0
+73821_3|73821_3#3||Check in was fast and courteous.|Check in|SERVICE#GENERAL|positive|0|8
+73821_3|73821_3#4||Rooms were clean, spacious and comforatable.|Rooms|ROOMS#CLEANLINESS|positive|0|5
+73821_3|73821_3#4||Rooms were clean, spacious and comforatable.|Rooms|ROOMS#DESIGN_FEATURES|positive|0|5
+73821_3|73821_3#4||Rooms were clean, spacious and comforatable.|Rooms|ROOMS#COMFORT|positive|0|5
+73821_3|73821_3#5||Food was outstanding, for both the conference and on my own.|Food|FOOD_DRINKS#QUALITY|positive|0|4
+73821_3|73821_3#6||Pool was refreshing on the hot days.|Pool|FACILITIES#GENERAL|positive|0|4
+73821_3|73821_3#7||Overall for the price of this hotel it cannot be beat!|hotel|HOTEL#GENERAL|positive|30|35
+73821_3|73821_3#7||Overall for the price of this hotel it cannot be beat!|hotel|HOTEL#PRICES|positive|30|35
+73821_3|73821_3#8||I will definitely stay here again conference or not.|NULL|HOTEL#GENERAL|positive|0|0
+73821_26|73821_26#0||Good Business Hotel|Hotel|HOTEL#MISCELLANEOUS|positive|14|19
+73821_26|73821_26#1||Very nice hotel for business travelers - very few kids.|hotel|HOTEL#MISCELLANEOUS|positive|10|15
+73821_26|73821_26#2||Great rooms with very comfortable beds.|rooms|ROOMS#GENERAL|positive|6|11
+73821_26|73821_26#2||Great rooms with very comfortable beds.|beds|ROOMS#COMFORT|positive|34|38
+73821_26|73821_26#3||Big pool area, very good fitness center - nice lobby and common areas.|pool area|FACILITIES#DESIGN_FEATURES|positive|4|13
+73821_26|73821_26#3||Big pool area, very good fitness center - nice lobby and common areas.|fitness center|FACILITIES#GENERAL|positive|25|39
+73821_26|73821_26#3||Big pool area, very good fitness center - nice lobby and common areas.|lobby|HOTEL#GENERAL|positive|47|52
+73821_26|73821_26#3||Big pool area, very good fitness center - nice lobby and common areas.|common areas|HOTEL#GENERAL|positive|57|69
+73821_26|73821_26#4||I had excellent shuttle service.|shuttle service|FACILITIES#GENERAL|positive|16|31
+73821_26|73821_26#5||The Sports Bar had good food with very reasonable prices.|food|FOOD_DRINKS#QUALITY|positive|24|28
+73821_26|73821_26#5||The Sports Bar had good food with very reasonable prices.|food|FOOD_DRINKS#PRICES|positive|24|28
+73821_26|73821_26#6||The only downside was a per minute charge to use the business center computers.|business center computers|FACILITIES#PRICES|negative|53|78
+73821_21|73821_21#0||Perfectly Close to the Airport|NULL|LOCATION#GENERAL|positive|0|0
+73821_21|73821_21#1||I booked this because of it's proximity to the airport for our departure.|NULL|LOCATION#GENERAL|positive|0|0
+73821_21|73821_21#2||The staff was friendly and helpful, they upgraded our room to queen beds without us asking.|staff|SERVICE#GENERAL|positive|4|9
+73821_21|73821_21#3||The rooms are lovely, and the hotel is quiet even though it is so close to the airport.|rooms|ROOMS#GENERAL|positive|4|9
+73821_21|73821_21#3||The rooms are lovely, and the hotel is quiet even though it is so close to the airport.|hotel|HOTEL#COMFORT|positive|30|35
+73821_21|73821_21#4||The 24 hour shuttle to the airport is very, very convenient and gets you there in about 4 minutes.|24 hour shuttle|FACILITIES#COMFORT|positive|4|19
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|food|FOOD_DRINKS#QUALITY|positive|33|37
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|avocado|FOOD_DRINKS#QUALITY|positive|67|74
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|NULL|HOTEL#PRICES|positive|0|0
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|location|LOCATION#GENERAL|positive|136|144
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|rooms|ROOMS#CLEANLINESS|positive|156|161
+73821_21|73821_21#5||We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....|service|SERVICE#GENERAL|positive|171|178
+73821_2|73821_2#0||A Great Hotel|Hotel|HOTEL#GENERAL|positive|8|13
+73821_2|73821_2#1||Our stay at this hotel was wonderful.|hotel|HOTEL#GENERAL|positive|17|22
+73821_2|73821_2#2||The staff was very courteous upon check-in.|staff|SERVICE#GENERAL|positive|4|9
+73821_2|73821_2#3||Our room was perfectly spotless.|room|ROOMS#CLEANLINESS|positive|4|8
+73821_2|73821_2#4||(I had to use an outlet behind the headboard, and expected to see some type of dirt when I pulled the bed out, but to my surprise, not even dust!)|NULL|ROOMS#CLEANLINESS|positive|0|0
+73821_2|73821_2#5||Very clean and well maintained.|NULL|ROOMS#CLEANLINESS|positive|0|0
+73821_2|73821_2#5||Very clean and well maintained.|NULL|ROOMS#QUALITY|positive|0|0
+73821_2|73821_2#6||Some nice touches of southwest decor here and there.|NULL|ROOMS#DESIGN_FEATURES|positive|0|0
+73821_2|73821_2#7||No problems whatsoever, and I would recommend this hotel to anybody.|hotel|HOTEL#GENERAL|positive|51|56
+73739_13|73739_13#0||Good service but rude desk clerk|service|SERVICE#GENERAL|positive|5|12
+73739_13|73739_13#0||Good service but rude desk clerk|desk clerk|SERVICE#GENERAL|negative|22|32
+73739_13|73739_13#3||She immediately began to yell that if I wanted an upgrade I would have to pay for it.|NULL|SERVICE#GENERAL|negative|0|0
+73739_13|73739_13#5||The same desk clerk started to yell again stating that she had told me when I called that I could upgrade for a charge and that was her rules.|desk clerk|SERVICE#GENERAL|negative|9|19
+73739_13|73739_13#8||She completely ignored me and just kept on yelling.|NULL|SERVICE#GENERAL|negative|0|0
+73739_13|73739_13#9||I asked to speak to the manager and she told me she was the manager when in fact the manager's name was clearly displayed on the wall.|NULL|SERVICE#GENERAL|negative|0|0
+73739_13|73739_13#11||This incident was very humiliating as other guests were present.|NULL|SERVICE#GENERAL|negative|0|0
+73739_13|73739_13#12||I am writing this review because this kind of behavior was totally unacceptable and hopefully no other guests will be treated in this manner.|NULL|SERVICE#GENERAL|negative|0|0
+73739_13|73739_13#13||Overall service was great and the staff as a whole were very courteous and helpful.|service|SERVICE#GENERAL|positive|8|15
+73739_13|73739_13#13||Overall service was great and the staff as a whole were very courteous and helpful.|staff|SERVICE#GENERAL|positive|34|39
+73727_9|73727_9#0||Not bad for one night|NULL|HOTEL#GENERAL|neutral|0|0
+73727_9|73727_9#2||Front desk staff were friendly and helpful both with early check-in and an early check-out.|Front desk staff|SERVICE#GENERAL|positive|0|16
+73727_9|73727_9#3||Room was large and spacious, but rather bland.|Room|ROOMS#DESIGN_FEATURES|positive|0|4
+73727_9|73727_9#3||Room was large and spacious, but rather bland.|Room|ROOMS#COMFORT|positive|0|4
+73727_9|73727_9#3||Room was large and spacious, but rather bland.|Room|ROOMS#DESIGN_FEATURES|negative|0|4
+73727_9|73727_9#4||Excellent for a business traveler, or for a stayover with early departure to Phoenix Sky Harbor Airport, took 8 minutes to get to the airport via 10 freeway.|NULL|HOTEL#MISCELLANEOUS|positive|0|0
+73727_9|73727_9#4||Excellent for a business traveler, or for a stayover with early departure to Phoenix Sky Harbor Airport, took 8 minutes to get to the airport via 10 freeway.|NULL|LOCATION#GENERAL|positive|0|0
+73727_9|73727_9#5||Ideal location.|location|LOCATION#GENERAL|positive|6|14
+73727_9|73727_9#6||Very affordable rate at low $50s.|NULL|HOTEL#PRICES|positive|0|0
+73727_9|73727_9#7||The pool looked nice, as did their restaurant, but didn't try either one.|pool|FACILITIES#GENERAL|positive|4|8
+73727_9|73727_9#7||The pool looked nice, as did their restaurant, but didn't try either one.|restaurant|FACILITIES#GENERAL|positive|35|45
+73727_15|73727_15#0||Well below average|NULL|HOTEL#GENERAL|negative|0|0
+73727_15|73727_15#2||Unfortunately, this is below average.|NULL|HOTEL#GENERAL|negative|0|0
+73727_15|73727_15#3||Rooms are large but very plain, with furnishings and fixtures as cheap as possible.|Rooms|ROOMS#DESIGN_FEATURES|positive|0|5
+73727_15|73727_15#3||Rooms are large but very plain, with furnishings and fixtures as cheap as possible.|Rooms|ROOMS#DESIGN_FEATURES|negative|0|5
+73727_15|73727_15#3||Rooms are large but very plain, with furnishings and fixtures as cheap as possible.|fixtures|ROOMS#QUALITY|negative|53|61
+73727_15|73727_15#3||Rooms are large but very plain, with furnishings and fixtures as cheap as possible.|furnishings|ROOMS#QUALITY|negative|37|48
+73727_15|73727_15#4||The hotel shows its age and badly needs refurbishing.|hotel|HOTEL#QUALITY|negative|4|9
+73727_15|73727_15#5||Bathroom sink was on a slight slant because it was pulling out of the wall.|Bathroom sink|ROOMS#QUALITY|negative|0|13
+73727_15|73727_15#6||Nothing is especially terrible or unacceptable about this hotel.|hotel|HOTEL#GENERAL|neutral|58|63
+73727_15|73727_15#7||It is just subpar.|NULL|HOTEL#GENERAL|negative|0|0
+73727_13|73727_13#0||Don't do it!!|NULL|HOTEL#GENERAL|negative|0|0
+73727_13|73727_13#1||This place is run down, dirty and loud.|place|HOTEL#QUALITY|negative|5|10
+73727_13|73727_13#1||This place is run down, dirty and loud.|place|HOTEL#CLEANLINESS|negative|5|10
+73727_13|73727_13#1||This place is run down, dirty and loud.|place|HOTEL#COMFORT|negative|5|10
+73727_13|73727_13#2||The pictures they provide on the web do not tell the story so don't be fooled.|NULL|HOTEL#MISCELLANEOUS|negative|0|0
+73718_2|73718_2#0||Great Restaurant|Restaurant|FACILITIES#GENERAL|positive|6|16
+73718_2|73718_2#1||This property has really improved since our last stay.|property|HOTEL#GENERAL|positive|5|13
+73718_2|73718_2#2||Room was cool, clean and comfy.|Room|ROOMS#GENERAL|positive|0|4
+73718_2|73718_2#2||Room was cool, clean and comfy.|Room|ROOMS#CLEANLINESS|positive|0|4
+73718_2|73718_2#2||Room was cool, clean and comfy.|Room|ROOMS#COMFORT|positive|0|4
+73718_2|73718_2#3||The restaurant downstairs is the best kept secret in the area!|restaurant|FACILITIES#GENERAL|positive|4|14
+73718_2|73718_2#4||The food and service was outstanding (try the seafood platter).|food|FOOD_DRINKS#QUALITY|positive|4|8
+73718_2|73718_2#4||The food and service was outstanding (try the seafood platter).|service|SERVICE#GENERAL|positive|13|20
+73718_2|73718_2#4||The food and service was outstanding (try the seafood platter).|seafood platter|FOOD_DRINKS#QUALITY|positive|46|61
+73718_2|73718_2#5||Staff was courteous and efficient.|Staff|SERVICE#GENERAL|positive|0|5
+73727_17|73727_17#0||I keep on coming back!|NULL|HOTEL#GENERAL|positive|0|0
+73727_17|73727_17#1||I've been going to this place every year and I keep on coming back to this hotel.|hotel|HOTEL#GENERAL|positive|75|80
+73727_17|73727_17#3||The breakfast is excellent!|breakfast|FOOD_DRINKS#QUALITY|positive|4|13
+73727_17|73727_17#4||It is rare that hotels in this class serve hot meals, yet they do!|meals|FOOD_DRINKS#STYLE_OPTIONS|positive|47|52
+73727_17|73727_17#5||Breakfast is fit for a king.|Breakfast|FOOD_DRINKS#QUALITY|positive|0|9
+73727_17|73727_17#6||Plus, the staff at the front desk are always courteous and friendly.|staff at the front desk|SERVICE#GENERAL|positive|10|33
+73727_17|73727_17#7||Though the bathrooms are a bit old, the beds are still cozy.|bathrooms|ROOMS#QUALITY|negative|11|20
+73727_17|73727_17#7||Though the bathrooms are a bit old, the beds are still cozy.|beds|ROOMS#COMFORT|positive|40|44
+73727_17|73727_17#8||And the hotel is right in the middle of everywhere.|hotel|LOCATION#GENERAL|positive|8|13
+73821_19|73821_19#0||Above average hotel for great price !|hotel|HOTEL#GENERAL|positive|14|19
+73821_19|73821_19#0||Above average hotel for great price !|hotel|HOTEL#PRICES|positive|14|19
+73821_19|73821_19#1||Got a great price of $64 per night.|NULL|HOTEL#PRICES|positive|0|0
+73821_19|73821_19#2||The room was perfect for me, the bed was one of the most comfortable I've ever had in a hotel.|room|ROOMS#GENERAL|positive|4|8
+73821_19|73821_19#2||The room was perfect for me, the bed was one of the most comfortable I've ever had in a hotel.|bed|ROOMS#COMFORT|positive|33|36
+73821_19|73821_19#4||Very clean, great service - they gave me a complimentary bottle of wine because I missed the hotel shuttle.|service|SERVICE#GENERAL|positive|18|25
+73821_19|73821_19#4||Very clean, great service - they gave me a complimentary bottle of wine because I missed the hotel shuttle.|NULL|HOTEL#CLEANLINESS|positive|0|0
+73821_19|73821_19#4||Very clean, great service - they gave me a complimentary bottle of wine because I missed the hotel shuttle.|NULL|SERVICE#GENERAL|positive|0|0
+73821_19|73821_19#5||Good restaurant and bar attached.|restaurant|FACILITIES#GENERAL|positive|5|15
+73821_19|73821_19#5||Good restaurant and bar attached.|bar|FACILITIES#GENERAL|positive|20|23
+73821_19|73821_19#6||Close to Scottsdale and the University.|NULL|LOCATION#GENERAL|positive|0|0
+73718_1|73718_1#0||Price was right|NULL|HOTEL#PRICES|positive|0|0
+73718_1|73718_1#1||Pleasantly surprised at $69 night.|NULL|HOTEL#PRICES|positive|0|0
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|Front desk|SERVICE#GENERAL|negative|0|10
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|room|ROOMS#PRICES|positive|82|86
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|room|ROOMS#CLEANLINESS|positive|82|86
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|room|ROOMS#DESIGN_FEATURES|positive|82|86
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|breakfast buffet|FOOD_DRINKS#PRICES|positive|133|149
+73718_1|73718_1#2||Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.|breakfast buffet|FOOD_DRINKS#STYLE_OPTIONS|negative|133|149
+73718_1|73718_1#3||Stayed there because it was near Banner Hospital.|NULL|LOCATION#GENERAL|positive|0|0
+73718_17|73718_17#0||Friendly Staff|Staff|SERVICE#GENERAL|positive|9|14
+73718_17|73718_17#2||The staff was extremely helpful and friendly.|staff|SERVICE#GENERAL|positive|4|9
+73718_17|73718_17#3||I would say they are the best part of the hotel!|NULL|SERVICE#GENERAL|positive|0|0
+73718_17|73718_17#4||An elevator was broken during our last stay and it was most annoying, but did not greatly impact the overall experience.|elevator|FACILITIES#QUALITY|negative|3|11
+73718_17|73718_17#4||An elevator was broken during our last stay and it was most annoying, but did not greatly impact the overall experience.|NULL|HOTEL#GENERAL|positive|0|0
+73718_17|73718_17#6||All in all it is a nice and affordable spot for sightseeing in the area.|spot|HOTEL#GENERAL|positive|39|43
+73718_17|73718_17#6||All in all it is a nice and affordable spot for sightseeing in the area.|spot|HOTEL#PRICES|positive|39|43
+73718_17|73718_17#6||All in all it is a nice and affordable spot for sightseeing in the area.|spot|HOTEL#MISCELLANEOUS|positive|39|43
+73718_24|73718_24#0||Administrative Issues|NULL|SERVICE#GENERAL|negative|0|0
+73718_24|73718_24#1||The Best Western Executive Park Hotel is an average place to stay (though a bit far from downtown) with a substandard management team.|Best Western Executive Park Hotel|HOTEL#GENERAL|neutral|4|37
+73718_24|73718_24#1||The Best Western Executive Park Hotel is an average place to stay (though a bit far from downtown) with a substandard management team.|Best Western Executive Park Hotel|LOCATION#GENERAL|negative|4|37
+73718_24|73718_24#1||The Best Western Executive Park Hotel is an average place to stay (though a bit far from downtown) with a substandard management team.|management team|SERVICE#GENERAL|negative|118|133
+73718_24|73718_24#2||I've tried to obtain a receipt for my stay to replace one I lost and have been ignored.|NULL|SERVICE#GENERAL|negative|0|0
+73718_24|73718_24#3||There's never anyone to talk to from management and phone calls/e mails receive no response.|management|SERVICE#GENERAL|negative|37|47
+73718_24|73718_24#3||There's never anyone to talk to from management and phone calls/e mails receive no response.|NULL|SERVICE#GENERAL|negative|0|0
+73718_24|73718_24#4||It's not a recipe for another stay.|NULL|HOTEL#GENERAL|negative|0|0
+73718_4|73718_4#0||Not impressed|NULL|HOTEL#GENERAL|negative|0|0
+73718_4|73718_4#1||The desk person was in a rude mood.|desk person|SERVICE#GENERAL|negative|4|15
+73718_4|73718_4#2||There was construction being done on the street in front of the hotel; which made it very difficult driving around.|NULL|HOTEL#MISCELLANEOUS|negative|0|0
+73718_4|73718_4#3||The air conditioner was very loud.|air conditioner|ROOMS_AMENITIES#QUALITY|negative|4|19
+73718_4|73718_4#4||Nothing told us that there was a free breakfast - the restaurant looked like it was closed.|restaurant|FACILITIES#GENERAL|negative|54|64
+73718_4|73718_4#5||All in all the price was way too high for such a poor accomodations.|accomodations|HOTEL#GENERAL|negative|54|67
+73718_4|73718_4#5||All in all the price was way too high for such a poor accomodations.|accomodations|HOTEL#PRICES|negative|54|67
+73727_1|73727_1#0||Extremely reasonable for the price paid.|NULL|HOTEL#GENERAL|positive|0|0
+73727_1|73727_1#0||Extremely reasonable for the price paid.|NULL|HOTEL#PRICES|neutral|0|0
+73727_1|73727_1#1||Excellent service.|service|SERVICE#GENERAL|positive|10|17
+73727_1|73727_1#2||I was there 3 nights for a conference and am giving it 5 stars, as it was quite reasonably priced for what we received.|NULL|HOTEL#GENERAL|positive|0|0
+73727_1|73727_1#2||I was there 3 nights for a conference and am giving it 5 stars, as it was quite reasonably priced for what we received.|NULL|HOTEL#PRICES|positive|0|0
+73727_1|73727_1#3||The staff was friendly overall.|staff|SERVICE#GENERAL|positive|4|9
+73727_1|73727_1#5||Airport shuttle service was convenient as I chose not to rent a car during this trip.|Airport shuttle service|FACILITIES#COMFORT|positive|0|23
+73727_1|73727_1#6||No complaints about the room, pretty clean.|room|ROOMS#GENERAL|positive|24|28
+73727_1|73727_1#6||No complaints about the room, pretty clean.|room|ROOMS#CLEANLINESS|positive|24|28
+73727_1|73727_1#7||I went to the lunch buffet twice and had a nice meal and again at very reasonable price.|lunch buffet|FOOD_DRINKS#QUALITY|positive|14|26
+73727_1|73727_1#7||I went to the lunch buffet twice and had a nice meal and again at very reasonable price.|lunch buffet|FOOD_DRINKS#PRICES|positive|14|26
+73727_1|73727_1#8||There was a few restaurants within walking distance to eat at as well.|NULL|LOCATION#GENERAL|positive|0|0
+73727_1|73727_1#9||The conference/banquet room was great.|conference/banquet room|FACILITIES#GENERAL|positive|4|27
+73727_1|73727_1#10||Very accomodating, good acoustics, clean.|NULL|FACILITIES#GENERAL|positive|0|0
+73727_1|73727_1#10||Very accomodating, good acoustics, clean.|NULL|FACILITIES#QUALITY|positive|0|0
+73727_1|73727_1#10||Very accomodating, good acoustics, clean.|NULL|FACILITIES#CLEANLINESS|positive|0|0
+73727_1|73727_1#11||Not sure where the location was in reference to tourist spots, etc....but for a local conference, it was perfect.|location|LOCATION#GENERAL|positive|19|27
+73821_17|73821_17#0||Nice hotel, nice location for the valley|location|LOCATION#GENERAL|positive|17|25
+73821_17|73821_17#0||Nice hotel, nice location for the valley|hotel|HOTEL#GENERAL|positive|5|10
+73821_17|73821_17#3||I really liked the hotel, it was very clean, the staff were fantastic and the rooms were great.|hotel|HOTEL#GENERAL|positive|19|24
+73821_17|73821_17#3||I really liked the hotel, it was very clean, the staff were fantastic and the rooms were great.|hotel|HOTEL#CLEANLINESS|positive|19|24
+73821_17|73821_17#3||I really liked the hotel, it was very clean, the staff were fantastic and the rooms were great.|staff|SERVICE#GENERAL|positive|49|54
+73821_17|73821_17#3||I really liked the hotel, it was very clean, the staff were fantastic and the rooms were great.|rooms|ROOMS#GENERAL|positive|78|83
+73821_17|73821_17#4||I cant complain about this hotel stay.|hotel|HOTEL#GENERAL|positive|27|32
+73821_17|73821_17#5||the location is in the central valley so getting to anywhere is easy with the easy access to the local freeways.|location|LOCATION#GENERAL|positive|4|12
+73821_17|73821_17#6||the only drawback was that the pool area this time of year didnt seem to get much sun during the day, but the water is heated so it didnt matter too much.|pool area|FACILITIES#DESIGN_FEATURES|negative|31|40
+73821_17|73821_17#6||the only drawback was that the pool area this time of year didnt seem to get much sun during the day, but the water is heated so it didnt matter too much.|pool|FACILITIES#DESIGN_FEATURES|positive|31|35
+73821_17|73821_17#6||the only drawback was that the pool area this time of year didnt seem to get much sun during the day, but the water is heated so it didnt matter too much.|pool|FACILITIES#COMFORT|positive|31|35
+73821_17|73821_17#7||I would absolutely stay here again!!|NULL|HOTEL#GENERAL|positive|0|0
+73821_24|73821_24#1||I was pleasantly surprised.|NULL|HOTEL#GENERAL|positive|0|0
+73821_24|73821_24#3||I expected it to be a dingy motel, but to my surprise, the rooms were clean and even a little spacious.|rooms|ROOMS#CLEANLINESS|positive|59|64
+73821_24|73821_24#3||I expected it to be a dingy motel, but to my surprise, the rooms were clean and even a little spacious.|rooms|ROOMS#DESIGN_FEATURES|positive|59|64
+73821_24|73821_24#3||I expected it to be a dingy motel, but to my surprise, the rooms were clean and even a little spacious.|rooms|ROOMS#COMFORT|positive|59|64
+73821_24|73821_24#5||The continental breakfast was excellent.|continental breakfast|FOOD_DRINKS#QUALITY|positive|4|25
+73821_24|73821_24#6||If all you want is a clean place to stay without the frills, and especially if you're a business traveler, stay here.|place|HOTEL#CLEANLINESS|positive|27|32
+73821_24|73821_24#6||If all you want is a clean place to stay without the frills, and especially if you're a business traveler, stay here.|place|HOTEL#DESIGN_FEATURES|neutral|27|32
+73821_24|73821_24#6||If all you want is a clean place to stay without the frills, and especially if you're a business traveler, stay here.|place|HOTEL#MISCELLANEOUS|positive|27|32
+73821_24|73821_24#7||They seem to have businesspeople in mind.|NULL|HOTEL#MISCELLANEOUS|positive|0|0
+73739_3|73739_3#0||Loved this hotel overall|hotel|HOTEL#GENERAL|positive|11|16
+73739_3|73739_3#1||We loved this hotel.|hotel|HOTEL#GENERAL|positive|14|19
+73739_3|73739_3#3||It was close to the airport.|NULL|LOCATION#GENERAL|positive|0|0
+73739_3|73739_3#4||The hotel staff was very friendly, the rooms were very clean, both times.|hotel staff|SERVICE#GENERAL|positive|4|15
+73739_3|73739_3#4||The hotel staff was very friendly, the rooms were very clean, both times.|rooms|ROOMS#CLEANLINESS|positive|39|44
+73739_3|73739_3#5||The rooms were quiet.|rooms|ROOMS#COMFORT|positive|4|9
+73739_3|73739_3#6||The pool was great and quiet both times, loved the lighted palm trees at night.|pool|FACILITIES#GENERAL|positive|4|8
+73739_3|73739_3#6||The pool was great and quiet both times, loved the lighted palm trees at night.|pool|FACILITIES#COMFORT|positive|4|8
+73739_3|73739_3#6||The pool was great and quiet both times, loved the lighted palm trees at night.|pool|FACILITIES#DESIGN_FEATURES|positive|4|8
+73739_3|73739_3#7||The breakfast buffet was unbelievable, everything you could imagine and a wonderful lady taking care of it.|breakfast buffet|FOOD_DRINKS#STYLE_OPTIONS|positive|4|20
+73739_3|73739_3#7||The breakfast buffet was unbelievable, everything you could imagine and a wonderful lady taking care of it.|lady|SERVICE#GENERAL|positive|84|88
+73739_3|73739_3#9||Awesome suite, 2 bathrooms, sinks and showers seperated by french doors.|suite|ROOMS#GENERAL|positive|8|13
+73739_3|73739_3#9||Awesome suite, 2 bathrooms, sinks and showers seperated by french doors.|suite|ROOMS#DESIGN_FEATURES|positive|8|13
+73739_3|73739_3#10||Also 2 flat sceen tvs and lots of space in each room.|room|ROOMS#DESIGN_FEATURES|positive|48|52
+73739_3|73739_3#11||The only complaint I had is that our suite smelled like smoke and it was a non smoking suite.|suite|ROOMS#MISCELLANEOUS|negative|37|42
+73739_3|73739_3#12||We turned on both air conditioners to get rid of the smell and it wouldn't go away.|NULL|ROOMS#MISCELLANEOUS|negative|0|0
+73739_3|73739_3#13||I would highly recommend the hotel, great location, great service, good value.|location|LOCATION#GENERAL|positive|42|50
+73739_3|73739_3#13||I would highly recommend the hotel, great location, great service, good value.|service|SERVICE#GENERAL|positive|58|65
+73739_3|73739_3#13||I would highly recommend the hotel, great location, great service, good value.|hotel|HOTEL#GENERAL|positive|29|34
+73739_3|73739_3#13||I would highly recommend the hotel, great location, great service, good value.|hotel|HOTEL#PRICES|positive|29|34
+73718_9|73718_9#0||Convienient Comfortable business travel Hotel|Hotel|HOTEL#COMFORT|positive|40|45
+73718_9|73718_9#0||Convienient Comfortable business travel Hotel|Hotel|HOTEL#MISCELLANEOUS|positive|40|45
+73718_9|73718_9#1||This was my third stay in two months and I have noticed a continuing trend of upgrades and service.|NULL|HOTEL#GENERAL|positive|0|0
+73718_9|73718_9#1||This was my third stay in two months and I have noticed a continuing trend of upgrades and service.|service|SERVICE#GENERAL|positive|91|98
+73718_9|73718_9#2||Understand the property is under new management and it really shows.|property|HOTEL#MISCELLANEOUS|positive|15|23
+73718_9|73718_9#5||Recommend this highly for the seasoned Pheonix road warrior or warriorette.|NULL|HOTEL#GENERAL|positive|0|0
+73727_12|73727_12#0||Clean, decent hotel|hotel|HOTEL#CLEANLINESS|positive|14|19
+73727_12|73727_12#0||Clean, decent hotel|hotel|HOTEL#GENERAL|neutral|14|19
+73727_12|73727_12#2||The hotel was clean, rooms were large and comfortable, nothing fancy.|hotel|HOTEL#CLEANLINESS|positive|4|9
+73727_12|73727_12#2||The hotel was clean, rooms were large and comfortable, nothing fancy.|rooms|ROOMS#DESIGN_FEATURES|positive|21|26
+73727_12|73727_12#2||The hotel was clean, rooms were large and comfortable, nothing fancy.|rooms|ROOMS#COMFORT|positive|21|26
+73727_12|73727_12#3||No noise, though hotel was half empty I'm extremely sensitive to noise at hotels and was not disturbed both evenings or in the mornings.|hotel|HOTEL#COMFORT|positive|17|22
+73727_12|73727_12#4||Is an older building but appeared to be well maintained.|building|HOTEL#QUALITY|positive|12|20
+73727_12|73727_12#5||Interior corridors clean and well lit.|Interior corridors|HOTEL#CLEANLINESS|positive|0|18
+73727_12|73727_12#5||Interior corridors clean and well lit.|Interior corridors|HOTEL#DESIGN_FEATURES|positive|0|18
+73727_12|73727_12#6||Exterior grounds well kept.|Exterior grounds|HOTEL#QUALITY|positive|0|16
+73727_12|73727_12#7||Has elevators on both sides of the building.|building|HOTEL#DESIGN_FEATURES|positive|35|43
+73727_12|73727_12#8||Has a nice pool and very hot jaquizzi , was clean.|pool|FACILITIES#GENERAL|positive|11|15
+73727_12|73727_12#8||Has a nice pool and very hot jaquizzi , was clean.|jaquizzi|FACILITIES#DESIGN_FEATURES|positive|29|37
+73727_12|73727_12#8||Has a nice pool and very hot jaquizzi , was clean.|NULL|HOTEL#CLEANLINESS|positive|0|0
+73727_12|73727_12#9||The pool was well heated so swimming was possible in the winter climate, even at night.|pool|FACILITIES#DESIGN_FEATURES|positive|4|8
+73727_12|73727_12#9||The pool was well heated so swimming was possible in the winter climate, even at night.|pool|FACILITIES#COMFORT|positive|4|8
+73727_12|73727_12#10||Hotel provides free pass to Golds Gym, a five minute walk from front door.|Hotel|HOTEL#MISCELLANEOUS|positive|0|5
+73727_12|73727_12#11||Staff was freindly and professional for the most part.|Staff|SERVICE#GENERAL|positive|0|5
+73727_12|73727_12#12||Has good airport shuttle, ten minutes unless heavy traffic, then at worst 20 minutes.|airport shuttle|FACILITIES#GENERAL|positive|9|24
+73727_12|73727_12#13||Its convienently located in southeast phoenix, right next to Tempe.|NULL|LOCATION#GENERAL|positive|0|0
+73727_12|73727_12#14||Nice neghborhood, safe.|neghborhood|LOCATION#GENERAL|positive|5|16
+73727_12|73727_12#15||Would stay again.|NULL|HOTEL#GENERAL|positive|0|0
+73727_12|73727_12#16||Good conference facilities too, set up well.|conference facilities|FACILITIES#GENERAL|positive|5|26
+73727_16|73727_16#0||"best" Best Western|Best Western|HOTEL#GENERAL|positive|7|19
+73727_16|73727_16#1||This hotel is the best Best Western I have stayed in.|Best Western|HOTEL#GENERAL|positive|23|35
+73727_16|73727_16#2||Not especially attractive outside or surrounding area but convenient location and walk to small strip malls c eateries.|outside|HOTEL#DESIGN_FEATURES|negative|26|33
+73727_16|73727_16#2||Not especially attractive outside or surrounding area but convenient location and walk to small strip malls c eateries.|surrounding area|LOCATION#GENERAL|negative|37|53
+73727_16|73727_16#2||Not especially attractive outside or surrounding area but convenient location and walk to small strip malls c eateries.|location|LOCATION#GENERAL|positive|69|77
+73727_16|73727_16#3||Inside hotel is cool and southwestern.|hotel|HOTEL#GENERAL|positive|7|12
+73727_16|73727_16#3||Inside hotel is cool and southwestern.|hotel|HOTEL#DESIGN_FEATURES|neutral|7|12
+73727_16|73727_16#4||Hotel desk staff was friendly.|Hotel desk staff|SERVICE#GENERAL|positive|0|16
+73727_16|73727_16#5||There is a complimentary shuttle that goes anywhere in 5 mi area, including airport, and runs early am until about 10 pm.|shuttle|FACILITIES#PRICES|positive|25|32
+73727_16|73727_16#5||There is a complimentary shuttle that goes anywhere in 5 mi area, including airport, and runs early am until about 10 pm.|shuttle|FACILITIES#MISCELLANEOUS|positive|25|32
+73727_16|73727_16#6||Free high speed internet.|internet|FACILITIES#QUALITY|positive|16|24
+73727_16|73727_16#6||Free high speed internet.|internet|FACILITIES#PRICES|positive|16|24
+73727_16|73727_16#7||Very comfortable room.|room|ROOMS#COMFORT|positive|17|21
+73727_16|73727_16#8||Pool area clean but not very attractive.|Pool area|FACILITIES#CLEANLINESS|positive|0|9
+73727_16|73727_16#8||Pool area clean but not very attractive.|Pool area|FACILITIES#DESIGN_FEATURES|negative|0|9
+73727_16|73727_16#9||Two dificulties I had were: One, the restaurant service was terrible!|restaurant service|SERVICE#GENERAL|negative|37|55
+73727_16|73727_16#10||It opens at 6 am which was great for the sightseeing tours and my breakfasts were all free, but once had to finally open the kitchen door and ask to be seated.|NULL|FACILITIES#MISCELLANEOUS|positive|0|0
+73727_16|73727_16#10||It opens at 6 am which was great for the sightseeing tours and my breakfasts were all free, but once had to finally open the kitchen door and ask to be seated.|breakfasts|FOOD_DRINKS#PRICES|positive|66|76
+73727_16|73727_16#10||It opens at 6 am which was great for the sightseeing tours and my breakfasts were all free, but once had to finally open the kitchen door and ask to be seated.|NULL|SERVICE#GENERAL|negative|0|0
+73727_16|73727_16#11||Then wait to give order, then wait for the food.|NULL|SERVICE#GENERAL|negative|0|0
+73727_16|73727_16#12||The food selection was pretty good.|food selection|FOOD_DRINKS#STYLE_OPTIONS|positive|4|18
+73727_16|73727_16#13||One time the employee stopped to pick up dirty plates as he led me to my seat!|employee|SERVICE#GENERAL|negative|13|21
+73727_16|73727_16#14||The other problem was the hotel manager - a young woman apparently somewhat new at her job.|hotel manager|SERVICE#GENERAL|negative|26|39
+73727_16|73727_16#15||She tried to refuse my gold crown club points as payment for my stay.|NULL|SERVICE#GENERAL|negative|0|0
+73727_16|73727_16#16||When I was persistent, she made a phone call and I heard her say well, i never heard of that.|NULL|SERVICE#GENERAL|negative|0|0
+73727_16|73727_16#18||I would definitely stay here again when in the Phoenix area!|NULL|HOTEL#GENERAL|positive|0|0
+73739_12|73739_12#0||Good motel, Poor location|motel|HOTEL#GENERAL|positive|5|10
+73739_12|73739_12#0||Good motel, Poor location|location|LOCATION#GENERAL|negative|17|25
+73739_12|73739_12#2||My overall sense is that this was a good motel, comparatively inexpensive.|motel|HOTEL#GENERAL|positive|41|46
+73739_12|73739_12#2||My overall sense is that this was a good motel, comparatively inexpensive.|motel|HOTEL#PRICES|positive|41|46
+73739_12|73739_12#4||- Comparatively inexpensive|NULL|HOTEL#PRICES|positive|0|0
+73739_12|73739_12#5||- Microwave, refrigerator, coffee maker in room|room|ROOMS#DESIGN_FEATURES|positive|43|47
+73739_12|73739_12#6||- Decent (but repetitive) breakfast included in price (wafles, scrambled eggs, cereal, etc.)|breakfast|FOOD_DRINKS#QUALITY|neutral|26|35
+73739_12|73739_12#6||- Decent (but repetitive) breakfast included in price (wafles, scrambled eggs, cereal, etc.)|breakfast|FOOD_DRINKS#STYLE_OPTIONS|negative|26|35
+73739_12|73739_12#6||- Decent (but repetitive) breakfast included in price (wafles, scrambled eggs, cereal, etc.)|breakfast|FOOD_DRINKS#PRICES|positive|26|35
+73739_12|73739_12#7||- Free internet access (including printing) from lobby|internet access|FACILITIES#PRICES|positive|7|22
+73739_12|73739_12#7||- Free internet access (including printing) from lobby|printing|FACILITIES#PRICES|positive|34|42
+73739_12|73739_12#8||- Nice staff|staff|SERVICE#GENERAL|positive|7|12
+73739_12|73739_12#10||- Average room size.|room|ROOMS#DESIGN_FEATURES|neutral|10|14
+73739_12|73739_12#11||- Very limited space to hang clothes|space|ROOMS#DESIGN_FEATURES|negative|15|20
+73739_12|73739_12#12||My biggest problem was the location.|location|LOCATION#GENERAL|negative|27|35
+73739_12|73739_12#13||It was far away from all the sites I wanted to see.|NULL|LOCATION#GENERAL|negative|0|0
+73821_13|73821_13#0||Great airport location|location|LOCATION#GENERAL|positive|14|22
+73821_13|73821_13#2||It was very quiet considering being so close to the airport.|NULL|HOTEL#COMFORT|positive|0|0
+73821_13|73821_13#3||Very clean and comfortable room, helpful and friendly staff.|room|ROOMS#CLEANLINESS|positive|27|31
+73821_13|73821_13#3||Very clean and comfortable room, helpful and friendly staff.|room|ROOMS#COMFORT|positive|27|31
+73821_13|73821_13#3||Very clean and comfortable room, helpful and friendly staff.|staff|SERVICE#GENERAL|positive|54|59
+73821_13|73821_13#4||The food in the Bar and Grille was just ok.|food|FOOD_DRINKS#QUALITY|neutral|4|8
+73821_13|73821_13#5||There is a charge for internet access in the room but it works great.|internet access|ROOMS_AMENITIES#PRICES|negative|22|37
+73821_13|73821_13#5||There is a charge for internet access in the room but it works great.|internet access|ROOMS_AMENITIES#QUALITY|positive|22|37
+73821_13|73821_13#6||You can print boarding passes at a kiosk near the front desk but it can be busy first thing in the morning so you might want to do it the day before.|kiosk|FACILITIES#MISCELLANEOUS|neutral|35|40
+73821_13|73821_13#7||I left on the 7:00am shuttle and the ride to the airport was quick and hassle-free.|shuttle|FACILITIES#GENERAL|positive|21|28
+73821_14|73821_14#0||Excellent!|NULL|HOTEL#GENERAL|positive|0|0
+73821_14|73821_14#1||Wow! What a great hotel!|hotel|HOTEL#GENERAL|positive|18|23
+73821_14|73821_14#2||Rooms were clean, easy accessible.|Rooms|ROOMS#CLEANLINESS|positive|0|5
+73821_14|73821_14#2||Rooms were clean, easy accessible.|Rooms|ROOMS#COMFORT|positive|0|5
+73821_14|73821_14#3||Beds were so comfortable!|Beds|ROOMS#COMFORT|positive|0|4
+73821_14|73821_14#4||Staff was friendly.|Staff|SERVICE#GENERAL|positive|0|5
+73821_14|73821_14#5||Pool was heated, had a great atmosphere with unlimited bottled water available while swimming/laying out.|Pool|FACILITIES#DESIGN_FEATURES|positive|0|4
+73821_14|73821_14#6||Offered food and drink service at the pool.|pool|FACILITIES#DESIGN_FEATURES|positive|38|42
+73821_14|73821_14#7||Room service was great!|Room service|SERVICE#GENERAL|positive|0|12
+73821_14|73821_14#8||Prompt delivery and wonderful food.|food|FOOD_DRINKS#QUALITY|positive|30|34
+73821_14|73821_14#8||Prompt delivery and wonderful food.|delivery|SERVICE#GENERAL|positive|7|15
+73821_14|73821_14#9||I had the southwestern ceasar - it was one of the best salads I've ever had!|southwestern ceasar|FOOD_DRINKS#QUALITY|positive|10|29
+73821_14|73821_14#10||I was very impressed and would come back to the HIlton Phoenix Airport again!|HIlton Phoenix Airport|HOTEL#GENERAL|positive|48|70
+73718_23|73718_23#0||DO NOT STAY HERE|NULL|HOTEL#GENERAL|negative|0|0
+73718_23|73718_23#4||All 4 lower rooms were 80 degrees and above.|rooms|ROOMS#COMFORT|negative|12|17
+73718_23|73718_23#6||After the concert we had to change 4 of the rooms twice trying to find cooler floors.|rooms|ROOMS#COMFORT|negative|44|49
+73718_23|73718_23#7||We finally gave up at 12:30 a.m. with a room that was 77 degrees - still too warm.|room|ROOMS#COMFORT|negative|40|44
+73718_23|73718_23#8||And the room did not even have a shower curtain!|room|ROOMS#DESIGN_FEATURES|negative|8|12
+73718_23|73718_23#9||I understand they are going through renovations, but they need to either do it floor by floor and close that floor or close the entire hotel until finished.|hotel|HOTEL#MISCELLANEOUS|negative|135|140
+73718_23|73718_23#10||The only nice thing was the free shuttle to America West Arena.|shuttle|FACILITIES#PRICES|positive|33|40
+73718_23|73718_23#10||The only nice thing was the free shuttle to America West Arena.|NULL|HOTEL#GENERAL|negative|0|0
+73718_16|73718_16#0||Very disappointing|NULL|HOTEL#GENERAL|negative|0|0
+73718_16|73718_16#1||Lots of services promised and not provided.|services|FACILITIES#GENERAL|negative|8|16
+73718_16|73718_16#2||The shuttle wasn't running, and the restaurant was closed down - both of those explained to me with because business is low right now around the holidays.|shuttle|FACILITIES#GENERAL|negative|4|11
+73718_16|73718_16#2||The shuttle wasn't running, and the restaurant was closed down - both of those explained to me with because business is low right now around the holidays.|restaurant|FACILITIES#GENERAL|negative|36|46
+73718_16|73718_16#4||The business center has been taken apart - the front desk staff did not know if it was going to be back, since they had no idea it had been taken apart and were quite shocked to find out, when they tried to let me in to use it.|business center|FACILITIES#GENERAL|negative|4|19
+73718_16|73718_16#4||The business center has been taken apart - the front desk staff did not know if it was going to be back, since they had no idea it had been taken apart and were quite shocked to find out, when they tried to let me in to use it.|front desk staff|SERVICE#GENERAL|negative|47|63
+73718_16|73718_16#5||Vending machines were out of everything except in the lobby.|Vending machines|FACILITIES#GENERAL|negative|0|16
+73718_16|73718_16#6||Staff was very friendly and a bit embarrassed about everything that wasn't available.|Staff|SERVICE#GENERAL|positive|0|5
+73718_16|73718_16#7||The room itself was fine.|room|ROOMS#GENERAL|positive|4|8
+73727_6|73727_6#0||Pay extra and stay somewhere else|NULL|HOTEL#GENERAL|negative|0|0
+73727_6|73727_6#1||This has to be the worst hotel I have ever stayed in!|hotel|HOTEL#GENERAL|negative|25|30
+73727_6|73727_6#3||Their was no HOT WATER!|NULL|ROOMS#COMFORT|negative|0|0
+73727_6|73727_6#4||The beds are very hard.|beds|ROOMS#COMFORT|negative|4|8
+73727_6|73727_6#5||The staff was friendly.|staff|SERVICE#GENERAL|positive|4|9
+73727_6|73727_6#6||No wifi only in the hotel lobby.|NULL|ROOMS#DESIGN_FEATURES|negative|20|31
+73727_6|73727_6#7||If you get a suite with a stove dont except dishes, pots and pans they do not provide them you have to buy your own.|suite|ROOMS#DESIGN_FEATURES|negative|13|18
+73727_6|73727_6#8||Pay the 20 extra and stay somewhere's else|NULL|HOTEL#GENERAL|negative|0|0
+73718_19|73718_19#0||Great hotel, great location, great price|hotel|HOTEL#GENERAL|positive|6|11
+73718_19|73718_19#0||Great hotel, great location, great price|location|LOCATION#GENERAL|positive|19|27
+73718_19|73718_19#0||Great hotel, great location, great price|hotel|HOTEL#PRICES|positive|6|11
+73718_19|73718_19#1||I had a great time at this hotel and did not experience any of what the bad reviews are about.|hotel|HOTEL#GENERAL|positive|27|32
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|staff|SERVICE#GENERAL|positive|4|9
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|rooms|ROOMS#DESIGN_FEATURES|positive|45|50
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|rooms|ROOMS#COMFORT|positive|45|50
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|breakfast|FOOD_DRINKS#PRICES|positive|88|97
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|breakfast|FOOD_DRINKS#QUALITY|positive|88|97
+73718_19|73718_19#2||The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.|location|LOCATION#GENERAL|positive|117|125
+73718_19|73718_19#4||I would highly recommend this hotel to anyone wanting to stay in downtown Phoenix.|hotel|HOTEL#GENERAL|positive|30|35
