@@ -10,27 +10,36 @@ import java.io.IOException;
  */
 public class calculateAccuracy {
     public static void main(String[] args) throws IOException {
-        final String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment";
+        String rootDirectory= System.getProperty("user.dir");
+        /*File file = new File("rootDir.txt");
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        String line;
+        while((line = reader.readLine())!=null)
+        {
+            rootDirectory = line;
+            System.out.println("Root Directory is: "+rootDirectory);
+        }*/
+
         File file1 = new File(rootDirectory + "\\dataset\\testLabels.txt");
         BufferedReader reader1 = new BufferedReader(new FileReader(file1));
 
-        File file2 = new File(rootDirectory + "\\dataset\\predictedRestaurantsLabels.txt");
+        File file2 = new File(rootDirectory + "\\dataset\\predictedLabels.txt");
         BufferedReader reader2 = new BufferedReader(new FileReader(file2));
 
         String line;
-        int count = 0, num = 0;
+        int count = 0;
+        double num = 0;
         while ((line = reader1.readLine()) != null) {
             num++;
 
             if (Double.parseDouble(line) == Double.parseDouble(reader2.readLine())) {
                 count++;
                 //System.out.println(num);
-            }
-            else
-            {
-                System.out.println(num);
+            } else {
+                //System.out.println(num);
             }
         }
-        System.out.println(count);
+        System.out.println("Number of correct predictions is: "+count);
+        System.out.println("Accuracy is: "+count/num);
     }
 }

@@ -68,22 +68,19 @@ class GenerateTestFeatureH {
     }
 }*/
 
-class ClassifierHelperH
-{
+class ClassifierHelperH {
     List<LinkedHashMap<Integer, Double>> featureList = new ArrayList<LinkedHashMap<Integer, Double>>();
     //static List<LinkedHashMap<Integer, Double>> testFeatureList = new ArrayList<LinkedHashMap<Integer, Double>>();
 
-    ClassifierHelperH(String dataset)throws IOException
-    {
+    ClassifierHelperH(String dataset) throws IOException {
         //String trainingSet = "\\dataset\\Train_Restaurants_Contextual_Cleansed.txt";
         //String testSet = "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt";
         BufferedReader readerTrain = new BufferedReader(new FileReader(new File(dataset)));
         //BufferedReader readerTest = new BufferedReader(new FileReader(new File(testSet)));
 
         String line;
-        int count=0;
-        while((line = readerTrain.readLine()) != null)
-        {
+        int count = 0;
+        while ((line = readerTrain.readLine()) != null) {
             count++;
         }
 
@@ -107,7 +104,7 @@ class ClassifierHelperH
     public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
         //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
         System.out.println("start: " + start + ": ");
-        System.out.println("$$$$$$$$$$$$$$$$$"+featureList.size());
+        System.out.println("$$$$$$$$$$$$$$$$$" + featureList.size());
         //System.out.println(hMap.size());
         for (int i = 0; i < hMap.size(); i++) {
             //System.out.println();
@@ -128,7 +125,7 @@ class ClassifierHelperH
 
 public class SentimentClassifierH {
     //static int start=0;
-    final static String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment";
+    final static String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\english";
 
     public static void main(String[] args) throws IOException {
 
@@ -145,7 +142,6 @@ public class SentimentClassifierH {
         List<LinkedHashMap<Integer, Double>> testFeature;
         /*GenerateTestFeatureH testObject = new GenerateTestFeatureH();
         List<LinkedHashMap<Integer, Double>> testFeature;*/
-
 
 
         //POS FEATURE
@@ -348,7 +344,7 @@ public class SentimentClassifierH {
         }*/
 
 
-        System.out.println("Hello sentiment!");
+        System.out.println("Hello aspectCategorization!");
 
         // Create features
 

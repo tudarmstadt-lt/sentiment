@@ -11,7 +11,8 @@ import java.util.*;
  */
 public class SendHTTPRequest {
     public static void main(String[] args) throws Exception {
-        File fR = new File("D:\\Course\\Semester VII\\Internship\\Results\\Maggie TUD\\sentimentWordsIL.txt");
+        String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\indian";
+        File fR = new File(rootDirectory+"\\resources\\sentimentSeedWordsHindi.txt");
         //PrintWriter writer = new PrintWriter("D:\\Course\\Semester VII\\Internship\\Results\\Maggie TUD\\sentimentJavaWords.txt");
         BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(fR), "UTF-8"));
 
@@ -28,12 +29,16 @@ public class SendHTTPRequest {
             BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream(), "UTF-8"));
             String inputLine;
             Writer writer = new OutputStreamWriter(
-                    new FileOutputStream("D:\\Course\\Semester VII\\Internship\\Results\\Maggie TUD\\HTTPResults\\"+count+".txt"), "UTF-8");
+                    new FileOutputStream(rootDirectory+"\\resources\\DTExpansion\\HTTPResults\\"+count+".txt"), "UTF-8");
             BufferedWriter fout = new BufferedWriter(writer);
             while ((inputLine = in.readLine()) != null)
             {
                 //System.out.println(inputLine);
-                fout.write(inputLine+"\n");
+                String words[] = inputLine.split("\\t");
+                if(words.length>=2)
+                {
+                    fout.write(words[0]+"\t"+words[1]+"\n");
+                }
             }
             count++;
             fout.close();

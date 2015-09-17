@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class AFINNLexicon {
     List<LinkedHashMap<Integer, Double>> trainingFeature;
     List<LinkedHashMap<Integer, Double>> testFeature;
     LinkedHashMap<String, Double> scoreMap;
-    //LinkedHashMap<String, Double> sentiment;
+    //LinkedHashMap<String, Double> aspectCategorization;
     String rootDirectory;
 
     AFINNLexicon(String rootDirectory) throws IOException {
@@ -23,14 +22,14 @@ public class AFINNLexicon {
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         scoreMap = new LinkedHashMap<String, Double>();
-        //sentiment = new LinkedHashMap<String, Double>();
+        //aspectCategorization = new LinkedHashMap<String, Double>();
         String line;
         BufferedReader reader = new BufferedReader(new FileReader(new File(rootDirectory + "\\resources\\AFINNLexicon\\afinn.txt")));
         while ((line = reader.readLine()) != null) {
             //System.out.println(line);
             String tokens[] = line.split("\\t");
             scoreMap.put(tokens[0], Double.parseDouble(tokens[1]));
-            //sentiment.put(tokens[0], Double.parseDouble(tokens[2]));
+            //aspectCategorization.put(tokens[0], Double.parseDouble(tokens[2]));
         }
 
         trainingFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Train.txt");
@@ -50,12 +49,12 @@ public class AFINNLexicon {
         //List<HashMap<Integer, Double>> trainingFeature = new ArrayList<HashMap<Integer, Double>>();
         while ((line = reader.readLine()) != null) {
             String[] str = line.split(" ");
-            double pos=0.0, neg=0.0;
-            double totalScore=0;
-            double max=0;
+            double pos = 0.0, neg = 0.0;
+            double totalScore = 0;
+            double max = 0;
             for (int i = 0; i < str.length; i++) {
                 if (scoreMap.get(str[i]) != null) {
-                    double currScore= scoreMap.get(str[i]);
+                    double currScore = scoreMap.get(str[i]);
                     //double currEmotion = emotion.get(str[i]);
 
                     if (currScore > 0) {
@@ -63,9 +62,8 @@ public class AFINNLexicon {
                     } else if (currScore < 0) {
                         neg++;
                     }
-                    if(max<pos)
-                    {
-                        max=pos;
+                    if (max < pos) {
+                        max = pos;
                     }
                     totalScore += currScore;
                     //totalEmotion += currEmotion;
@@ -102,9 +100,8 @@ public class AFINNLexicon {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] args)throws IOException
-    {
-        AFINNLexicon ef = new AFINNLexicon("D:\\Course\\Semester VII\\Internship\\sentiment");
+    public static void main(String[] args) throws IOException {
+        AFINNLexicon ef = new AFINNLexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 
 

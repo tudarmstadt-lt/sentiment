@@ -61,8 +61,7 @@ public class NRCHashtag {
                             neg++;
                         }
                         totalScore += currScore;
-                        if(max<currScore)
-                        {
+                        if (max < currScore) {
                             max = currScore;
                         }
                         //System.out.println(count);

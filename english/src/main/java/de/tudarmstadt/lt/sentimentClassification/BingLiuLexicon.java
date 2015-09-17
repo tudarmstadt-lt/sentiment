@@ -107,6 +107,6 @@ public class BingLiuLexicon {
     }
 
     public static void main(String[] args) throws IOException {
-        BingLiuLexicon ob = new BingLiuLexicon("D:\\Course\\Semester VII\\Internship\\sentiment");
+        BingLiuLexicon ob = new BingLiuLexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 }

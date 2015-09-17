@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/datasetConstruction.iml" filepath="$PROJECT_DIR$/datasetConstruction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataSetConstruction.iml" filepath="$PROJECT_DIR$/dataSetConstruction.iml" />
     </modules>
   </component>
 </project>

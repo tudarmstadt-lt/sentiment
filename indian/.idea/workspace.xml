@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83498415-9979-4a04-bfd6-eeaee95cf955" name="Default" comment="" />
-    <ignored path="IndianSentiment.iws" />
+    <list default="true" id="5e868b05-55d2-4539-b68a-34025dafd5be" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ABSALaptopsPair.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train1.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train2.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train3.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\ngram_Train4.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Course\Semester VII\Internship\sentiment\english\dataset\weight.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierLaptops.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAClassifierRestaurants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityLaptops.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/ABSAPolarityRestaurants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/CalculateFScore.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/CalculateFScore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateLaptopsPredictedXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/aspectCategorization/CreateRestaurantsPredictedXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsBengali.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsHindi.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsHotels.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsLaptops.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/PolarityLabelsRestaurants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierBengali.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierBengali.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/SentimentClassifierR.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java" afterPath="$PROJECT_DIR$/../english/src/main/java/de/tudarmstadt/lt/sentimentClassification/calculateAccuracy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sentimentClassifier/calculateAccuracy.java" afterPath="$PROJECT_DIR$/src/main/java/sentimentClassifier/calculateAccuracy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/model" afterPath="$PROJECT_DIR$/../english/model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model" afterPath="$PROJECT_DIR$/model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/raw_POS_Test.txt" afterPath="$PROJECT_DIR$/../english/dataset/raw_POS_Test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/raw_POS_Train.txt" afterPath="$PROJECT_DIR$/../english/dataset/raw_POS_Train.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/testLabels.txt" afterPath="$PROJECT_DIR$/../english/dataset/testLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/tokenized_Test.txt" afterPath="$PROJECT_DIR$/../english/dataset/tokenized_Test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/tokenized_Train.txt" afterPath="$PROJECT_DIR$/../english/dataset/tokenized_Train.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/dataset/trainingLabels.txt" afterPath="$PROJECT_DIR$/../english/dataset/trainingLabels.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../english/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../english/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="indian.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,51 +55,65 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="IndianSentiment" />
+    <favorites_list name="indian" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SentimentClassifier.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29504505">
-              <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#GenerateTestFeature#0" expanded="false" />
-                <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PolarityLabels.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabels.java">
+      <file leaf-file-name="SentimentClassifierHindi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+              <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ngram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
+      <file leaf-file-name="PolarityLabelsBengali.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsBengali.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
-              <folding>
-                <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-              </folding>
+              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="POS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java">
+      <file leaf-file-name="calculateAccuracy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/calculateAccuracy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PolarityLabelsHindi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsHindi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentimentClassifierBengali.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierBengali.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculateFScore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/CalculateFScore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -71,12 +121,8 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -87,14 +133,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsHindi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierBengali.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/CalculateFScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsBengali.java" />
         <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/calculateAccuracy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateCleansedSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateHindiDataset.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java" />
       </list>
     </option>
   </component>
@@ -116,10 +160,10 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
+    <option name="width" value="1313" />
     <option name="height" value="784" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -142,31 +186,32 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -184,37 +229,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentimentClassifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -233,18 +252,44 @@
               <option name="myItemId" value="sentimentClassifier" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SentimentClassifier.java" />
+              <option name="myItemId" value="indian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="indian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentimentClassifier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentClassifierHindi.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IndianSentiment" />
+              <option name="myItemId" value="indian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -260,38 +305,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="datasetConstruction" />
+              <option name="myItemId" value="sentimentClassifier" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SentimentClassifierBengali.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="sentimentClassifier" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.calculateAccuracy">
-    <configuration default="false" name="SentimentClassifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.CalculateFScore">
+    <configuration default="false" name="PolarityLabelsHindi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="sentimentClassifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.SentimentClassifier" />
+      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.PolarityLabelsHindi" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -300,18 +346,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IndianSentiment" />
+      <module name="mike" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="calculateAccuracy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SentimentClassifierHindi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="sentimentClassifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.calculateAccuracy" />
+      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.SentimentClassifierHindi" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,18 +366,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IndianSentiment" />
+      <module name="mike" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="POS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CalculateFScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="sentimentClassifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.POS" />
+      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.CalculateFScore" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -340,47 +386,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IndianSentiment" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="GenerateHindiDataset" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="datasetConstruction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="datasetConstruction.GenerateHindiDataset" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IndianSentiment" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="PolarityLabels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sentimentClassifier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sentimentClassifier.PolarityLabels" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="IndianSentiment" />
+      <module name="mike" />
       <envs />
       <method />
     </configuration>
@@ -531,20 +537,16 @@
       <listeners />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SentimentClassifier" />
-      <item index="1" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
-      <item index="2" class="java.lang.String" itemvalue="Application.POS" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GenerateHindiDataset" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PolarityLabels" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.PolarityLabelsHindi" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassifierHindi" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CalculateFScore" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.calculateAccuracy" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassifier" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PolarityLabels" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GenerateHindiDataset" />
-        <item index="4" class="java.lang.String" itemvalue="Application.POS" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.CalculateFScore" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SentimentClassifierHindi" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PolarityLabelsHindi" />
       </list>
     </recent_temporary>
   </component>
@@ -554,29 +556,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83498415-9979-4a04-bfd6-eeaee95cf955" name="Default" comment="" />
-      <created>1437264011624</created>
+      <changelist id="5e868b05-55d2-4539-b68a-34025dafd5be" name="Default" comment="" />
+      <created>1438182151693</created>
       <option name="number" value="Default" />
-      <updated>1437264011624</updated>
+      <updated>1438182151693</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1313" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37925926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30074075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25134927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -602,9 +604,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -612,105 +612,61 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNetHindi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTExpansion/GetCOOCPolarityHindiTwitter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GenerateTestFeature#0" expanded="false" />
-            <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNetHindi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-          <folding>
-            <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateCleansedSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTExpansion/GetCOOCPolarityHindiTwitter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GenerateTestFeature#0" expanded="false" />
-            <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-          <folding>
-            <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateCleansedSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GenerateTestFeature#0" expanded="false" />
-            <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="109" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="109" />
-          <folding>
-            <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNetHindi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -718,107 +674,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="170" column="53" selection-start-line="170" selection-start-column="53" selection-end-line="170" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GenerateTestFeature#0" expanded="false" />
-            <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
+    <entry file="file://$PROJECT_DIR$/IndianSentiment.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89335394">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNetHindi.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTExpansion/GetCOOCPolarityHindiTwitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsHindi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierBengali.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/CalculateFScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifierHindi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabelsBengali.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/calculateAccuracy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DTExpansion/SendHTTPRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18392581">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentiWordNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3294117">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateCleansedSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6321484">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/datasetConstruction/GenerateHindiDataset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/POS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/PolarityLabels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/Ngram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
-          <folding>
-            <element signature="method#sortHashMapByValuesD#0;class#Ngram#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sentimentClassifier/SentimentClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29504505">
-          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#GenerateTestFeature#0" expanded="false" />
-            <element signature="method#sortHashMapByValuesD#0;class#SentimentClassifier#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

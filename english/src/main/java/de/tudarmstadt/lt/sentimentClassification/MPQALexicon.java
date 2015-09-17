@@ -16,18 +16,18 @@ public class MPQALexicon {
     List<LinkedHashMap<Integer, Double>> testFeature;
     String rootDirectory;
 
-    MPQALexicon(String rootDirectory)throws IOException {
+    MPQALexicon(String rootDirectory) throws IOException {
         this.rootDirectory = rootDirectory;
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
 
-        trainingFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Train.txt");
+        trainingFeature = generateFeature(rootDirectory + "\\dataset\\dataset_sentimentClassification\\tokenized_Train.txt");
         System.out.println();
-        testFeature = generateFeature(rootDirectory + "\\dataset\\tokenized_Test.txt");
+        testFeature = generateFeature(rootDirectory + "\\dataset\\dataset_sentimentClassification\\tokenized_Test.txt");
 
     }
 
-    private List<LinkedHashMap<Integer, Double>> generateFeature(String fileName)throws IOException {
+    private List<LinkedHashMap<Integer, Double>> generateFeature(String fileName) throws IOException {
         File file = new File(fileName);
         BufferedReader reader = new BufferedReader(new FileReader(file));
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
@@ -37,67 +37,47 @@ public class MPQALexicon {
 
         String line;
 
-        while((line = mpqa.readLine()) != null)
-        {
+        while ((line = mpqa.readLine()) != null) {
             //System.out.println(line);
             line = line.trim();
             String tokens[] = line.split(" ");
             String type[] = tokens[0].split("=");
             String polarity[] = tokens[5].split("=");
             //System.out.println(polarity.length);
-            if(polarity[1].compareToIgnoreCase("positive") == 0)
-            {
-                if(type[1].compareToIgnoreCase("strongsubj") == 0)
-                {
+            if (polarity[1].compareToIgnoreCase("positive") == 0) {
+                if (type[1].compareToIgnoreCase("strongsubj") == 0) {
                     mpqaHash.put(tokens[2].split("=")[1], 5.0);
-                }
-                else
-                {
+                } else {
                     mpqaHash.put(tokens[2].split("=")[1], 2.5);
                 }
-            }
-            else if(polarity[1].compareToIgnoreCase("negative") == 0)
-            {
-                if(type[1].compareToIgnoreCase("strongsubj") == 0)
-                {
+            } else if (polarity[1].compareToIgnoreCase("negative") == 0) {
+                if (type[1].compareToIgnoreCase("strongsubj") == 0) {
                     mpqaHash.put(tokens[2].split("=")[1], -5.0);
-                }
-                else
-                {
+                } else {
                     mpqaHash.put(tokens[2].split("=")[1], -2.5);
                 }
-            }
-            else if(polarity[1].compareToIgnoreCase("neutral") == 0)
-            {
+            } else if (polarity[1].compareToIgnoreCase("neutral") == 0) {
                 mpqaHash.put(tokens[2].split("=")[1], 0.0);
             }
         }
 
-        int count=0;
-        while((line=reader.readLine()) != null)
-        {
+        int count = 0;
+        while ((line = reader.readLine()) != null) {
             //System.out.println(line);
             String tokens[] = line.split(" ");
-            double pos=0, neg=0, neutral=0, total=0;
-            for(int i=0; i<tokens.length; i++)
-            {
-                if(mpqaHash.containsKey(tokens[i].toLowerCase()))
-                {
+            double pos = 0, neg = 0, neutral = 0, total = 0;
+            for (int i = 0; i < tokens.length; i++) {
+                if (mpqaHash.containsKey(tokens[i].toLowerCase())) {
                     //System.out.println(tokens[i]);
                     //System.out.println(mpqaHash.get(tokens[i]));
                     total += mpqaHash.get(tokens[i]);
-                    if(mpqaHash.get(tokens[i]) == 5.0  || mpqaHash.get(tokens[i]) == 2.5)
-                    {
+                    if (mpqaHash.get(tokens[i]) == 5.0 || mpqaHash.get(tokens[i]) == 2.5) {
                         //System.out.print(tokens[i]+", ");
                         pos++;
-                    }
-                    else if(mpqaHash.get(tokens[i]) == -5.0  || mpqaHash.get(tokens[i]) == -2.5)
-                    {
+                    } else if (mpqaHash.get(tokens[i]) == -5.0 || mpqaHash.get(tokens[i]) == -2.5) {
                         //System.out.print(tokens[i]+", ");
                         neg++;
-                    }
-                    else if(mpqaHash.get(tokens[i]) == 0.0)
-                    {
+                    } else if (mpqaHash.get(tokens[i]) == 0.0) {
                         neutral++;
                     }
                 }
@@ -105,8 +85,7 @@ public class MPQALexicon {
 
 
             featureVector.add(count, new LinkedHashMap<Integer, Double>());
-            if(pos != 0 || neg !=0)
-            {
+            if (pos != 0 || neg != 0) {
                 featureVector.get(count).put(1, pos);
                 featureVector.get(count).put(2, neg);
                 featureVector.get(count).put(3, total);
@@ -148,9 +127,8 @@ public class MPQALexicon {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] main)throws IOException
-    {
-        MPQALexicon ob = new MPQALexicon("D:\\Course\\Semester VII\\Internship\\sentiment");
+    public static void main(String[] main) throws IOException {
+        MPQALexicon ob = new MPQALexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 
 }

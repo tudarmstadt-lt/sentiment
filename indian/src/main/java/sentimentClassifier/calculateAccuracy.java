@@ -10,7 +10,8 @@ import java.io.IOException;
  */
 public class calculateAccuracy {
     public static void main(String[] args) throws IOException {
-        final String rootDirectory = "D:\\Course\\Semester VII\\Internship\\IndianSentiment";
+        //final String rootDirectory = "D:\\Course\\Semester VII\\Internship\\IndianSentiment";
+        final String rootDirectory = System.getProperty("user.dir");
         File file1 = new File(rootDirectory + "\\dataset\\testLabels.txt");
         BufferedReader reader1 = new BufferedReader(new FileReader(file1));
 

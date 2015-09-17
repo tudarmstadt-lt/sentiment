@@ -96,6 +96,6 @@ public class BrownClusters {
     }
 
     public static void main(String[] args) throws IOException {
-        BrownClusters ob = new BrownClusters("D:\\Course\\Semester VII\\Internship\\sentiment");
+        BrownClusters ob = new BrownClusters("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 }

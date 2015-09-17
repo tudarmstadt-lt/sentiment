@@ -8,7 +8,7 @@ import java.io.*;
 public class GenerateHindiDataset {
     public static void main(String[] args)throws IOException
     {
-        String root = "D:\\Course\\Semester VII\\Internship\\Hindi Sentiment Analysis Folder 2\\Training Data\\HI_Train_SAIL2015_Tweets";
+        String root = "D:\\Course\\Semester VII\\Internship\\IL Sentiment Analysis Folder 2\\Training Data\\HI_Train_SAIL2015_Tweets";
 
         createDataset(root+"\\hindiTraining.txt", root+"\\HI_POS.TXT");
         createDataset(root+"\\hindiTraining.txt", root+"\\HI_NEG.TXT");

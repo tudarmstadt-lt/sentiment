@@ -53,7 +53,7 @@ public class NRCHashtagBigrams {
                 //System.out.println(str.length);       //Check the split method
                 double max = -20.0;
                 for (int i = 1; i < str.length; i++) {
-                    String bigram = str[i-1]+" "+str[i];
+                    String bigram = str[i - 1] + " " + str[i];
                     if (scoreMap.get(bigram) != null) {
                         double currScore = scoreMap.get(bigram);
                         if (currScore > 0) {
@@ -62,8 +62,7 @@ public class NRCHashtagBigrams {
                             neg++;
                         }
                         totalScore += currScore;
-                        if(max<currScore)
-                        {
+                        if (max < currScore) {
                             max = currScore;
                         }
                         //System.out.println(count);

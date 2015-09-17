@@ -87,7 +87,7 @@ public class SentiWordNet {
             double total = 0.0;
             double equal = 0;
             String tokens[] = line.split(" ");
-            double maxPos=-20.0, minNeg=20.0;
+            double maxPos = -20.0, minNeg = 20.0;
             for (String token : tokens) {
                 String word[] = token.split("_");
                 if (word[1].compareToIgnoreCase("NN") == 0 || word[1].compareToIgnoreCase("NNS") == 0 || word[1].compareToIgnoreCase("NNP") == 0 || word[1].compareToIgnoreCase("NNPS") == 0) {
@@ -103,13 +103,11 @@ public class SentiWordNet {
                         } else {
                             equal++;
                         }
-                        if(maxPos<pVal)
-                        {
-                            maxPos=pVal;
+                        if (maxPos < pVal) {
+                            maxPos = pVal;
                         }
-                        if(minNeg>nVal)
-                        {
-                            minNeg=nVal;
+                        if (minNeg > nVal) {
+                            minNeg = nVal;
                         }
 
                         total += pVal - nVal;
@@ -127,13 +125,11 @@ public class SentiWordNet {
                         } else {
                             equal++;
                         }
-                        if(maxPos<pVal)
-                        {
-                            maxPos=pVal;
+                        if (maxPos < pVal) {
+                            maxPos = pVal;
                         }
-                        if(minNeg>nVal)
-                        {
-                            minNeg=nVal;
+                        if (minNeg > nVal) {
+                            minNeg = nVal;
                         }
                         total += pVal - nVal;
                     }
@@ -150,13 +146,11 @@ public class SentiWordNet {
                         } else {
                             equal++;
                         }
-                        if(maxPos<pVal)
-                        {
-                            maxPos=pVal;
+                        if (maxPos < pVal) {
+                            maxPos = pVal;
                         }
-                        if(minNeg>nVal)
-                        {
-                            minNeg=nVal;
+                        if (minNeg > nVal) {
+                            minNeg = nVal;
                         }
                         total += pVal - nVal;
                     }
@@ -173,13 +167,11 @@ public class SentiWordNet {
                         } else {
                             equal++;
                         }
-                        if(maxPos<pVal)
-                        {
-                            maxPos=pVal;
+                        if (maxPos < pVal) {
+                            maxPos = pVal;
                         }
-                        if(minNeg>nVal)
-                        {
-                            minNeg=nVal;
+                        if (minNeg > nVal) {
+                            minNeg = nVal;
                         }
                         total += pVal - nVal;
                     }

@@ -10,80 +10,15 @@ import java.util.List;
 import java.util.Map;
 
 
-/*class GenerateTrainFeatureL {
-    static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
-
-    GenerateTrainFeatureL() {
-        for (int i = 0; i < 1974; i++) {
-            listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
-        }
-    }
-
-    public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
-        //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
-        System.out.println("start: " + start + ": ");
-
-        for (int i = 0; i < hMap.size(); i++) {
-            //System.out.println();
-            for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
-                listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
-            }
-        }
-    }
-
-    public List<LinkedHashMap<Integer, Double>> getList() {
-        //System.out.println(trainingFeature.size());
-        return listOfMaps;
-    }
-}
-
-class GenerateTestFeatureL {
-    static List<LinkedHashMap<Integer, Double>> listOfMaps = new ArrayList<LinkedHashMap<Integer, Double>>();
-
-    GenerateTestFeatureL() {
-        for (int i = 0; i < 949; i++) {
-            listOfMaps.add(i, new LinkedHashMap<Integer, Double>());
-        }
-    }
-
-    public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
-        //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
-        System.out.println("start: " + start + ": ");
-
-        for (int i = 0; i < hMap.size(); i++) {
-            //System.out.println();
-            for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
-                listOfMaps.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
-            }
-        }
-    }
-
-    public List<LinkedHashMap<Integer, Double>> getList() {
-        //System.out.println(trainingFeature.size());
-        return listOfMaps;
-    }
-}*/
-
-class ClassifierHelperL
-{
+class ClassifierHelperL {
     List<LinkedHashMap<Integer, Double>> featureList = new ArrayList<LinkedHashMap<Integer, Double>>();
     //static List<LinkedHashMap<Integer, Double>> testFeatureList = new ArrayList<LinkedHashMap<Integer, Double>>();
 
-    ClassifierHelperL(String dataset)throws IOException
-    {
-        //String trainingSet = "\\dataset\\Train_Restaurants_Contextual_Cleansed.txt";
-        //String testSet = "\\dataset\\Test_Restaurants_Contextual_Cleansed.txt";
+    ClassifierHelperL(String dataset) throws IOException {
         BufferedReader readerTrain = new BufferedReader(new FileReader(new File(dataset)));
-        //BufferedReader readerTest = new BufferedReader(new FileReader(new File(testSet)));
 
-        String line;
-        int count=0;
-        while((line = readerTrain.readLine()) != null)
-        {
+        int count = 0;
+        while (readerTrain.readLine() != null) {
             count++;
         }
 
@@ -92,55 +27,50 @@ class ClassifierHelperL
         }
 
         System.out.println(count);
-
-        /*count=0;
-        while((line = readerTrain.readLine()) != null)
-        {
-            count++;
-        }
-
-        for (int i = 0; i < count; i++) {
-            testFeatureList.add(i, new LinkedHashMap<Integer, Double>());
-        }*/
     }
 
     public void setHashMap(int start, List<LinkedHashMap<Integer, Double>> hMap) {
-        //System.out.println(hMap.size() + " ** " + hMap.get(0).size() + " ## "+start);
-        System.out.println("start: " + start + ": ");
-        System.out.println("$$$$$$$$$$$$$$$$$"+featureList.size());
-        //System.out.println(hMap.size());
         for (int i = 0; i < hMap.size(); i++) {
-            //System.out.println();
             for (Map.Entry<Integer, Double> entry : hMap.get(i).entrySet()) {
-                //System.out.print(entry.getKey() + ": " + entry.getValue() + ";   ");
                 featureList.get(i).put(start + entry.getKey(), entry.getValue());
-                // do stuff
             }
         }
     }
 
     public List<LinkedHashMap<Integer, Double>> getList() {
-        //System.out.println(trainingFeature.size());
-        //System.out.println("$$$$$$$$$$$$$$$$$"+featureList.size());
         return featureList;
     }
 }
 
 public class SentimentClassifierL {
-    //static int start=0;
+    static String rootDirectory;
+    static List<LinkedHashMap<Integer, Double>> trainingFeature;
+    static List<LinkedHashMap<Integer, Double>> testFeature;
 
-    public static void main(String[] args) throws IOException {
-        final String rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment";
 
+    int SentimentClassifierL() throws IOException {
+        /*File file = new File("rootDir.txt");
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        String line;
+        while((line = reader.readLine())!=null)
+        {
+            rootDirectory = line;
+            System.out.println("Roor Directory is: "+rootDirectory);
+        }*/
+
+        rootDirectory = System.getProperty("user.dir");
+
+        //rootDirectory = "D:\\Course\\Semester VII\\Internship\\sentiment\\english";
+        return generateFeature();
+    }
+
+    private int generateFeature() throws IOException {
         //TRAINING SET
-        ClassifierHelperL trainingObject = new ClassifierHelperL(rootDirectory + "\\dataset\\Train_Laptops_Contextual_Cleansed.txt");
-        List<LinkedHashMap<Integer, Double>> trainingFeature;
+        ClassifierHelperL trainingObject = new ClassifierHelperL(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Laptops_Contextual_Cleansed.txt");
 
 
         //TESTING SET
-        ClassifierHelperL testObject = new ClassifierHelperL(rootDirectory + "\\dataset\\Test_Laptops_Contextual_Cleansed.txt");
-        List<LinkedHashMap<Integer, Double>> testFeature;
-
+        ClassifierHelperL testObject = new ClassifierHelperL(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Laptops_Contextual_Cleansed.txt");
 
 
         //POS FEATURE
@@ -158,15 +88,6 @@ public class SentimentClassifierL {
         trainingObject.setHashMap(start, nrcHashtagObject.getTrainingList());
 
         testObject.setHashMap(start, nrcHashtagObject.getTestList());
-
-
-        /*System.out.println("*************************************");
-        for(int i=0; i<trainingFeature.size(); i++)    //Print the feature values
-        {
-            //System.out.println(trainingFeature.get(i).size());
-            System.out.println(trainingFeature.get(i));
-        }*/
-
 
         //N GRAM FEATURE
         start += nrcHashtagObject.getFeatureCount();
@@ -245,113 +166,22 @@ public class SentimentClassifierL {
         trainingObject.setHashMap(start, afinnObject.getTrainingList());
 
         testObject.setHashMap(start, afinnObject.getTestList());
+
+        trainingFeature = trainingObject.getList();
         testFeature = testObject.getList();
-
-        //PMI SCORE
-
-        /*start += afinnObject.getFeatureCount();
-        PMIScore pmiObject = new PMIScore(rootDirectory);
-        trainingObject.setHashMap(start, pmiObject.getTrainingList());
-
-        testObject.setHashMap(start, pmiObject.getTestList());
-        testFeature = testObject.getList();*/
-
-
-        /*//ZSCORE FEATURE
-
-        start += afinnObject.getFeatureCount();
-        ZScore zscoreObject = new ZScore(rootDirectory);
-        trainingObject.setHashMap(start, zscoreObject.getTrainingList());
-
-        testObject.setHashMap(start, zscoreObject.getTestList());
-        testFeature = testObject.getList();*/
-
-        //MPQA LEXICON FEATURE
-
-        /*start += afinnObject.getFeatureCount();
-        MPQALexicon mpqaObject = new MPQALexicon(rootDirectory);
-        trainingObject.setHashMap(start, mpqaObject.getTrainingList());
-
-        testObject.setHashMap(start, mpqaObject.getTestList());
-        testFeature = testObject.getList();*/
-
-        //TF-IDF FEATURE
-        /*start += sentiBiObject.getFeatureCount();
-        Tf_IdfFeature tfidfObject = new Tf_IdfFeature(rootDirectory);
-        trainingObject.setHashMap(start, tfidfObject.getTrainingList());
-
-        testObject.setHashMap(start, tfidfObject.getTestList());
-        testFeature = testObject.getList();*/
-
-        //CLUSTER LEXICON FEATURE
-
-        /*start += sentiBiObject.getFeatureCount();
-        BrownClusters clusterObject = new BrownClusters(rootDirectory);
-        trainingObject.setHashMap(start, clusterObject.getTrainingList());
-
-        testObject.setHashMap(start, clusterObject.getTestList());
-        testFeature = testObject.getList();*/
-
-        //NEGATED WORD FEATURE
-
-        /*start += mpqaObject.getFeatureCount();
-        NegatedWord negatedWordObject = new NegatedWord(rootDirectory);
-        trainingObject.setHashMap(start, negatedWordObject.getTrainingList());
-
-        testObject.setHashMap(start, negatedWordObject.getTestList());
-        testFeature = testObject.getList();*/
-        /*
-        //CHARACTER NGRAM PREFIX SIZE 2 FEATURE
-        start += bingLiuObject.getFeatureCount();
-        CharacterNgramPrefixSize2 cNgramObject = new CharacterNgramPrefixSize2(rootDirectory);
-        trainingObject.setHashMap(start, cNgramObject.getTrainingList());
-
-        testObject.setHashMap(start, cNgramObject.getTestList());
-        testFeature = testObject.getList();
-
-        //CHARACTER NGRAM PREFIX SIZE 3 FEATURE
-        start += cNgramObject.getFeatureCount();
-        CharacterNgramPrefixSize3 cNgramP3Object = new CharacterNgramPrefixSize3(rootDirectory);
-        trainingObject.setHashMap(start, cNgramP3Object.getTrainingList());
-
-        testObject.setHashMap(start, cNgramP3Object.getTestList());
-        testFeature = testObject.getList();
-
-        //CHARACTER NGRAM SUFFIX SIZE 2 FEATURE
-        start += cNgramP3Object.getFeatureCount();
-        CharacterNgramSuffixSize2 cNgramS2Object = new CharacterNgramSuffixSize2(rootDirectory);
-        trainingObject.setHashMap(start, cNgramS2Object.getTrainingList());
-
-        testObject.setHashMap(start, cNgramS2Object.getTestList());
-        testFeature = testObject.getList();
-
-        //CHARACTER NGRAM SUFFIX SIZE 3 FEATURE
-        start += cNgramS2Object.getFeatureCount();
-        CharacterNgramSuffixSize3 cNgramS3Object = new CharacterNgramSuffixSize3(rootDirectory);
-        trainingObject.setHashMap(start, cNgramS3Object.getTrainingList());
-
-        testObject.setHashMap(start, cNgramS3Object.getTestList());
-        testFeature = testObject.getList();*/
 
         int finalSize = start + afinnObject.getFeatureCount();
 
-
-        /*System.out.println("TRAINING *************************************");
-        for (int i = 0; i < trainingFeature.size(); i++)    //Print the feature values
-        {
-            //System.out.println(trainingFeature.get(i).size());
-            System.out.println(trainingFeature.get(i));
-        }
-
-        System.out.println("TEST *************************************");
-        for (int i = 0; i < testFeature.size(); i++)    //Print the feature values
-        {
-            //System.out.println(trainingFeature.get(i).size());
-            System.out.println(testFeature.get(i));
-        }*/
+        return finalSize;
+    }
 
 
-        System.out.println("Hello sentiment!");
+    public static void main(String[] args) throws IOException {
+
+        SentimentClassifierL object = new SentimentClassifierL();
+        int finalSize = object.SentimentClassifierL();
+        System.out.println("Hello aspectCategorization!");
+        //System.out.println("Hello aspectCategorization!");
 
         // Create features
 
@@ -360,7 +190,8 @@ public class SentimentClassifierL {
         Problem problem = new Problem();
 
         // Save X to problem
-        double a[] = new double[nrcHashtagObject.getTrainingList().size()];
+        double a[] = new double[object.trainingFeature.size()];
+        System.out.println(a.length);
         File file = new File(rootDirectory + "\\dataset\\trainingLabels.txt");
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String read;
@@ -372,7 +203,7 @@ public class SentimentClassifierL {
 
         //Feature[][] f = new Feature[][]{ {}, {}, {}, {}, {}, {} };
 
-        trainingFeature = trainingObject.getList();
+        //trainingFeature = trainingObject.getList();
         Feature[][] trainFeatureVector = new Feature[trainingFeature.size()][finalSize];
 
         System.out.println(trainingFeature.size());
@@ -400,16 +231,6 @@ public class SentimentClassifierL {
         problem.x = trainFeatureVector; // feature nodes
         problem.y = a; // target values ----
 
-        /**
-         This is similar to original C implementation:
-         struct problem
-         {
-         int l, n;
-         int *y;
-         struct feature_node **x;
-         double bias;
-         };
-         * */
 
         BasicParser bp = new BasicParser();
 
@@ -434,7 +255,7 @@ public class SentimentClassifierL {
             }
         }*/
 
-        PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedRestaurantsLabels.txt")));
+        PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter(rootDirectory + "\\dataset\\predictedLabels.txt")));
         for (int i = 0; i < testFeature.size(); i++) {
             //System.out.println();
             Feature[] instance = new Feature[testFeature.get(i).size()];

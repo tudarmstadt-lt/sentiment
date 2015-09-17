@@ -1,6 +1,9 @@
 package sentimentClassifier;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 //package de.tu.darmstadt.lt.ner.util;
@@ -20,7 +23,7 @@ public class Ngram {
         LinkedHashMap<String, Integer> indexedNgrams = new LinkedHashMap<String, Integer>();
         indexedNgrams = generateNgrams();
 
-        trainingFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\raw_POS_Train.txt");
+        trainingFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Train.txt");
         //testFeature = generateFeature(indexedNgrams, rootDirectory + "\\dataset\\tokenized_Test.txt");
 
         //featureCount = 1;
@@ -84,6 +87,7 @@ public class Ngram {
 
             System.out.println("Func: " + featureCount);
 
+            read.close();
 
         } catch (IOException e) {
             System.out.println(e);
@@ -144,6 +148,7 @@ public class Ngram {
                 }
                 count++;
             }
+            read.close();
 
 
             for (int i = 0; i < featureVector.size(); i++)    //Print the feature values in sorted order

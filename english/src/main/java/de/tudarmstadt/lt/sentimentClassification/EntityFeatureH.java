@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -17,18 +16,18 @@ public class EntityFeatureH {
     List<LinkedHashMap<Integer, Double>> testFeature;
     String rootDirectory;
 
-    EntityFeatureH(String rootDirectory)throws IOException{
+    EntityFeatureH(String rootDirectory) throws IOException {
         this.rootDirectory = rootDirectory;
         trainingFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
         testFeature = new ArrayList<LinkedHashMap<Integer, Double>>();
 
-        trainingFeature = generateFeatureTrain(rootDirectory + "\\dataset\\Train_Hotels_Cleansed.txt");
-        testFeature = generateFeatureTest(rootDirectory + "\\dataset\\Test_Hotels_Cleansed.txt");
+        trainingFeature = generateFeatureTrain(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Train_Hotels_Cleansed.txt");
+        testFeature = generateFeatureTest(rootDirectory + "\\dataset\\dataset_sentimentClassification\\Test_Hotels_Cleansed.txt");
 
         getTrainingList();
     }
 
-    private List<LinkedHashMap<Integer, Double>> generateFeatureTest(String fileName)throws IOException {
+    private List<LinkedHashMap<Integer, Double>> generateFeatureTest(String fileName) throws IOException {
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
         File file = new File(fileName);
         BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -55,28 +54,24 @@ public class EntityFeatureH {
         //entityMap.put("MISCELLANEOUS", 5.0);
 
 
-
         String line;
-        int count=0;
+        int count = 0;
         while ((line = reader.readLine()) != null) {
             String words[] = line.split("\\|");
             String entity[] = words[5].split("#");
-            if(entityMap.containsKey(entity[1]))
-            {
+            if (entityMap.containsKey(entity[1])) {
                 featureVector.add(count, new LinkedHashMap<Integer, Double>());
                 //featureVector.get(count).put(1, entityMap.get(entity[0]));
                 featureVector.get(count).put(entityMap.get(entity[1]), 1.0);
                 count++;
-            }
-            else
-            {
-                System.out.println("Error: "+entity[1]+count+"ABC");
+            } else {
+                System.out.println("Error: " + entity[1] + count + "ABC");
             }
         }
         return featureVector;
     }
 
-    private List<LinkedHashMap<Integer, Double>> generateFeatureTrain(String fileName)throws IOException {
+    private List<LinkedHashMap<Integer, Double>> generateFeatureTrain(String fileName) throws IOException {
         List<LinkedHashMap<Integer, Double>> featureVector = new ArrayList<LinkedHashMap<Integer, Double>>();
         File file = new File(fileName);
         BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -103,31 +98,24 @@ public class EntityFeatureH {
         //entityMap.put("MISCELLANEOUS", 5.0);
 
 
-
         String line;
-        int count=0;
+        int count = 0;
         while ((line = reader.readLine()) != null) {
             String words[] = line.split("\\|");
             String entity[];
-            if(count < 1200)
-            {
+            if (count < 1200) {
                 entity = words[4].split("#");
-            }
-            else
-            {
+            } else {
                 entity = words[5].split("#");
             }
 
-            if(entityMap.containsKey(entity[1]))
-            {
+            if (entityMap.containsKey(entity[1])) {
                 featureVector.add(count, new LinkedHashMap<Integer, Double>());
                 //featureVector.get(count).put(1, entityMap.get(entity[0]));
                 featureVector.get(count).put(entityMap.get(entity[1]), 1.0);
                 count++;
-            }
-            else
-            {
-                System.out.println("Error: "+entity[1]+count+"ABC");
+            } else {
+                System.out.println("Error: " + entity[1] + count + "ABC");
             }
         }
         return featureVector;
@@ -152,8 +140,7 @@ public class EntityFeatureH {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] args)throws IOException
-    {
-        EntityFeature ef = new EntityFeature("D:\\Course\\Semester VII\\Internship\\sentiment");
+    public static void main(String[] args) throws IOException {
+        EntityFeature ef = new EntityFeature("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 }

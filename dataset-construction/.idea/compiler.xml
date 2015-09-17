@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="datasetConstruction" />
+        <module name="dataSetConstruction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="datasetConstruction" target="1.5" />
+      <module name="dataSetConstruction" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

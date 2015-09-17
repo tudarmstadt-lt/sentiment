@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -50,25 +49,24 @@ public class NRCEmotionLexicon {
         //List<HashMap<Integer, Double>> trainingFeature = new ArrayList<HashMap<Integer, Double>>();
         while ((line = reader.readLine()) != null) {
             String[] str = line.split(" ");
-            double pos=0.0, neg=0.0, neutral=0.0;
-            double totalSentiment=0, totalEmotion=0, total=0;
+            double pos = 0.0, neg = 0.0, neutral = 0.0;
+            double totalSentiment = 0, totalEmotion = 0, total = 0;
 
             for (int i = 0; i < str.length; i++) {
                 if (sentiment.get(str[i]) != null) {
-                    double currSentiment= sentiment.get(str[i]);
+                    double currSentiment = sentiment.get(str[i]);
                     double currEmotion = emotion.get(str[i]);
 
                     if (currSentiment > 0) {
                         pos++;
                     } else if (currSentiment < 0) {
                         neg++;
-                    }
-                    else {
+                    } else {
                         neutral++;
                     }
                     totalSentiment += currSentiment;
                     totalEmotion += currEmotion;
-                    total += totalEmotion*totalSentiment;
+                    total += totalEmotion * totalSentiment;
                     //System.out.println(count);
                 }
             }
@@ -85,8 +83,8 @@ public class NRCEmotionLexicon {
             //System.out.println(totalScore+" "+pos+" "+neg);
         }
 
-    return featureVector;
-}
+        return featureVector;
+    }
 
     public List<LinkedHashMap<Integer, Double>> getTrainingList() {
         //System.out.println(trainingFeature.size());
@@ -103,9 +101,8 @@ public class NRCEmotionLexicon {
         return trainingFeature.get(0).size();
     }
 
-    public static void main(String[] args)throws IOException
-    {
-        NRCEmotionLexicon ef = new NRCEmotionLexicon("D:\\Course\\Semester VII\\Internship\\sentiment");
+    public static void main(String[] args) throws IOException {
+        NRCEmotionLexicon ef = new NRCEmotionLexicon("D:\\Course\\Semester VII\\Internship\\aspectCategorization");
     }
 
 
